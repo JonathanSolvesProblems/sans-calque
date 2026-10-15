@@ -1,0 +1,9 @@
+.venv
+.env
+.git
+.claude
+tmp
+models
+data/raw
+data/eval_private
+data/train.jsonl

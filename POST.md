@@ -25,7 +25,7 @@ Nothing gets fixed silently. A flagged sentence lands on the review list, and th
 
 ## Code
 
-{% github [X: repo] %}
+{% github JonathanSolvesProblems/sans-calque %}
 
 ## How I Built It
 

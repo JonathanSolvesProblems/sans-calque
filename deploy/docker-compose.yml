@@ -1,0 +1,37 @@
+# Server copy lives at ~/experimental-projects/sans-calque/docker-compose.yml, next to app/ (git clone)
+# and .env (TINKER_API_KEY, chmod 600). Joins the box's shared `web` network so the existing Traefik
+# serves it with Let's Encrypt. sslip.io needs no DNS record, so nothing is left pointing at the IP
+# after teardown. Capped because the box is shared.
+services:
+  app:
+    build: ./app
+    image: sans-calque:latest
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DAILY_WORDS: "20000"
+    volumes:
+      - hf-cache:/cache/hf
+    networks: [web]
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: 1500M
+    logging:
+      driver: json-file
+      options: {max-size: "10m", max-file: "3"}
+    labels:
+      traefik.enable: "true"
+      traefik.docker.network: web
+      traefik.http.routers.sanscalque.rule: Host(`sans-calque.51-161-82-166.sslip.io`)
+      traefik.http.routers.sanscalque.entrypoints: websecure
+      traefik.http.routers.sanscalque.tls.certresolver: le
+      traefik.http.services.sanscalque.loadbalancer.server.port: "8000"
+
+volumes:
+  hf-cache:
+
+networks:
+  web:
+    external: true
