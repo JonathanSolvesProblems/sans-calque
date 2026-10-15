@@ -1,0 +1,19 @@
+{
+ "a": "gemma3_4b",
+ "b": "ft_qwen35_4b",
+ "chrf_b_beats_a_share": 1.0,
+ "acronyms_all_rows": {
+  "gemma3_4b": {
+   "french_acronyms_in_reference": 242,
+   "reproduced": 87,
+   "rate": 0.36,
+   "english_acronyms_left_in": 47
+  },
+  "ft_qwen35_4b": {
+   "french_acronyms_in_reference": 242,
+   "reproduced": 135,
+   "rate": 0.558,
+   "english_acronyms_left_in": 6
+  }
+ }
+}

@@ -1,0 +1,827 @@
+[
+ {
+  "en_url": "https://www.canada.ca/en/services/business.html",
+  "fr_url": "https://www.canada.ca/fr/services/entreprises.html",
+  "blocks": 39
+ },
+ {
+  "en_url": "https://www.canada.ca/en/services/business/start.html",
+  "fr_url": "https://www.canada.ca/fr/services/entreprises/lancer.html",
+  "blocks": 26
+ },
+ {
+  "en_url": "https://www.canada.ca/en/services/business/taxes.html",
+  "fr_url": "https://www.canada.ca/fr/services/entreprises/impots.html",
+  "blocks": 28
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/entreprise-individuelle-societe-personnes.html",
+  "blocks": 27
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/tps-tvh-entreprises.html",
+  "blocks": 37
+ },
+ {
+  "en_url": "https://www.canada.ca/en/services/business/start/planning.html",
+  "fr_url": "https://www.canada.ca/fr/services/entreprises/lancer/planifier-lancement-entreprise.html",
+  "blocks": 18
+ },
+ {
+  "en_url": "https://www.canada.ca/en/services/business/start/choosing-a-business-name-1.html",
+  "fr_url": "https://www.canada.ca/fr/services/entreprises/lancer/choisir-un-nom-entreprise-1.html",
+  "blocks": 10
+ },
+ {
+  "en_url": "https://www.canada.ca/en/services/business/start/register-with-gov.html",
+  "fr_url": "https://www.canada.ca/fr/services/entreprises/lancer/enregistrer-entreprise-aupres-gouvernement.html",
+  "blocks": 12
+ },
+ {
+  "en_url": "https://www.canada.ca/en/services/business/start/support-financing.html",
+  "fr_url": "https://www.canada.ca/fr/services/entreprises/lancer/soutien-financement-pour-entreprise.html",
+  "blocks": 45
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/completing-filing-information-returns.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/remplir-produire-declarations-renseignements.html",
+  "blocks": 16
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie.html",
+  "blocks": 44
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/definitions-letter-a-business.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/definitions-lettre-a-entreprise.html",
+  "blocks": 248
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/farmers-fishers.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/agriculteurs-pecheurs.html",
+  "blocks": 15
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/daycare-your-home.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/garderie-a-maison.html",
+  "blocks": 14
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/what-a-business.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/entreprise-individuelle-societe-personnes/est-entreprise.html",
+  "blocks": 20
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/business-expenses.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/entreprise-individuelle-societe-personnes/depenses-entreprise.html",
+  "blocks": 204
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/entreprise-individuelle-societe-personnes/declarer-vos-revenus-depenses-entreprise.html",
+  "blocks": 11
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/t5013-partnership-information-return-filing-requirements.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/entreprise-individuelle-societe-personnes/declarations-renseignements-societes-personnes-t5013-exigences-concernant-production.html",
+  "blocks": 22
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/accounting-methods.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/entreprise-individuelle-societe-personnes/methodes-comptabilite.html",
+  "blocks": 38
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/fiscal-period.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/entreprise-individuelle-societe-personnes/exercice.html",
+  "blocks": 8
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/business-records.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/entreprise-individuelle-societe-personnes/registres-entreprise.html",
+  "blocks": 30
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/tax-shelters.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/abris-fiscaux.html",
+  "blocks": 7
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/business-registration/business-number-program-account/how-register/resident.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/inscription-entreprise/numero-entreprise-comptes-programme/comment-inscrire/resident.html",
+  "blocks": 82
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate/calculator.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/tps-tvh-entreprises/facturer-percevoir-quel-taux/calculatrice.html",
+  "blocks": 34
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/file-gst-hst-return/how-file.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/tps-tvh-entreprises/produire-declaration-tps-tvh/comment-produire-declaration.html",
+  "blocks": 31
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/file-gst-hst-return/how-file/get-gst-hst-access-code.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/tps-tvh-entreprises/produire-declaration-tps-tvh/comment-produire-declaration/obtenir-code-acces-tps-tvh.html",
+  "blocks": 40
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/file-gst-hst-return/reporting-requirements-deadlines/gst-hst-filing-penalties.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/tps-tvh-entreprises/produire-declaration-tps-tvh/exigences-dates-limites-matiere-declaration/penalites-liees-production-declaration-tps-tvh.html",
+  "blocks": 38
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/gst-hst-account.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/tps-tvh-entreprises/compte-tps-tvh.html",
+  "blocks": 11
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/tps-tvh-entreprises/facturer-percevoir-quel-taux.html",
+  "blocks": 65
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/calculate-prepare-report.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/tps-tvh-entreprises/calculer-preparer-declarer.html",
+  "blocks": 15
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/file-gst-hst-return.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/tps-tvh-entreprises/produire-declaration-tps-tvh.html",
+  "blocks": 5
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/remit-pay-gst-hst-collected.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/tps-tvh-entreprises/verser-payer-tps-tvh-percue.html",
+  "blocks": 62
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/gst-hst-rebates.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/tps-tvh-entreprises/remboursements-tps-tvh.html",
+  "blocks": 11
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/digital-economy.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/tps-tvh-entreprises/economie-numerique.html",
+  "blocks": 18
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-specific-situations.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/tps-tvh-entreprises/facturer-percevoir-situations-particulieres.html",
+  "blocks": 1
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/file-gst-hst-return/reporting-requirements-deadlines.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/tps-tvh-entreprises/produire-declaration-tps-tvh/exigences-dates-limites-matiere-declaration.html",
+  "blocks": 57
+ },
+ {
+  "en_url": "https://www.canada.ca/en/services/business/start/choosing-a-business-name-2.html",
+  "fr_url": "https://www.canada.ca/fr/services/entreprises/lancer/choisir-un-nom-entreprise-2.html",
+  "blocks": 15
+ },
+ {
+  "en_url": "https://www.canada.ca/en/services/business/start/choosing-a-business-name-3.html",
+  "fr_url": "https://www.canada.ca/fr/services/entreprises/lancer/choisir-un-nom-entreprise-3.html",
+  "blocks": 40
+ },
+ {
+  "en_url": "https://www.canada.ca/en/services/business/start/register-with-gov/register-corp.html",
+  "fr_url": "https://www.canada.ca/fr/services/entreprises/lancer/enregistrer-entreprise-aupres-gouvernement/incorporation.html",
+  "blocks": 10
+ },
+ {
+  "en_url": "https://www.canada.ca/en/services/business/start/register-with-gov/register-sole-prop-partner.html",
+  "fr_url": "https://www.canada.ca/fr/services/entreprises/lancer/enregistrer-entreprise-aupres-gouvernement/enregistrement-entreprise-proprietaire-societe-collectif.html",
+  "blocks": 20
+ },
+ {
+  "en_url": "https://www.canada.ca/en/services/business/start/support-financing/businesssupport/ontario.html",
+  "fr_url": "https://www.canada.ca/fr/services/entreprises/lancer/soutien-financement-pour-entreprise.html",
+  "blocks": 45
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/file-information-returns-slip-summaries.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/produire-declarations-renseignements-feuillets-sommaires.html",
+  "blocks": 8
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/file-information-returns-slip-summaries/when-to-file.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/produire-declarations-renseignements-feuillets-sommaires/quand-produire.html",
+  "blocks": 70
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/file-information-returns-slip-summaries/distribute-slips.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/produire-declarations-renseignements-feuillets-sommaires/distribuer-feuillets.html",
+  "blocks": 27
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/file-information-returns-slip-summaries/receiving-payroll/notice-assessment.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/produire-declarations-renseignements-feuillets-sommaires/recevoir-correspondance-sur-retenues/avis-cotisation.html",
+  "blocks": 15
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/file-information-returns-slip-summaries/make-corrections-after-filing.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/produire-declarations-renseignements-feuillets-sommaires/faire-corrections-apres-production.html",
+  "blocks": 8
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/completing-filing-information-returns/t4-information-employers/t4-summary.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/remplir-produire-declarations-renseignements/t4-information-employeurs/t4-sommaire.html",
+  "blocks": 47
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/completing-filing-information-returns/t4a-information-payers/t4a-summary.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/remplir-produire-declarations-renseignements/t4a-information-payeurs/sommaire-t4a.html",
+  "blocks": 44
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/completing-filing-information-returns/t4a-1.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/remplir-produire-declarations-renseignements/t4a-1.html",
+  "blocks": 49
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/completing-filing-information-returns/t4a-rca-summary.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/remplir-produire-declarations-renseignements/t4a-rca-sommaire.html",
+  "blocks": 42
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/completing-filing-information-returns/t4a-summary.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/remplir-produire-declarations-renseignements/t4a-sommaire.html",
+  "blocks": 29
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/completing-filing-information-returns/t4ps-summary.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/remplir-produire-declarations-renseignements/t4ps-sommaire.html",
+  "blocks": 45
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/completing-filing-information-returns/t5018-slip-statement-contract-payments.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/remplir-produire-declarations-renseignements/t5018-etat-paiements-contractuels.html",
+  "blocks": 86
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/file-information-returns-slip-summaries/receiving-payroll.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/produire-declarations-renseignements-feuillets-sommaires/recevoir-correspondance-sur-retenues.html",
+  "blocks": 1
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/benefits-allowances/benefits-allowances-chart.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/avantages-allocations/tableau-avantages-allocations.html",
+  "blocks": 35
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/calculating-deductions/determining-tax-treatment.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/calculer-retenues/determiner-traitement-fiscal.html",
+  "blocks": 15
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/whats-new-payroll.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/quoi-neuf-retenues-paie.html",
+  "blocks": 707
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/determine-relationship-employer-payer.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/determiner-relation-employeur-payeur.html",
+  "blocks": 5
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/open-manage-payroll-account.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/ouvrir-gerer-compte-retenues-paie.html",
+  "blocks": 1
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/set-up-new-employee.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/obtenir-renseignements-nouvel-employe.html",
+  "blocks": 4
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/calculating-deductions.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/calculer-retenues.html",
+  "blocks": 1
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/remitting-source-deductions.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/versement-retenues-a-source.html",
+  "blocks": 4
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-compliance-enforcement.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/observation-execution-retenue-paie.html",
+  "blocks": 15
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/file-information-returns-slip-summaries/receiving-payroll/earnings-review.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/produire-declarations-renseignements-feuillets-sommaires/recevoir-correspondance-sur-retenues/revue-des-gains.html",
+  "blocks": 61
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/file-information-returns-slip-summaries/receiving-payroll/discrepancy-notice.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/produire-declarations-renseignements-feuillets-sommaires/recevoir-correspondance-sur-retenues/avis-ecart.html",
+  "blocks": 47
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/file-information-returns-slip-summaries/receiving-payroll/notice-to-file.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/produire-declarations-renseignements-feuillets-sommaires/recevoir-correspondance-sur-retenues/avis-de-produire.html",
+  "blocks": 11
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/remitting-source-deductions/how-when-remit-overview/request-tax-deductions-cpp-ei-information-remit-late.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/versement-retenues-a-source/comment-quand-payer-versements-apercu/demande-renseignements-retenues-impot-rpc-ae-effectuez-versement-retard.html",
+  "blocks": 14
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/remitting-source-deductions/how-when-remit-overview/statement-account-current-source-deductions-regular-quarterly-remitters.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/versement-retenues-a-source/comment-quand-payer-versements-apercu/releve-compte-retenues-source-courantes-auteurs-versements-reguliers-trimestriels.html",
+  "blocks": 16
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/remitting-source-deductions/how-when-remit-overview/statement-account-current-source-deductions-accelerated-remitters.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/versement-retenues-a-source/comment-quand-payer-versements-apercu/releve-compte-retenues-source-courantes-auteurs-versements-acceleres.html",
+  "blocks": 14
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/remitting-source-deductions/how-when-remit-overview/remittance-voucher-booklets-accelerated-remitters.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/versement-retenues-a-source/comment-quand-payer-versements-apercu/livrets-bons-versement-auteurs-versements-acceleres.html",
+  "blocks": 12
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/remitting-source-deductions/how-when-remit-overview/statement-account-partial-payment-arrears-balance-remittance-voucher.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/versement-retenues-a-source/comment-quand-payer-versements-apercu/relevr-compte-paiement-partiel-bordereau-remise-solde-arrieres.html",
+  "blocks": 9
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/remitting-source-deductions/how-when-remit-overview/statement-account-payment-existing-balance-remittance-voucher.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/versement-retenues-a-source/comment-quand-payer-versements-apercu/releve-compte-paiement-bordereau-remise-solde-existant.html",
+  "blocks": 13
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/remitting-source-deductions/how-when-remit-overview/remittance-voucher-payment-filing-source-deductions.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/versement-retenues-a-source/comment-quand-payer-versements-apercu/bon-versement-paiement-production-retenues-source.html",
+  "blocks": 20
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/remitting-source-deductions/how-when-remit-more-information/t216.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/versement-retenues-a-source/comment-quand-payer-versements-plus-information/t216.html",
+  "blocks": 32
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/claiming-capital-cost-allowance/accelerated-investment-incentive.html?utm_campaign=not-applicable&utm_medium=vanity-url&utm_source=canada-ca_taxes-accelerated-investment-income.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/entreprise-individuelle-societe-personnes/declarer-vos-revenus-depenses-entreprise/reclamer-deduction-amortissement/incitatif-investissement-accelere.html",
+  "blocks": 82
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/rental-income/capital-expenses-special-situations.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/revenus-location/depenses-capital-cas-particuliers.html",
+  "blocks": 37
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/rental-income/capital-cost-allowance-rental-property/rental-classes-depreciable-property.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/revenus-location/deduction-amortissement-bien-location/location-categories-biens-amortissables.html",
+  "blocks": 39
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/keeping-records.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/tenue-registres-comptables.html",
+  "blocks": 24
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/farmers-fishers/what-farming-fishing-income.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/agriculteurs-pecheurs/est-revenu-agricole-peche.html",
+  "blocks": 25
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/farmers-fishers/reporting-income-loss-farmers-fishers.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/agriculteurs-pecheurs/declarer-revenu-perte-agriculteurs-pecheurs.html",
+  "blocks": 42
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/farmers-fishers/capital-cost-allowance-farmers-fishers.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/agriculteurs-pecheurs/deduction-amortissement-agriculteurs-pecheurs.html",
+  "blocks": 2
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/farmers-fishers/capital-gains-losses-farmers-fishers.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/agriculteurs-pecheurs/gains-pertes-capital-agriculteurs-pecheurs.html",
+  "blocks": 24
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/farmers-fishers/drought-excessive-moisture-farmers.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/agriculteurs-pecheurs/secheresse-humidite-excessive-agriculteurs.html",
+  "blocks": 8
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/farmers-fishers/agristability-agriinvest-programs-farmers.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/agriculteurs-pecheurs/programmes-agri-stabilite-agri-investissement-agriculteurs.html",
+  "blocks": 25
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/small-businesses-self-employed-income/checklist-small-businesses.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/revenu-petites-entreprises-travailleurs-independants/liste-controle-petites-entreprises.html",
+  "blocks": 30
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/daycare-your-home/reporting-your-income.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/garderie-a-maison/declarer-votre-revenu.html",
+  "blocks": 20
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/daycare-your-home/deducting-your-business-expenses.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/garderie-a-maison/deduire-depenses-entreprise.html",
+  "blocks": 15
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/daycare-your-home/self-employed-individual-employee.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/garderie-a-maison/travailleur-independant-employe.html",
+  "blocks": 15
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/daycare-your-home/issuing-receipts.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/garderie-a-maison/remettre-recus.html",
+  "blocks": 9
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/daycare-your-home/your-employees.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/garderie-a-maison/vos-employes.html",
+  "blocks": 18
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/daycare-your-home/keeping-daycare-records.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/garderie-a-maison/tenue-registres-votre-service-garde.html",
+  "blocks": 10
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/daycare-your-home/collecting-goods-services-tax-harmonized-sales-tax-on-your-daycare-services.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/garderie-a-maison/percevoir-taxe-produits-services-taxe-vente-harmonisee-votre-service-garde.html",
+  "blocks": 8
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/small-businesses-self-employed-income.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/revenu-petites-entreprises-travailleurs-independants.html",
+  "blocks": 65
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/small-businesses-self-employed-income/business-income-tax-reporting.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/revenu-petites-entreprises-travailleurs-independants/impot-revenu-entreprises.html",
+  "blocks": 11
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/small-businesses-self-employed-income/business-income-tax-reporting/business-income.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/revenu-petites-entreprises-travailleurs-independants/impot-revenu-entreprises/revenus-entreprise.html",
+  "blocks": 20
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/corporation-income-tax-return.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/societes/declaration-revenus-societes.html",
+  "blocks": 32
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/corporation-payments.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/societes/paiements-societes.html",
+  "blocks": 5
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/corporation-tax-rates.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/societes/taux-impot-societes.html",
+  "blocks": 12
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/type-corporation.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/societes/genre-societe.html",
+  "blocks": 32
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/important-dates-businesses/important-dates-corporations.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/dates-importantes-entreprises/dates-importantes-societes.html",
+  "blocks": 18
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/business-tax-credits.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/societes/credits-dimpot-entreprises.html",
+  "blocks": 7
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/provincial-territorial-corporation-tax.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/societes/impot-provincial-territorial-societes.html",
+  "blocks": 19
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/after-you-file-your-corporation-income-tax-return.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/societes/apres-avoir-produit-votre-declaration-revenus-societes.html",
+  "blocks": 15
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/eligible-dividends.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/societes/dividendes-determines.html",
+  "blocks": 11
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/functional-currency.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/societes/monnaie-fonctionnelle.html",
+  "blocks": 22
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/partnerships-deferral-corporation-tax.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/societes/societes-personnes-report-impot-societes.html",
+  "blocks": 23
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/international-financial-reporting-standards-ifrs.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/normes-internationales-information-financiere-ifrs.html",
+  "blocks": 6
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/changes-your-business/comfort-letter.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/changements-effectues-a-votre-entreprise/lettre-accord.html",
+  "blocks": 7
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/business-expenses/current-capital-expenses.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/entreprise-individuelle-societe-personnes/depenses-entreprise/depense-courante-depense-capital.html",
+  "blocks": 6
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/claiming-capital-cost-allowance/basic-information-about-capital-cost-allowance.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/entreprise-individuelle-societe-personnes/declarer-vos-revenus-depenses-entreprise/reclamer-deduction-amortissement/renseignements-base-deduction-amortissement.html",
+  "blocks": 35
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/completing-form-t2125/business-use-home-expenses.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/entreprise-individuelle-societe-personnes/declarer-vos-revenus-depenses-entreprise/comment-remplir-formulaire-t2125/frais-utilisation-residence-fins-entreprise.html",
+  "blocks": 17
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/claiming-capital-cost-allowance.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/entreprise-individuelle-societe-personnes/declarer-vos-revenus-depenses-entreprise/reclamer-deduction-amortissement.html",
+  "blocks": 19
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/business-expenses/motor-vehicle-expenses.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/entreprise-individuelle-societe-personnes/depenses-entreprise/depenses-relatives-vehicules-a-moteur.html",
+  "blocks": 10
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/completing-form-t2125/other-business-expenses.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/entreprise-individuelle-societe-personnes/declarer-vos-revenus-depenses-entreprise/comment-remplir-formulaire-t2125/autres-depenses-entreprise.html",
+  "blocks": 71
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/completing-form-t2125/motor-vehicle-expenses-including.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/entreprise-individuelle-societe-personnes/declarer-vos-revenus-depenses-entreprise/comment-remplir-formulaire-t2125/depenses-relatives-vehicules-a-moteur-sans.html",
+  "blocks": 8
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/completing-form-t2125.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/entreprise-individuelle-societe-personnes/declarer-vos-revenus-depenses-entreprise/comment-remplir-formulaire-t2125.html",
+  "blocks": 6
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/industry-codes.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/entreprise-individuelle-societe-personnes/declarer-vos-revenus-depenses-entreprise/codes-activites-economiques.html",
+  "blocks": 7
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/t5013-partnership-information-return-filing-requirements/whats-new-partnerships.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/entreprise-individuelle-societe-personnes/declarations-renseignements-societes-personnes-t5013-exigences-concernant-production/quoi-neuf-societes-personnes.html",
+  "blocks": 50
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/t5013-partnership-information-return-filing-requirements/electronic-filing-t5013-partnership-information-return.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/entreprise-individuelle-societe-personnes/declarations-renseignements-societes-personnes-t5013-exigences-concernant-production/transmission-electronique-declarations-renseignements-societes-personnes-t5013.html",
+  "blocks": 6
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/t5013-partnership-information-return-filing-requirements/electronic-filing-t5013-partnership-information-return/exemption-farm-partnerships-filing-t5013-partnership-information-return.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/entreprise-individuelle-societe-personnes/declarations-renseignements-societes-personnes-t5013-exigences-concernant-production/transmission-electronique-declarations-renseignements-societes-personnes-t5013/exemption-societes-personnes-agricoles.html",
+  "blocks": 3
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/t5013-partnership-information-return-filing-requirements/filing-t5013-partnership-information-return.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/entreprise-individuelle-societe-personnes/declarations-renseignements-societes-personnes-t5013-exigences-concernant-production/produire-declaration-renseignements-societes-personnes-t5013.html",
+  "blocks": 49
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/t5013-partnership-information-return-filing-requirements/reporting-partnership-income.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/entreprise-individuelle-societe-personnes/declarations-renseignements-societes-personnes-t5013-exigences-concernant-production/declarer-revenu-societe-personnes.html",
+  "blocks": 10
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/gst-hst-rebates/employees-partners.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/tps-tvh-entreprises/remboursements-tps-tvh/salaries-associes.html",
+  "blocks": 1
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/t5013-partnership-information-return-filing-requirements/partnerships-that-subject-specified-investment-flow-through-sift-tax.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/entreprise-individuelle-societe-personnes/declarations-renseignements-societes-personnes-t5013-exigences-concernant-production/societes-personnes-sont-assujetties-a-impot-entites-intermediaires-placements-determinees-eipd.html",
+  "blocks": 13
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/t5013-partnership-information-return-filing-requirements/capital-cost-allowance-partnership.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/entreprise-individuelle-societe-personnes/declarations-renseignements-societes-personnes-t5013-exigences-concernant-production/deduction-amortissement-societe-personnes.html",
+  "blocks": 11
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/tax-topics-partnerships.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/entreprise-individuelle-societe-personnes/sujets-lies-a-impot-taxes-societes-personnes.html",
+  "blocks": 32
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/business-registration/maintain-business/change-fiscal-year-end.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/inscription-entreprise/gerer-entreprise/changement-fin-exercice.html",
+  "blocks": 26
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/business-expenses/prepaid-expenses.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/entreprise-individuelle-societe-personnes/depenses-entreprise/frais-payes-avance.html",
+  "blocks": 10
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/business-records/example-sales-journal-month-july.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/entreprise-individuelle-societe-personnes/registres-entreprise/exemple-journal-ventes-mois-juillet.html",
+  "blocks": 8
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/business-records/example-expense-journal-month-july.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/entreprise-individuelle-societe-personnes/registres-entreprise/exemple-journal-depenses-mois-juillet.html",
+  "blocks": 3
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/claiming-capital-cost-allowance/calculate-deduction-capital-cost-allowance.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/entreprise-individuelle-societe-personnes/declarer-vos-revenus-depenses-entreprise/reclamer-deduction-amortissement/comment-calculer-deduction-amortissement.html",
+  "blocks": 43
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/business-expenses/motor-vehicle-expenses/motor-vehicle-records.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/entreprise-individuelle-societe-personnes/depenses-entreprise/depenses-relatives-vehicules-a-moteur/registres-vehicules-a-moteur.html",
+  "blocks": 17
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/tax-shelters/what-a-tax-shelter.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/abris-fiscaux/est-abri-fiscal.html",
+  "blocks": 8
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/tax-shelters/who-register-a-tax-shelter.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/abris-fiscaux/doit-enregistrer-abri-fiscal.html",
+  "blocks": 8
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/tax-shelters/tax-shelter-identification-number.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/abris-fiscaux/numero-inscription-abri-fiscal.html",
+  "blocks": 19
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/tax-shelters/investments-properties-gifting-arrangements.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/abris-fiscaux/investissements-biens-arrangements.html",
+  "blocks": 39
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/tax-shelters/definitions-tax-shelters.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/abris-fiscaux/definitions-abris-fiscaux.html",
+  "blocks": 25
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/business-registration/business-number-program-account.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/inscription-entreprise/numero-entreprise-comptes-programme.html",
+  "blocks": 3
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/business-registration/business-number-program-account/how-register.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/inscription-entreprise/numero-entreprise-comptes-programme/comment-inscrire.html",
+  "blocks": 11
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/business-registration/business-number-program-account/need-bn.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/inscription-entreprise/numero-entreprise-comptes-programme/besoin-ne.html",
+  "blocks": 38
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/business-registration/business-number-program-account/need-program-accounts.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/inscription-entreprise/numero-entreprise-comptes-programme/besoin-comptes-programme.html",
+  "blocks": 51
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/business-registration/business-number-program-account/gather-information.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/inscription-entreprise/numero-entreprise-comptes-programme/recueillir-renseignements.html",
+  "blocks": 58
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/business-registration/business-number-program-account/how-register/non-resident.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/inscription-entreprise/numero-entreprise-comptes-programme/comment-inscrire/non-resident.html",
+  "blocks": 56
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/business-registration/find-business-number.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/inscription-entreprise/trouver-numero-entreprise.html",
+  "blocks": 23
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/business-registration/business-number-program-account/need-program-accounts/air-travellers-security-charge.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/inscription-entreprise/numero-entreprise-comptes-programme/besoin-comptes-programme/droit-securite-passagers-transport-aerien.html",
+  "blocks": 19
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/business-registration/business-number-program-account/need-program-accounts/insurance-premium-tax.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/inscription-entreprise/numero-entreprise-comptes-programme/besoin-comptes-programme/taxe-primes-assurance.html",
+  "blocks": 13
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-type-supply.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/tps-tvh-entreprises/facture-percevoir-type-fourniture.html",
+  "blocks": 26
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/calculating-deductions/making-deductions/gst-hst-rates-benefits.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/retenues-paie/calculer-retenues/preparer-deductions/taux-tps-tvh-sur-avantages.html",
+  "blocks": 26
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/file-gst-hst-return/after-file.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/tps-tvh-entreprises/produire-declaration-tps-tvh/apres-produire.html",
+  "blocks": 91
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/file-gst-hst-return/how-file/in-your-cra-account.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/tps-tvh-entreprises/produire-declaration-tps-tvh/comment-produire-declaration/dans-votre-compte-arc.html",
+  "blocks": 50
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/file-gst-hst-return/how-file/using-online-netfile-form.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/tps-tvh-entreprises/produire-declaration-tps-tvh/comment-produire-declaration/utilisant-formulaire-ligne.html",
+  "blocks": 55
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/file-gst-hst-return/how-file/through-financial-institution.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/tps-tvh-entreprises/produire-declaration-tps-tvh/comment-produire-declaration/par-intermediaire-institution-financiere.html",
+  "blocks": 37
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/file-gst-hst-return/how-file/using-third-party-software.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/tps-tvh-entreprises/produire-declaration-tps-tvh/comment-produire-declaration/utilisant-logiciel-tiers.html",
+  "blocks": 53
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/file-gst-hst-return/how-file/by-phone-telefile.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/tps-tvh-entreprises/produire-declaration-tps-tvh/comment-produire-declaration/par-telephone-impotnet.html",
+  "blocks": 38
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/file-gst-hst-return/how-file/by-mail.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/tps-tvh-entreprises/produire-declaration-tps-tvh/comment-produire-declaration/par-poste.html",
+  "blocks": 25
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/business-registration/business-number-program-account/register-rideshare-taxi.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/inscription-entreprise/numero-entreprise-comptes-programme/inscrire-covoiturage-taxi.html",
+  "blocks": 48
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/gst-hst-account/change-account.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/tps-tvh-entreprises/compte-tps-tvh/modifier-compte.html",
+  "blocks": 58
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/gst-hst-account/close-account.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/tps-tvh-entreprises/compte-tps-tvh/fermer-compte.html",
+  "blocks": 96
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-specific-situations/governments-diplomats.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/tps-tvh-entreprises/facturer-percevoir-situations-particulieres/gouvernements-diplomates.html",
+  "blocks": 51
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/calculate-prepare-report/which-gst-hst-return-use-your-situation.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/tps-tvh-entreprises/calculer-preparer-declarer/quelle-declaration-tps-tvh-utiliser-votre-situation.html",
+  "blocks": 43
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/calculate-prepare-report/gst-hst-records-keep.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/tps-tvh-entreprises/calculer-preparer-declarer/documents-tps-tvh-conserver.html",
+  "blocks": 13
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/calculate-prepare-report/software-gst-hst-internet-file-transfer.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/tps-tvh-entreprises/calculer-preparer-declarer/logiciels-tps-tvh-transfert-fichiers-internet.html",
+  "blocks": 6
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/file-gst-hst-return/gst-hst-business-filing-contact.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/tps-tvh-entreprises/produire-declaration-tps-tvh/contactez-nous-declaration-entreprise-tps-tvh.html",
+  "blocks": 40
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/remit-pay-gst-hst-collected/pay-instalment.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/tps-tvh-entreprises/verser-payer-tps-tvh-percue/payez-acomptes-provisionnels.html",
+  "blocks": 2
+ },
+ {
+  "en_url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/gst-hst-rebates/reason-code-1c-tax-break.html",
+  "fr_url": "https://www.canada.ca/fr/agence-revenu/services/impot/entreprises/sujets/tps-tvh-entreprises/remboursements-tps-tvh/code-motif-1c-conge-taxe.html",
+  "blocks": 4
+ }
+]

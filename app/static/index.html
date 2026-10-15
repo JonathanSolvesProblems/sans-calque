@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sans calque</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f7f5f0; --ink:#1d1d1b; --muted:#6b6862; --rule:#dcd7cc; --card:#fffdf8;
+  --red:#b3261e; --red-soft:#f6e3e1; --green:#22603d; --green-soft:#e2efe6; --amber:#8a5a00; --amber-soft:#f6ecd6;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#16150f; --ink:#ece8de; --muted:#a29d92; --rule:#353228; --card:#1f1d16;
+    --red:#f08a80; --red-soft:#3a1f1c; --green:#8fd1a6; --green-soft:#1b3024; --amber:#e3b55a; --amber-soft:#3a2f17;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 Inter,system-ui,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 16px 64px}
+header{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;border-bottom:2px solid var(--ink);padding-bottom:14px}
+h1{font:600 2.1rem/1.1 "Source Serif 4",Georgia,serif;margin:0;letter-spacing:-.01em}
+h1 em{font-style:normal;color:var(--red);text-decoration:line-through;text-decoration-thickness:2px}
+.tag{color:var(--muted);margin:6px 0 0;max-width:62ch}
+.mode{font-size:.8rem;color:var(--muted);border:1px solid var(--rule);border-radius:999px;padding:3px 10px;white-space:nowrap}
+.score{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:22px 0 8px;border:1px solid var(--rule);background:var(--card)}
+.score div{padding:14px 16px;border-right:1px solid var(--rule)}
+.score div:last-child{border-right:0}
+.score .k{font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.score .v{font:600 1.6rem "Source Serif 4",serif}
+.score .v small{font:400 .85rem Inter;color:var(--muted)}
+.score .ft .v{color:var(--green)}
+.fine{font-size:.82rem;color:var(--muted);margin:0 0 22px}
+textarea{width:100%;min-height:150px;resize:vertical;padding:14px;font:15px/1.5 Inter,sans-serif;background:var(--card);color:var(--ink);border:1px solid var(--rule);border-radius:4px}
+.bar{display:flex;gap:12px;align-items:center;margin:10px 0 26px;flex-wrap:wrap}
+button{font:600 15px Inter;background:var(--ink);color:var(--paper);border:0;border-radius:4px;padding:11px 18px;cursor:pointer}
+button.ghost{background:transparent;color:var(--ink);border:1px solid var(--rule)}
+button:disabled{opacity:.5;cursor:wait}
+label{font-size:.9rem;color:var(--muted);display:flex;gap:6px;align-items:center}
+.cols{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;border:1px solid var(--rule);background:var(--card)}
+.cols.two{grid-template-columns:1fr 1fr}
+.colh{font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);padding:10px 14px;border-bottom:1px solid var(--rule);border-right:1px solid var(--rule)}
+.colh:last-child{border-right:0}
+.cell{padding:12px 14px;border-bottom:1px solid var(--rule);border-right:1px solid var(--rule);font-size:.95rem}
+.cell:nth-child(3n){border-right:0}
+.cols.two .cell:nth-child(3n){border-right:1px solid var(--rule)}
+.cols.two .cell:nth-child(2n){border-right:0}
+.cell.en{color:var(--muted)}
+mark{background:var(--red-soft);color:var(--red);padding:0 2px;border-radius:2px}
+mark.ok{background:transparent;color:inherit}
+.flags{margin-top:8px;display:flex;flex-direction:column;gap:4px}
+.flag{font-size:.8rem;padding:4px 8px;border-left:3px solid var(--amber);background:var(--amber-soft);color:var(--ink)}
+.flag b{color:var(--amber)}
+.clean{font-size:.8rem;color:var(--green)}
+.err{color:var(--red);font-size:.85rem}
+.deliver{margin-top:28px;border:2px solid var(--ink);background:var(--card);padding:18px}
+.deliver h2{font:600 1.3rem "Source Serif 4",serif;margin:0 0 6px}
+.deliver pre{white-space:pre-wrap;font:15px/1.6 "Source Serif 4",serif;margin:12px 0}
+.limit{margin-top:22px;font-size:.85rem;color:var(--muted);border-top:1px solid var(--rule);padding-top:12px}
+@media (max-width:760px){
+  .score{grid-template-columns:1fr}.score div{border-right:0;border-bottom:1px solid var(--rule)}
+  .cols,.cols.two{grid-template-columns:1fr}.colh{display:none}
+  .cell{border-right:0!important}
+  .cell::before{content:attr(data-h);display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Sans <em>calque</em></h1>
+      <p class="tag">English to Canadian French for small-business pages, on a 4-billion-parameter model fine-tuned on government text and small enough to run on a laptop. Every flag below cites where its rule came from.</p>
+    </div>
+    <span class="mode" id="mode">loading…</span>
+  </header>
+
+  <section class="score" id="score"></section>
+  <p class="fine" id="scorefine"></p>
+
+  <textarea id="src" placeholder="Paste English text: a page, a few paragraphs, an email to customers…"></textarea>
+  <div class="bar">
+    <button id="go">Translate</button>
+    <button class="ghost" id="sample">Use a sample</button>
+    <label><input type="checkbox" id="cmp" checked> Compare with the untouched base model</label>
+    <span class="err" id="msg"></span>
+  </div>
+
+  <section id="out"></section>
+
+  <p class="limit">What this model is not good at: it learned from government catalogue text, so it is strong on terminology and acronyms and has no particular flair for marketing copy. On held-out government pages its overall quality score is not measurably better than the base model's; the gain is in acronyms and terms. It still gets some acronyms wrong (it writes NIS for SIN, where the government writes NAS), which is why every acronym is checked against the government's own usage above. Read the French before you send it, starting with anything flagged.</p>
+</div>
+<script>
+const $ = s => document.querySelector(s);
+const SAMPLE = `Before you register your business, you need a business number (BN) from the CRA.
+If you expect to earn more than $30,000 in a year, you have to register for the GST/HST.
+Keep your accounting records for six years after the end of the fiscal year they relate to.
+You can apply for your SIN at a Service Canada office.`;
+const esc = s => s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function highlight(text, flags){
+  let h = esc(text);
+  for (const f of flags){
+    const t = esc(f.term).replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
+    h = h.replace(new RegExp(`(^|[^\\wÀ-ÿ])(${t})(?![\\wÀ-ÿ])`,"gi"), `$1<mark>$2</mark>`);
+  }
+  return h;
+}
+function flagList(flags){
+  if (!flags.length) return `<div class="clean">No flags</div>`;
+  return `<div class="flags">${flags.map(f => `<div class="flag"><b>${f.kind === "acronym" ? "Acronym" : "Termium"}</b> ${esc(f.note)}${f.preferred && f.preferred.length ? ` Preferred: <i>${esc(f.preferred.join(" / "))}</i>.` : ""}</div>`).join("")}</div>`;
+}
+function cellOut(r, flags, head){
+  if (!r) return "";
+  if (!r.ok) return `<div class="cell" data-h="${head}"><span class="err">This block failed (${esc(r.error)}). Nothing was filled in for it.</span></div>`;
+  return `<div class="cell" data-h="${head}">${highlight(r.text, flags)}${flagList(flags)}</div>`;
+}
+
+async function meta(){
+  const m = await (await fetch("/api/meta")).json();
+  $("#mode").textContent = m.local ? "Running on this computer (Ollama)" : "Hosted demo (Tinker)";
+  const s = m.scorecard;
+  const pct = x => x == null ? "–" : `${Math.round(x*100)}%`;
+  const col = (cls, label, r) => r ? `<div class="${cls}"><div class="k">${label}</div>
+     <div class="v">${pct(r.french_acronym_rate)} <small>of the government's French acronyms written correctly</small></div>
+     <div class="v">${r.english_acronyms_left ?? "–"} <small>English acronyms left in</small></div>
+     <div class="v">${r.termium} <small>of ${r.termium_of} sentences use a term Termium says to avoid</small></div></div>` : "";
+  $("#score").innerHTML = col("", "Gemma 3 4B", s.gemma) + col("", "Qwen3.5-4B, base", s.base) + col("ft", "Qwen3.5-4B, fine-tuned", s.ft);
+  if (s.ft) $("#scorefine").textContent =
+    `Graded on ${s.ft.n} held-out canada.ca sentences translated by Government of Canada translators, plus ${s.ft.termium_of} that touch a Termium term. ` +
+    `chrF++: Gemma ${s.gemma?.chrf ?? "–"}, base ${s.base.chrf}, fine-tuned ${s.ft.chrf} (fine-tuned beats base in ${Math.round(s.bootstrap_ft_beats_base_chrf*100)}% of bootstrap resamples, short of the 95% needed to call it better). ` +
+    `Training: ${s.training.examples.toLocaleString()} Open Government Licence pairs, ${s.training.epochs} epochs, about $${s.training.est_cost_usd}.`;
+}
+
+async function go(){
+  const text = $("#src").value; const compare = $("#cmp").checked;
+  $("#go").disabled = true; $("#msg").textContent = "Translating…"; $("#out").innerHTML = "";
+  try{
+    const r = await fetch("/api/translate",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({text,compare})});
+    const d = await r.json();
+    if (!r.ok) throw new Error(d.detail || r.statusText);
+    const two = !compare;
+    let html = `<div class="cols ${two?"two":""}"><div class="colh">English</div>${compare?`<div class="colh">Base model</div>`:""}<div class="colh">Fine-tuned</div>`;
+    for (const b of d.blocks){
+      html += `<div class="cell en" data-h="English">${esc(b.en)}</div>` + (compare ? cellOut(b.base, b.base_flags, "Base model") : "") + cellOut(b.ft, b.ft_flags, "Fine-tuned");
+    }
+    html += `</div>`;
+    const flagged = d.blocks.filter(b => b.ft_flags.length || !b.ft.ok).length;
+    const fr = d.blocks.map(b => b.ft.ok ? b.ft.text : "[NOT TRANSLATED: this block failed]").join("\n\n");
+    html += `<div class="deliver"><h2>French, ready to send</h2>
+      <div>${flagged ? `${flagged} of ${d.blocks.length} blocks are flagged above. Check those before this goes to the client.` : `No flags in ${d.blocks.length} blocks.`}</div>
+      <pre id="fr">${esc(fr)}</pre><button class="ghost" id="copy">Copy French</button></div>`;
+    $("#out").innerHTML = html; $("#msg").textContent = "";
+    $("#copy").onclick = () => navigator.clipboard.writeText(fr).then(()=>$("#copy").textContent="Copied");
+  }catch(e){ $("#msg").textContent = e.message; }
+  finally{ $("#go").disabled = false; }
+}
+$("#go").onclick = go;
+$("#sample").onclick = () => { $("#src").value = SAMPLE; };
+meta();
+</script>
+</body>
+</html>

@@ -1,0 +1,2332 @@
+{
+"EN": {
+"fr": "FR",
+"pairs": 4,
+"of": 4
+},
+"NAICS": {
+"fr": "SCIAN",
+"pairs": 1913,
+"of": 1915
+},
+"CNDSS": {
+"fr": "SCSMDO",
+"pairs": 7,
+"of": 7
+},
+"RCMP": {
+"fr": "GRC",
+"pairs": 84,
+"of": 84
+},
+"VAC": {
+"fr": "ACC",
+"pairs": 46,
+"of": 46
+},
+"CFIA": {
+"fr": "ACIA",
+"pairs": 145,
+"of": 145
+},
+"CAGDB": {
+"fr": "BDGAC",
+"pairs": 1085,
+"of": 1085
+},
+"CDIC": {
+"fr": "SADC",
+"pairs": 65,
+"of": 65
+},
+"FCAC": {
+"fr": "ACFC",
+"pairs": 18,
+"of": 18
+},
+"SLC": {
+"fr": "PPC",
+"pairs": 17,
+"of": 18
+},
+"FSDS": {
+"fr": "SFDD",
+"pairs": 11,
+"of": 11
+},
+"CESG": {
+"fr": "SCEE",
+"pairs": 10,
+"of": 10
+},
+"GCM": {
+"fr": "MCM",
+"pairs": 11,
+"of": 11
+},
+"SCG": {
+"fr": "CTB",
+"pairs": 23,
+"of": 23
+},
+"NOC": {
+"fr": "CNP",
+"pairs": 177,
+"of": 212
+},
+"CPP": {
+"fr": "RPC",
+"pairs": 36,
+"of": 36
+},
+"ICD": {
+"fr": "CIM",
+"pairs": 27,
+"of": 27
+},
+"PFAS": {
+"fr": "SPFA",
+"pairs": 15,
+"of": 15
+},
+"BMI": {
+"fr": "IMC",
+"pairs": 41,
+"of": 41
+},
+"CSC": {
+"fr": "SCC",
+"pairs": 71,
+"of": 71
+},
+"IT": {
+"fr": "TI",
+"pairs": 46,
+"of": 46
+},
+"DFHD": {
+"fr": "ADPF",
+"pairs": 3,
+"of": 3
+},
+"CEPA": {
+"fr": "LCPE",
+"pairs": 19,
+"of": 19
+},
+"CNSC": {
+"fr": "CCSN",
+"pairs": 83,
+"of": 83
+},
+"TBS": {
+"fr": "SCT",
+"pairs": 23,
+"of": 24
+},
+"GSS": {
+"fr": "ESG",
+"pairs": 15,
+"of": 15
+},
+"FSAP": {
+"fr": "PAASPA",
+"pairs": 21,
+"of": 21
+},
+"CSA": {
+"fr": "ASC",
+"pairs": 52,
+"of": 59
+},
+"SLAP": {
+"fr": "PASL",
+"pairs": 9,
+"of": 9
+},
+"SSC": {
+"fr": "SPC",
+"pairs": 59,
+"of": 59
+},
+"PIA": {
+"fr": "EFVP",
+"pairs": 13,
+"of": 17
+},
+"ICS": {
+"fr": "SCI",
+"pairs": 3,
+"of": 4
+},
+"DNA": {
+"fr": "ADN",
+"pairs": 53,
+"of": 53
+},
+"DFO": {
+"fr": "MPO",
+"pairs": 240,
+"of": 240
+},
+"ATSSC": {
+"fr": "SCDATA",
+"pairs": 19,
+"of": 19
+},
+"AI": {
+"fr": "IA",
+"pairs": 32,
+"of": 32
+},
+"SITC": {
+"fr": "CTCI",
+"pairs": 34,
+"of": 35
+},
+"CWI": {
+"fr": "ICTH",
+"pairs": 24,
+"of": 24
+},
+"CVCS": {
+"fr": "ECVCC",
+"pairs": 4,
+"of": 4
+},
+"CASFRI": {
+"fr": "SACIRF",
+"pairs": 5,
+"of": 5
+},
+"MAPI": {
+"fr": "MLCP",
+"pairs": 19,
+"of": 19
+},
+"CADS": {
+"fr": "ECAD",
+"pairs": 4,
+"of": 4
+},
+"GAC": {
+"fr": "AMC",
+"pairs": 20,
+"of": 20
+},
+"PA": {
+"fr": "LPRP",
+"pairs": 11,
+"of": 11
+},
+"CED": {
+"fr": "DEC",
+"pairs": 7,
+"of": 7
+},
+"NHS": {
+"fr": "ENM",
+"pairs": 15,
+"of": 17
+},
+"WMO": {
+"fr": "OMM",
+"pairs": 9,
+"of": 9
+},
+"EMAN": {
+"fr": "RESE",
+"pairs": 5,
+"of": 6
+},
+"EEM": {
+"fr": "ESEE",
+"pairs": 10,
+"of": 10
+},
+"TF": {
+"fr": "CT",
+"pairs": 3,
+"of": 3
+},
+"CRDC": {
+"fr": "CCRD",
+"pairs": 4,
+"of": 4
+},
+"MAP": {
+"fr": "PMA",
+"pairs": 5,
+"of": 5
+},
+"IA": {
+"fr": "AI",
+"pairs": 3,
+"of": 4
+},
+"CIP": {
+"fr": "CPE",
+"pairs": 56,
+"of": 56
+},
+"NAFO": {
+"fr": "OPANO",
+"pairs": 42,
+"of": 42
+},
+"HWC": {
+"fr": "CHF",
+"pairs": 3,
+"of": 3
+},
+"WDBA": {
+"fr": "APWD",
+"pairs": 3,
+"of": 3
+},
+"CCRA": {
+"fr": "LSCMLC",
+"pairs": 3,
+"of": 4
+},
+"LAI": {
+"fr": "ISF",
+"pairs": 9,
+"of": 9
+},
+"MAC": {
+"fr": "CMA",
+"pairs": 57,
+"of": 57
+},
+"CE": {
+"fr": "AC",
+"pairs": 27,
+"of": 27
+},
+"T1FF": {
+"fr": "FFT1",
+"pairs": 45,
+"of": 45
+},
+"CCDR": {
+"fr": "RMTC",
+"pairs": 67,
+"of": 67
+},
+"SNA": {
+"fr": "SCN",
+"pairs": 64,
+"of": 64
+},
+"CFLI": {
+"fr": "FCIL",
+"pairs": 3,
+"of": 3
+},
+"CMP": {
+"fr": "PGPC",
+"pairs": 24,
+"of": 27
+},
+"FSA": {
+"fr": "RTA",
+"pairs": 17,
+"of": 17
+},
+"PPER": {
+"fr": "REFPP",
+"pairs": 3,
+"of": 3
+},
+"CCA": {
+"fr": "ZCD",
+"pairs": 5,
+"of": 6
+},
+"SFA": {
+"fr": "ZPS",
+"pairs": 6,
+"of": 8
+},
+"DND": {
+"fr": "MDN",
+"pairs": 14,
+"of": 14
+},
+"CESI": {
+"fr": "ICDE",
+"pairs": 4,
+"of": 4
+},
+"AAFC": {
+"fr": "AAC",
+"pairs": 84,
+"of": 84
+},
+"TLW": {
+"fr": "BLT",
+"pairs": 10,
+"of": 10
+},
+"CBSA": {
+"fr": "ASFC",
+"pairs": 12,
+"of": 12
+},
+"ISED": {
+"fr": "ISDE",
+"pairs": 8,
+"of": 8
+},
+"CCHS": {
+"fr": "ESCC",
+"pairs": 54,
+"of": 54
+},
+"CETA": {
+"fr": "AECG",
+"pairs": 19,
+"of": 19
+},
+"HICC": {
+"fr": "LICC",
+"pairs": 4,
+"of": 4
+},
+"EU": {
+"fr": "UE",
+"pairs": 9,
+"of": 9
+},
+"MMP": {
+"fr": "PMO",
+"pairs": 5,
+"of": 7
+},
+"NAPS": {
+"fr": "SNPA",
+"pairs": 9,
+"of": 10
+},
+"ACOA": {
+"fr": "APECA",
+"pairs": 26,
+"of": 26
+},
+"PSC": {
+"fr": "CFP",
+"pairs": 49,
+"of": 49
+},
+"TGM": {
+"fr": "MGT",
+"pairs": 7,
+"of": 7
+},
+"BCPI": {
+"fr": "IPCB",
+"pairs": 4,
+"of": 4
+},
+"CMA": {
+"fr": "RMR",
+"pairs": 19,
+"of": 21
+},
+"RTE": {
+"fr": "PAM",
+"pairs": 8,
+"of": 8
+},
+"OAG": {
+"fr": "BVG",
+"pairs": 28,
+"of": 28
+},
+"IO": {
+"fr": "AU",
+"pairs": 7,
+"of": 10
+},
+"STG": {
+"fr": "GMS",
+"pairs": 8,
+"of": 8
+},
+"HR": {
+"fr": "RH",
+"pairs": 64,
+"of": 64
+},
+"SHS": {
+"fr": "EDM",
+"pairs": 33,
+"of": 33
+},
+"MICS": {
+"fr": "SRIM",
+"pairs": 4,
+"of": 4
+},
+"SIC": {
+"fr": "CTI",
+"pairs": 75,
+"of": 75
+},
+"IPCC": {
+"fr": "GIEC",
+"pairs": 5,
+"of": 5
+},
+"WSER": {
+"fr": "RESAEU",
+"pairs": 6,
+"of": 6
+},
+"AMS": {
+"fr": "SSPA",
+"pairs": 4,
+"of": 4
+},
+"GDP": {
+"fr": "PIB",
+"pairs": 102,
+"of": 102
+},
+"PHAC": {
+"fr": "ASPC",
+"pairs": 39,
+"of": 39
+},
+"NRC": {
+"fr": "CNRC",
+"pairs": 17,
+"of": 17
+},
+"OGIP": {
+"fr": "PMOGO",
+"pairs": 10,
+"of": 10
+},
+"CPTPP": {
+"fr": "PTPGP",
+"pairs": 49,
+"of": 49
+},
+"GLAP": {
+"fr": "PAGL",
+"pairs": 12,
+"of": 12
+},
+"BCCM": {
+"fr": "MCCB",
+"pairs": 42,
+"of": 42
+},
+"CSE": {
+"fr": "CST",
+"pairs": 29,
+"of": 29
+},
+"CUSMA": {
+"fr": "ACEUM",
+"pairs": 57,
+"of": 59
+},
+"NWP": {
+"fr": "PNT",
+"pairs": 5,
+"of": 5
+},
+"AIA": {
+"fr": "EIA",
+"pairs": 19,
+"of": 23
+},
+"CDD": {
+"fr": "BDC",
+"pairs": 12,
+"of": 12
+},
+"GBA": {
+"fr": "ACS",
+"pairs": 12,
+"of": 12
+},
+"SIU": {
+"fr": "UIS",
+"pairs": 6,
+"of": 6
+},
+"CHS": {
+"fr": "SHC",
+"pairs": 28,
+"of": 29
+},
+"GHG": {
+"fr": "GES",
+"pairs": 87,
+"of": 87
+},
+"NAPCS": {
+"fr": "SCPAN",
+"pairs": 45,
+"of": 46
+},
+"WHO": {
+"fr": "OMS",
+"pairs": 12,
+"of": 12
+},
+"HPP": {
+"fr": "PHPH",
+"pairs": 5,
+"of": 6
+},
+"DRF": {
+"fr": "CMR",
+"pairs": 14,
+"of": 19
+},
+"CAF": {
+"fr": "FAC",
+"pairs": 36,
+"of": 36
+},
+"CJS": {
+"fr": "SJP",
+"pairs": 29,
+"of": 29
+},
+"RPD": {
+"fr": "SPR",
+"pairs": 3,
+"of": 3
+},
+"RCED": {
+"fr": "BDECE",
+"pairs": 3,
+"of": 3
+},
+"CBC": {
+"fr": "SRC",
+"pairs": 4,
+"of": 4
+},
+"NCC": {
+"fr": "CCN",
+"pairs": 20,
+"of": 20
+},
+"LFS": {
+"fr": "EPA",
+"pairs": 15,
+"of": 15
+},
+"CAFF": {
+"fr": "CFFA",
+"pairs": 3,
+"of": 3
+},
+"EBSA": {
+"fr": "ZIEB",
+"pairs": 4,
+"of": 4
+},
+"CRA": {
+"fr": "ARC",
+"pairs": 31,
+"of": 31
+},
+"CCB": {
+"fr": "ACE",
+"pairs": 5,
+"of": 5
+},
+"SIN": {
+"fr": "NAS",
+"pairs": 10,
+"of": 10
+},
+"REP": {
+"fr": "PIR",
+"pairs": 6,
+"of": 7
+},
+"CRCC": {
+"fr": "CCETP",
+"pairs": 4,
+"of": 4
+},
+"CCOFOG": {
+"fr": "CCFAP",
+"pairs": 5,
+"of": 5
+},
+"CPI": {
+"fr": "IPC",
+"pairs": 29,
+"of": 29
+},
+"SOR": {
+"fr": "DORS",
+"pairs": 56,
+"of": 56
+},
+"TRQ": {
+"fr": "CT",
+"pairs": 38,
+"of": 38
+},
+"GIS": {
+"fr": "SIG",
+"pairs": 25,
+"of": 27
+},
+"GMP": {
+"fr": "BPF",
+"pairs": 8,
+"of": 8
+},
+"CGNDB": {
+"fr": "BDTC",
+"pairs": 10,
+"of": 10
+},
+"ICT": {
+"fr": "TIC",
+"pairs": 20,
+"of": 20
+},
+"VOC": {
+"fr": "COV",
+"pairs": 17,
+"of": 17
+},
+"ISC": {
+"fr": "SAC",
+"pairs": 5,
+"of": 5
+},
+"NOT": {
+"fr": "PAS",
+"pairs": 7,
+"of": 7
+},
+"OAS": {
+"fr": "SV",
+"pairs": 16,
+"of": 18
+},
+"NDVI": {
+"fr": "IVDN",
+"pairs": 26,
+"of": 28
+},
+"DRR": {
+"fr": "RRM",
+"pairs": 7,
+"of": 7
+},
+"DSL": {
+"fr": "LIS",
+"pairs": 6,
+"of": 7
+},
+"CER": {
+"fr": "REC",
+"pairs": 11,
+"of": 14
+},
+"MAS": {
+"fr": "DOA",
+"pairs": 5,
+"of": 5
+},
+"IMPORT": {
+"fr": "DES",
+"pairs": 3,
+"of": 3
+},
+"HPCDP": {
+"fr": "PSPMC",
+"pairs": 10,
+"of": 10
+},
+"PDL": {
+"fr": "LDO",
+"pairs": 60,
+"of": 60
+},
+"TFWP": {
+"fr": "PTET",
+"pairs": 6,
+"of": 6
+},
+"PBC": {
+"fr": "CLCC",
+"pairs": 13,
+"of": 13
+},
+"GSIN": {
+"fr": "NIBS",
+"pairs": 11,
+"of": 11
+},
+"TPL": {
+"fr": "NPT",
+"pairs": 5,
+"of": 5
+},
+"CLI": {
+"fr": "ITC",
+"pairs": 12,
+"of": 12
+},
+"ICNPO": {
+"fr": "CIOBNL",
+"pairs": 13,
+"of": 13
+},
+"NFI": {
+"fr": "IFN",
+"pairs": 9,
+"of": 9
+},
+"OSPW": {
+"fr": "ETSB",
+"pairs": 4,
+"of": 5
+},
+"EIPA": {
+"fr": "LLEI",
+"pairs": 20,
+"of": 22
+},
+"FASD": {
+"fr": "ETCAF",
+"pairs": 6,
+"of": 6
+},
+"HC": {
+"fr": "SC",
+"pairs": 10,
+"of": 10
+},
+"CESD": {
+"fr": "CEDD",
+"pairs": 11,
+"of": 11
+},
+"SARA": {
+"fr": "LEP",
+"pairs": 25,
+"of": 25
+},
+"ATIP": {
+"fr": "AIPRP",
+"pairs": 12,
+"of": 12
+},
+"WTO": {
+"fr": "OMC",
+"pairs": 40,
+"of": 40
+},
+"DFAIT": {
+"fr": "MAECI",
+"pairs": 11,
+"of": 11
+},
+"PCAP": {
+"fr": "PPCE",
+"pairs": 3,
+"of": 3
+},
+"OCL": {
+"fr": "CAL",
+"pairs": 4,
+"of": 4
+},
+"WSC": {
+"fr": "RHC",
+"pairs": 4,
+"of": 4
+},
+"HRDEM": {
+"fr": "MNEHR",
+"pairs": 11,
+"of": 11
+},
+"CMHC": {
+"fr": "SCHL",
+"pairs": 3,
+"of": 3
+},
+"PUMF": {
+"fr": "FMGD",
+"pairs": 4,
+"of": 4
+},
+"PFOA": {
+"fr": "APFO",
+"pairs": 4,
+"of": 4
+},
+"ICL": {
+"fr": "LMIC",
+"pairs": 4,
+"of": 5
+},
+"GLWQA": {
+"fr": "AQEGL",
+"pairs": 4,
+"of": 4
+},
+"SGC": {
+"fr": "CGT",
+"pairs": 54,
+"of": 54
+},
+"SI": {
+"fr": "TR",
+"pairs": 21,
+"of": 21
+},
+"CRHP": {
+"fr": "RCLP",
+"pairs": 5,
+"of": 5
+},
+"CCS": {
+"fr": "ECC",
+"pairs": 4,
+"of": 4
+},
+"OSFI": {
+"fr": "BSIF",
+"pairs": 13,
+"of": 13
+},
+"GHI": {
+"fr": "EHG",
+"pairs": 3,
+"of": 3
+},
+"NAPL": {
+"fr": "PNA",
+"pairs": 13,
+"of": 13
+},
+"CV": {
+"fr": "VC",
+"pairs": 12,
+"of": 12
+},
+"SEP": {
+"fr": "PMVS",
+"pairs": 4,
+"of": 4
+},
+"CGFS": {
+"fr": "SFPC",
+"pairs": 10,
+"of": 10
+},
+"TEER": {
+"fr": "FEER",
+"pairs": 4,
+"of": 4
+},
+"NGO": {
+"fr": "ONG",
+"pairs": 4,
+"of": 4
+},
+"STDP": {
+"fr": "PDTS",
+"pairs": 3,
+"of": 3
+},
+"ARP": {
+"fr": "PIL",
+"pairs": 3,
+"of": 3
+},
+"SAP": {
+"fr": "PAS",
+"pairs": 12,
+"of": 12
+},
+"PAA": {
+"fr": "AAP",
+"pairs": 10,
+"of": 10
+},
+"STBBI": {
+"fr": "ITSS",
+"pairs": 9,
+"of": 9
+},
+"LAC": {
+"fr": "BAC",
+"pairs": 17,
+"of": 17
+},
+"NAODS": {
+"fr": "ROGAN",
+"pairs": 4,
+"of": 4
+},
+"JSDS": {
+"fr": "SDDMJ",
+"pairs": 3,
+"of": 3
+},
+"UN": {
+"fr": "ONU",
+"pairs": 6,
+"of": 6
+},
+"LESSS": {
+"fr": "SCSLE",
+"pairs": 3,
+"of": 3
+},
+"CWA": {
+"fr": "AEC",
+"pairs": 3,
+"of": 3
+},
+"OT": {
+"fr": "TO",
+"pairs": 12,
+"of": 12
+},
+"ABCC": {
+"fr": "CEZB",
+"pairs": 6,
+"of": 7
+},
+"ESRF": {
+"fr": "FEE",
+"pairs": 14,
+"of": 14
+},
+"RESP": {
+"fr": "REEE",
+"pairs": 9,
+"of": 9
+},
+"WD": {
+"fr": "DEO",
+"pairs": 8,
+"of": 8
+},
+"ATIA": {
+"fr": "LAI",
+"pairs": 12,
+"of": 12
+},
+"HIV": {
+"fr": "VIH",
+"pairs": 10,
+"of": 10
+},
+"SEPH": {
+"fr": "EERH",
+"pairs": 8,
+"of": 8
+},
+"SARS": {
+"fr": "SRAS",
+"pairs": 25,
+"of": 25
+},
+"CD": {
+"fr": "DR",
+"pairs": 5,
+"of": 5
+},
+"IP": {
+"fr": "PI",
+"pairs": 10,
+"of": 10
+},
+"FPPI": {
+"fr": "IPPA",
+"pairs": 8,
+"of": 8
+},
+"AG": {
+"fr": "VG",
+"pairs": 14,
+"of": 14
+},
+"FHAMIS": {
+"fr": "SIGHAP",
+"pairs": 10,
+"of": 10
+},
+"FSD": {
+"fr": "DSE",
+"pairs": 3,
+"of": 3
+},
+"PILT": {
+"fr": "PERI",
+"pairs": 3,
+"of": 3
+},
+"CHN": {
+"fr": "RHC",
+"pairs": 6,
+"of": 6
+},
+"CDSA": {
+"fr": "LRCDAS",
+"pairs": 4,
+"of": 4
+},
+"RNA": {
+"fr": "ARN",
+"pairs": 12,
+"of": 12
+},
+"NVC": {
+"fr": "NCAC",
+"pairs": 8,
+"of": 8
+},
+"GEP": {
+"fr": "LGE",
+"pairs": 4,
+"of": 4
+},
+"CGDI": {
+"fr": "ICDG",
+"pairs": 4,
+"of": 4
+},
+"FAA": {
+"fr": "LGFP",
+"pairs": 12,
+"of": 12
+},
+"CNWI": {
+"fr": "INTHC",
+"pairs": 6,
+"of": 6
+},
+"MRDEM": {
+"fr": "MNEMR",
+"pairs": 3,
+"of": 3
+},
+"AESD": {
+"fr": "DSAE",
+"pairs": 3,
+"of": 3
+},
+"SES": {
+"fr": "SEE",
+"pairs": 17,
+"of": 19
+},
+"CCOHS": {
+"fr": "CCHST",
+"pairs": 21,
+"of": 21
+},
+"NPRI": {
+"fr": "INRP",
+"pairs": 18,
+"of": 18
+},
+"CWS": {
+"fr": "SCF",
+"pairs": 16,
+"of": 17
+},
+"CPCAD": {
+"fr": "BDCAPC",
+"pairs": 4,
+"of": 4
+},
+"NCP": {
+"fr": "PLCN",
+"pairs": 9,
+"of": 10
+},
+"CBMT": {
+"fr": "CBCT",
+"pairs": 10,
+"of": 10
+},
+"NATO": {
+"fr": "OTAN",
+"pairs": 6,
+"of": 6
+},
+"CIRNAC": {
+"fr": "RCAANC",
+"pairs": 7,
+"of": 7
+},
+"PSPC": {
+"fr": "SPAC",
+"pairs": 22,
+"of": 22
+},
+"EXCOL": {
+"fr": "CEED",
+"pairs": 3,
+"of": 3
+},
+"CRS": {
+"fr": "ECNS",
+"pairs": 8,
+"of": 10
+},
+"DEM": {
+"fr": "MAN",
+"pairs": 14,
+"of": 17
+},
+"AEI": {
+"fr": "IAE",
+"pairs": 4,
+"of": 4
+},
+"HRDPS": {
+"fr": "SHRPD",
+"pairs": 4,
+"of": 4
+},
+"PEMT": {
+"fr": "OGERP",
+"pairs": 10,
+"of": 10
+},
+"Q1": {
+"fr": "T1",
+"pairs": 3,
+"of": 3
+},
+"CCGS": {
+"fr": "NGCC",
+"pairs": 10,
+"of": 12
+},
+"CSIS": {
+"fr": "SCRS",
+"pairs": 10,
+"of": 10
+},
+"ISTFM": {
+"fr": "SPMPD",
+"pairs": 9,
+"of": 9
+},
+"AZMP": {
+"fr": "PMZA",
+"pairs": 27,
+"of": 27
+},
+"DM": {
+"fr": "SM",
+"pairs": 5,
+"of": 5
+},
+"TSB": {
+"fr": "BST",
+"pairs": 20,
+"of": 20
+},
+"RIOPS": {
+"fr": "SRPOG",
+"pairs": 3,
+"of": 3
+},
+"GVC": {
+"fr": "CVM",
+"pairs": 3,
+"of": 3
+},
+"NHN": {
+"fr": "RHN",
+"pairs": 10,
+"of": 11
+},
+"CIVI": {
+"fr": "IVIC",
+"pairs": 5,
+"of": 5
+},
+"ISAV": {
+"fr": "AIS",
+"pairs": 3,
+"of": 3
+},
+"AUV": {
+"fr": "VSA",
+"pairs": 3,
+"of": 3
+},
+"NAFTA": {
+"fr": "ALENA",
+"pairs": 8,
+"of": 8
+},
+"PMF": {
+"fr": "CMR",
+"pairs": 3,
+"of": 4
+},
+"PFMA": {
+"fr": "SGPP",
+"pairs": 3,
+"of": 3
+},
+"PMRA": {
+"fr": "ARLA",
+"pairs": 24,
+"of": 24
+},
+"NDMS": {
+"fr": "SNSD",
+"pairs": 4,
+"of": 4
+},
+"CWC": {
+"fr": "CAC",
+"pairs": 3,
+"of": 3
+},
+"FOB": {
+"fr": "FAB",
+"pairs": 3,
+"of": 3
+},
+"RPAS": {
+"fr": "SATP",
+"pairs": 5,
+"of": 5
+},
+"ACET": {
+"fr": "OECP",
+"pairs": 11,
+"of": 12
+},
+"ICCS": {
+"fr": "EITJC",
+"pairs": 3,
+"of": 3
+},
+"CRMN": {
+"fr": "RCSR",
+"pairs": 13,
+"of": 13
+},
+"MDEL": {
+"fr": "LEIM",
+"pairs": 11,
+"of": 11
+},
+"CESB": {
+"fr": "PCUE",
+"pairs": 4,
+"of": 4
+},
+"STI": {
+"fr": "ITS",
+"pairs": 4,
+"of": 4
+},
+"CCR": {
+"fr": "RCC",
+"pairs": 6,
+"of": 6
+},
+"CAT": {
+"fr": "OEC",
+"pairs": 4,
+"of": 4
+},
+"HAMP": {
+"fr": "PMAN",
+"pairs": 4,
+"of": 4
+},
+"DSM": {
+"fr": "MNS",
+"pairs": 4,
+"of": 4
+},
+"CIMT": {
+"fr": "CICM",
+"pairs": 8,
+"of": 10
+},
+"NTS": {
+"fr": "SNRC",
+"pairs": 10,
+"of": 10
+},
+"CIHR": {
+"fr": "IRSC",
+"pairs": 9,
+"of": 9
+},
+"ESDC": {
+"fr": "EDSC",
+"pairs": 11,
+"of": 13
+},
+"PSEA": {
+"fr": "LEFP",
+"pairs": 9,
+"of": 9
+},
+"PGWP": {
+"fr": "PTPD",
+"pairs": 3,
+"of": 3
+},
+"CCMEO": {
+"fr": "CCCOT",
+"pairs": 4,
+"of": 4
+},
+"NHP": {
+"fr": "PSN",
+"pairs": 8,
+"of": 9
+},
+"OES": {
+"fr": "SAO",
+"pairs": 4,
+"of": 4
+},
+"PCO": {
+"fr": "BCP",
+"pairs": 3,
+"of": 3
+},
+"DFATD": {
+"fr": "MAECD",
+"pairs": 4,
+"of": 4
+},
+"CGC": {
+"fr": "CCG",
+"pairs": 15,
+"of": 15
+},
+"IAQ": {
+"fr": "QAI",
+"pairs": 9,
+"of": 9
+},
+"CHMS": {
+"fr": "ECMS",
+"pairs": 5,
+"of": 5
+},
+"EGDD": {
+"fr": "DJCE",
+"pairs": 7,
+"of": 7
+},
+"TAC": {
+"fr": "CCT",
+"pairs": 8,
+"of": 8
+},
+"CIDA": {
+"fr": "ACDI",
+"pairs": 7,
+"of": 7
+},
+"IAA": {
+"fr": "LEI",
+"pairs": 3,
+"of": 3
+},
+"EI": {
+"fr": "AE",
+"pairs": 4,
+"of": 5
+},
+"EEZ": {
+"fr": "ZEE",
+"pairs": 9,
+"of": 10
+},
+"CWEEDS": {
+"fr": "FMCEG",
+"pairs": 5,
+"of": 5
+},
+"CUFTA": {
+"fr": "ALECU",
+"pairs": 3,
+"of": 3
+},
+"PAD": {
+"fr": "DPA",
+"pairs": 7,
+"of": 8
+},
+"GPHIN": {
+"fr": "RMISP",
+"pairs": 3,
+"of": 3
+},
+"EICS": {
+"fr": "SCEI",
+"pairs": 4,
+"of": 4
+},
+"SBCCI": {
+"fr": "IACNC",
+"pairs": 7,
+"of": 7
+},
+"VSP": {
+"fr": "PSV",
+"pairs": 3,
+"of": 3
+},
+"BERD": {
+"fr": "DIRDE",
+"pairs": 4,
+"of": 5
+},
+"MBM": {
+"fr": "MPC",
+"pairs": 18,
+"of": 18
+},
+"ACMPR": {
+"fr": "RACFM",
+"pairs": 5,
+"of": 5
+},
+"TCS": {
+"fr": "SDC",
+"pairs": 3,
+"of": 3
+},
+"GDPS": {
+"fr": "SGPD",
+"pairs": 8,
+"of": 8
+},
+"CCPSA": {
+"fr": "LCSPC",
+"pairs": 7,
+"of": 7
+},
+"CIUS": {
+"fr": "ECUI",
+"pairs": 3,
+"of": 3
+},
+"EIS": {
+"fr": "SIE",
+"pairs": 3,
+"of": 4
+},
+"RCC": {
+"fr": "CCR",
+"pairs": 5,
+"of": 5
+},
+"PPE": {
+"fr": "EPI",
+"pairs": 3,
+"of": 4
+},
+"NML": {
+"fr": "LNM",
+"pairs": 4,
+"of": 4
+},
+"CTD": {
+"fr": "CTP",
+"pairs": 9,
+"of": 9
+},
+"AHCCD": {
+"fr": "DCCAH",
+"pairs": 14,
+"of": 14
+},
+"ATT": {
+"fr": "TCA",
+"pairs": 4,
+"of": 4
+},
+"NVSCF": {
+"fr": "VNQAU",
+"pairs": 3,
+"of": 3
+},
+"PSES": {
+"fr": "SAFF",
+"pairs": 9,
+"of": 9
+},
+"CIOPS": {
+"fr": "SPCOG",
+"pairs": 6,
+"of": 6
+},
+"STIA": {
+"fr": "EICD",
+"pairs": 3,
+"of": 3
+},
+"CSD": {
+"fr": "SDR",
+"pairs": 6,
+"of": 7
+},
+"NPO": {
+"fr": "OSBL",
+"pairs": 3,
+"of": 3
+},
+"CTNS": {
+"fr": "ECTN",
+"pairs": 6,
+"of": 6
+},
+"SCT": {
+"fr": "TCC",
+"pairs": 8,
+"of": 8
+},
+"CABIN": {
+"fr": "RCBA",
+"pairs": 17,
+"of": 17
+},
+"NAR": {
+"fr": "RNA",
+"pairs": 3,
+"of": 3
+},
+"VIP": {
+"fr": "PAAC",
+"pairs": 10,
+"of": 10
+},
+"CAVCO": {
+"fr": "BCPAC",
+"pairs": 3,
+"of": 3
+},
+"NSERC": {
+"fr": "CRSNG",
+"pairs": 5,
+"of": 5
+},
+"NTDB": {
+"fr": "BNDT",
+"pairs": 8,
+"of": 8
+},
+"CMI": {
+"fr": "IHC",
+"pairs": 7,
+"of": 7
+},
+"AND": {
+"fr": "ET",
+"pairs": 3,
+"of": 4
+},
+"CCDS": {
+"fr": "DSCC",
+"pairs": 4,
+"of": 4
+},
+"RAP": {
+"fr": "PAR",
+"pairs": 6,
+"of": 6
+},
+"MODIS": {
+"fr": "MPIDO",
+"pairs": 3,
+"of": 3
+},
+"FNP": {
+"fr": "PNF",
+"pairs": 3,
+"of": 3
+},
+"OSW": {
+"fr": "ÉÉE",
+"pairs": 4,
+"of": 4
+},
+"TPPI": {
+"fr": "IPIT",
+"pairs": 3,
+"of": 3
+},
+"COLA": {
+"fr": "IVC",
+"pairs": 5,
+"of": 5
+},
+"CBI": {
+"fr": "RCC",
+"pairs": 4,
+"of": 4
+},
+"NFB": {
+"fr": "ONF",
+"pairs": 8,
+"of": 8
+},
+"AIG": {
+"fr": "SIA",
+"pairs": 3,
+"of": 3
+},
+"NTSC": {
+"fr": "CNSF",
+"pairs": 5,
+"of": 5
+},
+"SSHRC": {
+"fr": "CRSH",
+"pairs": 21,
+"of": 21
+},
+"IRS": {
+"fr": "SII",
+"pairs": 5,
+"of": 5
+},
+"MSI": {
+"fr": "MNG",
+"pairs": 4,
+"of": 4
+},
+"CATSA": {
+"fr": "ACSTA",
+"pairs": 5,
+"of": 5
+},
+"NASDI": {
+"fr": "SNIAD",
+"pairs": 8,
+"of": 8
+},
+"RJ": {
+"fr": "JR",
+"pairs": 9,
+"of": 9
+},
+"PET": {
+"fr": "ETP",
+"pairs": 7,
+"of": 7
+},
+"WIL": {
+"fr": "AIT",
+"pairs": 4,
+"of": 4
+},
+"CAS": {
+"fr": "SATJ",
+"pairs": 3,
+"of": 3
+},
+"SUR": {
+"fr": "PCE",
+"pairs": 4,
+"of": 4
+},
+"NRWN": {
+"fr": "RFN",
+"pairs": 3,
+"of": 3
+},
+"HRSDC": {
+"fr": "RHDCC",
+"pairs": 10,
+"of": 10
+},
+"DAS": {
+"fr": "SAD",
+"pairs": 4,
+"of": 4
+},
+"LRTAP": {
+"fr": "TGDPA",
+"pairs": 4,
+"of": 4
+},
+"CPPD": {
+"fr": "PIRPC",
+"pairs": 7,
+"of": 7
+},
+"WHMIS": {
+"fr": "SIMDUT",
+"pairs": 8,
+"of": 8
+},
+"EC": {
+"fr": "CE",
+"pairs": 5,
+"of": 5
+},
+"EGS": {
+"fr": "SGU",
+"pairs": 5,
+"of": 5
+},
+"ELA": {
+"fr": "RLE",
+"pairs": 3,
+"of": 3
+},
+"CBS": {
+"fr": "NCB",
+"pairs": 4,
+"of": 4
+},
+"RRM": {
+"fr": "MRR",
+"pairs": 5,
+"of": 5
+},
+"IAAC": {
+"fr": "AEIC",
+"pairs": 10,
+"of": 10
+},
+"MEPI": {
+"fr": "IPMM",
+"pairs": 6,
+"of": 6
+},
+"EDF": {
+"fr": "FDE",
+"pairs": 4,
+"of": 4
+},
+"CI": {
+"fr": "IC",
+"pairs": 4,
+"of": 4
+},
+"HTA": {
+"fr": "ETS",
+"pairs": 3,
+"of": 3
+},
+"FED": {
+"fr": "CF",
+"pairs": 4,
+"of": 4
+},
+"RFS": {
+"fr": "MCE",
+"pairs": 5,
+"of": 5
+},
+"FDR": {
+"fr": "RAD",
+"pairs": 6,
+"of": 6
+},
+"TRAP": {
+"fr": "PACA",
+"pairs": 6,
+"of": 6
+},
+"NACI": {
+"fr": "CCNI",
+"pairs": 11,
+"of": 11
+},
+"OECD": {
+"fr": "OCDE",
+"pairs": 11,
+"of": 12
+},
+"CCRS": {
+"fr": "CCT",
+"pairs": 8,
+"of": 8
+},
+"SEA": {
+"fr": "ÉES",
+"pairs": 3,
+"of": 4
+},
+"MPN": {
+"fr": "NPP",
+"pairs": 3,
+"of": 3
+},
+"EUCPI": {
+"fr": "IPCSE",
+"pairs": 3,
+"of": 3
+},
+"EV": {
+"fr": "VÉ",
+"pairs": 5,
+"of": 5
+},
+"OPO": {
+"fr": "BOA",
+"pairs": 7,
+"of": 7
+},
+"DPQPE": {
+"fr": "EQPDP",
+"pairs": 6,
+"of": 6
+},
+"NORM": {
+"fr": "MRN",
+"pairs": 5,
+"of": 5
+},
+"RAQDPS": {
+"fr": "SRPDQA",
+"pairs": 5,
+"of": 5
+},
+"CEWS": {
+"fr": "SSUC",
+"pairs": 11,
+"of": 11
+},
+"MANPRC": {
+"fr": "RPNCAM",
+"pairs": 4,
+"of": 4
+},
+"FGM": {
+"fr": "MGF",
+"pairs": 3,
+"of": 3
+},
+"CADC": {
+"fr": "CCDA",
+"pairs": 11,
+"of": 11
+},
+"EA": {
+"fr": "SD",
+"pairs": 3,
+"of": 4
+},
+"CCJS": {
+"fr": "CCSJ",
+"pairs": 5,
+"of": 5
+},
+"MDSAP": {
+"fr": "PAUMM",
+"pairs": 3,
+"of": 3
+},
+"DAC": {
+"fr": "CA",
+"pairs": 5,
+"of": 6
+},
+"PMC": {
+"fr": "CGP",
+"pairs": 3,
+"of": 4
+},
+"WQI": {
+"fr": "IQE",
+"pairs": 8,
+"of": 8
+},
+"CHU": {
+"fr": "UTC",
+"pairs": 3,
+"of": 4
+},
+"REI": {
+"fr": "IER",
+"pairs": 5,
+"of": 5
+},
+"NHSL": {
+"fr": "ZPN",
+"pairs": 4,
+"of": 4
+},
+"PCEIP": {
+"fr": "PIPCE",
+"pairs": 5,
+"of": 5
+},
+"CEDAG": {
+"fr": "GCCE",
+"pairs": 4,
+"of": 4
+},
+"NP": {
+"fr": "PN",
+"pairs": 4,
+"of": 4
+},
+"SBW": {
+"fr": "TBE",
+"pairs": 3,
+"of": 3
+},
+"SR": {
+"fr": "RS",
+"pairs": 8,
+"of": 8
+},
+"HFR": {
+"fr": "ZHR",
+"pairs": 4,
+"of": 4
+},
+"PAC": {
+"fr": "CAP",
+"pairs": 9,
+"of": 9
+},
+"RDPS": {
+"fr": "SRPD",
+"pairs": 3,
+"of": 3
+},
+"ADAI": {
+"fr": "IDRN",
+"pairs": 5,
+"of": 5
+},
+"CIPARS": {
+"fr": "PICRA",
+"pairs": 3,
+"of": 3
+},
+"FPS": {
+"fr": "SPF",
+"pairs": 5,
+"of": 5
+},
+"CWAQD": {
+"fr": "BDPQA",
+"pairs": 3,
+"of": 3
+},
+"SCAT": {
+"fr": "TERR",
+"pairs": 5,
+"of": 5
+},
+"GEPS": {
+"fr": "SGPE",
+"pairs": 3,
+"of": 3
+},
+"YCJA": {
+"fr": "LSJPA",
+"pairs": 3,
+"of": 3
+},
+"LIM": {
+"fr": "MFR",
+"pairs": 9,
+"of": 9
+},
+"DNI": {
+"fr": "END",
+"pairs": 3,
+"of": 3
+},
+"PIN": {
+"fr": "RIP",
+"pairs": 3,
+"of": 3
+},
+"PFOS": {
+"fr": "SPFO",
+"pairs": 4,
+"of": 4
+},
+"PAH": {
+"fr": "HAP",
+"pairs": 3,
+"of": 3
+},
+"EODMS": {
+"fr": "SGDOT",
+"pairs": 4,
+"of": 4
+},
+"OLMC": {
+"fr": "CLOSM",
+"pairs": 3,
+"of": 3
+},
+"FMS": {
+"fr": "SGF",
+"pairs": 7,
+"of": 7
+},
+"NRN": {
+"fr": "RRN",
+"pairs": 4,
+"of": 4
+},
+"GNBC": {
+"fr": "CTC",
+"pairs": 6,
+"of": 6
+},
+"MSC": {
+"fr": "SMC",
+"pairs": 7,
+"of": 7
+},
+"WLNP": {
+"fr": "PNLW",
+"pairs": 5,
+"of": 5
+},
+"HPFB": {
+"fr": "DGPSA",
+"pairs": 3,
+"of": 3
+},
+"CFHA": {
+"fr": "ALFC",
+"pairs": 3,
+"of": 3
+},
+"PHCTF": {
+"fr": "FASSP",
+"pairs": 3,
+"of": 3
+},
+"RPB": {
+"fr": "BRP",
+"pairs": 3,
+"of": 3
+},
+"CIMD": {
+"fr": "ICDM",
+"pairs": 3,
+"of": 3
+},
+"MEQ": {
+"fr": "QMM",
+"pairs": 3,
+"of": 3
+},
+"ASM": {
+"fr": "EAM",
+"pairs": 3,
+"of": 3
+},
+"CFS": {
+"fr": "SCF",
+"pairs": 4,
+"of": 4
+},
+"PBRER": {
+"fr": "RPEAR",
+"pairs": 4,
+"of": 4
+},
+"MAID": {
+"fr": "AMM",
+"pairs": 3,
+"of": 3
+},
+"ERS": {
+"fr": "SCE",
+"pairs": 3,
+"of": 3
+},
+"GHGRP": {
+"fr": "PDGES",
+"pairs": 3,
+"of": 3
+},
+"OCDS": {
+"fr": "NDPMO",
+"pairs": 3,
+"of": 3
+},
+"PORP": {
+"fr": "PRAP",
+"pairs": 3,
+"of": 3
+},
+"PSDPA": {
+"fr": "LPFDAR",
+"pairs": 3,
+"of": 3
+},
+"OAT": {
+"fr": "TAO",
+"pairs": 4,
+"of": 4
+},
+"QA": {
+"fr": "AQ",
+"pairs": 4,
+"of": 4
+},
+"CSR": {
+"fr": "RSE",
+"pairs": 3,
+"of": 3
+},
+"CYP": {
+"fr": "CCJC",
+"pairs": 3,
+"of": 3
+},
+"MCE": {
+"fr": "CFE",
+"pairs": 3,
+"of": 3
+},
+"LFA": {
+"fr": "ZPH",
+"pairs": 3,
+"of": 3
+},
+"FBCL": {
+"fr": "SPFL",
+"pairs": 4,
+"of": 4
+},
+"WAHVA": {
+"fr": "LÉBAD",
+"pairs": 4,
+"of": 4
+},
+"LPG": {
+"fr": "GPL",
+"pairs": 3,
+"of": 3
+},
+"ISCED": {
+"fr": "CITE",
+"pairs": 6,
+"of": 6
+},
+"APEI": {
+"fr": "IEPA",
+"pairs": 5,
+"of": 5
+},
+"ECE": {
+"fr": "ÉPE",
+"pairs": 3,
+"of": 3
+},
+"OGP": {
+"fr": "PGO",
+"pairs": 3,
+"of": 3
+},
+"PWGSC": {
+"fr": "TPSGC",
+"pairs": 6,
+"of": 6
+},
+"HS": {
+"fr": "SH",
+"pairs": 4,
+"of": 5
+},
+"IARC": {
+"fr": "CIRC",
+"pairs": 3,
+"of": 3
+},
+"AAST": {
+"fr": "OSAA",
+"pairs": 4,
+"of": 4
+},
+"DSDS": {
+"fr": "SMDD",
+"pairs": 6,
+"of": 6
+},
+"PPIA": {
+"fr": "EPFVP",
+"pairs": 3,
+"of": 3
+},
+"SCIEU": {
+"fr": "EUCIE",
+"pairs": 3,
+"of": 3
+},
+"CCDSS": {
+"fr": "SCSMC",
+"pairs": 3,
+"of": 3
+},
+"BBC": {
+"fr": "RON",
+"pairs": 3,
+"of": 3
+},
+"RMP": {
+"fr": "PGR",
+"pairs": 3,
+"of": 3
+},
+"BWIT": {
+"fr": "FACI",
+"pairs": 3,
+"of": 3
+},
+"CSP": {
+"fr": "FSI",
+"pairs": 3,
+"of": 3
+},
+"PRET": {
+"fr": "OEEEP",
+"pairs": 4,
+"of": 4
+},
+"PI": {
+"fr": "RP",
+"pairs": 3,
+"of": 3
+},
+"OLA": {
+"fr": "LLO",
+"pairs": 4,
+"of": 4
+},
+"HCV": {
+"fr": "VHC",
+"pairs": 3,
+"of": 3
+}
+}

@@ -1,0 +1,18 @@
+{
+ "name": "base_qwen35_4b",
+ "backend": "tinker:Qwen/Qwen3.5-4B",
+ "n_general": 300,
+ "failed_calls": 0,
+ "chrf++": 55.32,
+ "bleu": 32.35,
+ "termium_sentences": 147,
+ "termium_avoid_hits": 24,
+ "termium_sentences_with_avoid": 24,
+ "termium_avoid_hits_in_reference": 1,
+ "termium_terms_used": {
+  "année fiscale": 22,
+  "fonds mutuel": 1,
+  "comptes à payer": 1
+ },
+ "comet": 0.7886
+}

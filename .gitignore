@@ -1,0 +1,8 @@
+﻿.venv/
+.env
+data/eval_private/
+__pycache__/
+*.pyc
+tmp/
+models/
+data/raw/

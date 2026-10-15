@@ -1,0 +1,140 @@
+{
+ "sentences": [
+  "Before you register your business, you need a business number (BN) from the CRA.",
+  "If you expect to earn more than $30,000 in a year, you have to register for the GST/HST.",
+  "Keep your accounting records for six years after the end of the fiscal year they relate to.",
+  "You can apply for your SIN at a Service Canada office."
+ ],
+ "systems": {
+  "base": {
+   "backend": "tinker:Qwen/Qwen3.5-4B",
+   "outputs": [
+    {
+     "en": "Before you register your business, you need a business number (BN) from the CRA.",
+     "fr": "Avant d'enregistrer votre entreprise, vous devez obtenir un numéro d'entreprise (NE) auprès du RRCQ.",
+     "flags": [
+      {
+       "kind": "acronym",
+       "term": "CRA",
+       "expected": "ARC"
+      }
+     ]
+    },
+    {
+     "en": "If you expect to earn more than $30,000 in a year, you have to register for the GST/HST.",
+     "fr": "Si vous prévoyez gagner plus de 30 000 $ par année, vous devez vous inscrire à la TPS/TVH.",
+     "flags": []
+    },
+    {
+     "en": "Keep your accounting records for six years after the end of the fiscal year they relate to.",
+     "fr": "Conservez vos documents comptables pendant six ans après la fin de l'exercice fiscal auquel ils se rapportent.",
+     "flags": []
+    },
+    {
+     "en": "You can apply for your SIN at a Service Canada office.",
+     "fr": "Vous pouvez demander votre numéro d'assurance sociale (NAS) à un bureau de Services Canada.",
+     "flags": []
+    }
+   ]
+  },
+  "run1": {
+   "backend": "tinker:Qwen/Qwen3.5-4B@tinker://e95c3f9a-4f2f-537a-8331-b5c30c53ced1:train:0/sampler_weights/cafr-final",
+   "outputs": [
+    {
+     "en": "Before you register your business, you need a business number (BN) from the CRA.",
+     "fr": "Avant d’enregistrer votre entreprise, vous devez obtenir un numéro d’entreprise (NE) de la RC.",
+     "flags": [
+      {
+       "kind": "acronym",
+       "term": "CRA",
+       "expected": "ARC"
+      }
+     ]
+    },
+    {
+     "en": "If you expect to earn more than $30,000 in a year, you have to register for the GST/HST.",
+     "fr": "Si vous prévoyez gagner plus de 30 000 $ par année, vous devez vous inscrire à la TPS/TVH.",
+     "flags": []
+    },
+    {
+     "en": "Keep your accounting records for six years after the end of the fiscal year they relate to.",
+     "fr": "Conservez vos registres comptables pendant six ans après la fin de l’exercice qu’ils concernent.",
+     "flags": []
+    },
+    {
+     "en": "You can apply for your SIN at a Service Canada office.",
+     "fr": "Vous pouvez demander votre N° de S de C à un bureau de Services Canada.",
+     "flags": [
+      {
+       "kind": "acronym",
+       "term": "SIN",
+       "expected": "NAS"
+      }
+     ]
+    }
+   ]
+  },
+  "run2": {
+   "backend": "tinker:Qwen/Qwen3.5-4B@tinker://94d94c46-cc98-53ca-a631-a37de52d1de8:train:0/sampler_weights/cafr-run2",
+   "outputs": [
+    {
+     "en": "Before you register your business, you need a business number (BN) from the CRA.",
+     "fr": "Avant d’enregistrer votre entreprise, vous devez obtenir un numéro d’entreprise (NE) de l’ARC.",
+     "flags": []
+    },
+    {
+     "en": "If you expect to earn more than $30,000 in a year, you have to register for the GST/HST.",
+     "fr": "Si vous prévoyez gagner plus de 30 000 $ par année, vous devez vous inscrire à la TPS/TVH.",
+     "flags": []
+    },
+    {
+     "en": "Keep your accounting records for six years after the end of the fiscal year they relate to.",
+     "fr": "Conserver vos livres comptables pendant six ans après la fin de l’exercice financier auquel ils se rapportent.",
+     "flags": []
+    },
+    {
+     "en": "You can apply for your SIN at a Service Canada office.",
+     "fr": "Vous pouvez demander votre NIS à un bureau de Service Canada.",
+     "flags": [
+      {
+       "kind": "acronym",
+       "term": "SIN",
+       "expected": "NAS"
+      }
+     ]
+    }
+   ]
+  },
+  "local": {
+   "backend": "ollama:cafr-run2",
+   "outputs": [
+    {
+     "en": "Before you register your business, you need a business number (BN) from the CRA.",
+     "fr": "Avant d’enregistrer votre entreprise, vous devez obtenir un numéro d’entreprise (NE) de l’ARC.",
+     "flags": []
+    },
+    {
+     "en": "If you expect to earn more than $30,000 in a year, you have to register for the GST/HST.",
+     "fr": "Si vous gagnez plus de 30 000 $ par année, vous devez vous inscrire à la TPS/TVH.",
+     "flags": []
+    },
+    {
+     "en": "Keep your accounting records for six years after the end of the fiscal year they relate to.",
+     "fr": "Conserver vos livres comptables pendant six ans après la fin de l’exercice financier auquel ils se rapportent.",
+     "flags": []
+    },
+    {
+     "en": "You can apply for your SIN at a Service Canada office.",
+     "fr": "Vous pouvez demander votre NIS à un bureau de Service Canada.",
+     "flags": [
+      {
+       "kind": "acronym",
+       "term": "SIN",
+       "expected": "NAS"
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

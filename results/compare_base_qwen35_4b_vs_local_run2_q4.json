@@ -1,0 +1,19 @@
+{
+ "a": "base_qwen35_4b",
+ "b": "local_run2_q4",
+ "chrf_b_beats_a_share": 0.982,
+ "acronyms_all_rows": {
+  "base_qwen35_4b": {
+   "french_acronyms_in_reference": 242,
+   "reproduced": 123,
+   "rate": 0.508,
+   "english_acronyms_left_in": 41
+  },
+  "local_run2_q4": {
+   "french_acronyms_in_reference": 242,
+   "reproduced": 164,
+   "rate": 0.678,
+   "english_acronyms_left_in": 9
+  }
+ }
+}

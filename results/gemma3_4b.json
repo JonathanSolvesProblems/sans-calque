@@ -1,0 +1,17 @@
+{
+ "name": "gemma3_4b",
+ "backend": "ollama:gemma3:4b",
+ "n_general": 300,
+ "failed_calls": 1,
+ "chrf++": 50.58,
+ "bleu": 26.45,
+ "termium_sentences": 147,
+ "termium_avoid_hits": 16,
+ "termium_sentences_with_avoid": 16,
+ "termium_avoid_hits_in_reference": 1,
+ "termium_terms_used": {
+  "année fiscale": 15,
+  "comptes à payer": 1
+ },
+ "comet": 0.7587
+}

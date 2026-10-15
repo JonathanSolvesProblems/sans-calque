@@ -1,0 +1,18 @@
+{
+ "name": "local_run2_q4",
+ "backend": "ollama:cafr-run2",
+ "n_general": 300,
+ "failed_calls": 0,
+ "chrf++": 56.43,
+ "bleu": 33.63,
+ "termium_sentences": 147,
+ "termium_avoid_hits": 13,
+ "termium_sentences_with_avoid": 13,
+ "termium_avoid_hits_in_reference": 1,
+ "termium_terms_used": {
+  "année fiscale": 11,
+  "fonds mutuel": 1,
+  "comptes à payer": 1
+ },
+ "comet": 0.7865
+}

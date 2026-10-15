@@ -1,0 +1,7 @@
+# Hosted web app only (no COMET, no evaluation stack)
+tinker
+tinker-cookbook
+fastapi
+uvicorn[standard]
+python-dotenv
+requests

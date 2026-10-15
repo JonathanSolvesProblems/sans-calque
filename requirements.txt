@@ -1,0 +1,15 @@
+# Python 3.12 (3.14 is too new for torch + COMET)
+tinker
+tinker-cookbook
+sacrebleu
+unbabel-comet
+requests
+python-dotenv
+beautifulsoup4
+lxml
+# unbabel-comet needs pkg_resources, removed from newer setuptools
+setuptools<80
+# unbabel-comet pins numpy<2; newer pyarrow (via datasets) requires numpy>=2
+pyarrow<20
+fastapi
+uvicorn[standard]

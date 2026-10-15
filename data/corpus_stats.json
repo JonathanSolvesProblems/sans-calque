@@ -1,0 +1,8 @@
+{
+ "records": 48116,
+ "dropped_licence": 12033,
+ "dropped_machine_translated": 0,
+ "dropped_missing_language": 0,
+ "pairs_before_dedupe": 152706,
+ "pairs": 82455
+}

@@ -1,0 +1,19 @@
+{
+ "name": "ft_qwen35_4b",
+ "backend": "tinker:Qwen/Qwen3.5-4B@tinker://e95c3f9a-4f2f-537a-8331-b5c30c53ced1:train:0/sampler_weights/cafr-final",
+ "n_general": 300,
+ "failed_calls": 0,
+ "chrf++": 55.65,
+ "bleu": 32.64,
+ "termium_sentences": 147,
+ "termium_avoid_hits": 7,
+ "termium_sentences_with_avoid": 7,
+ "termium_avoid_hits_in_reference": 1,
+ "termium_terms_used": {
+  "année fiscale": 4,
+  "fonds mutuel": 1,
+  "comptes à payer": 1,
+  "compte à recevoir": 1
+ },
+ "comet": 0.7813
+}
