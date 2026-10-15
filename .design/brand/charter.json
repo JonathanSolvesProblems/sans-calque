@@ -1,0 +1,15 @@
+{
+  "allow_fonts": [],
+  "banned_fonts": ["Source Serif 4", "Inter"],
+  "banned_words": ["seamless", "effortless", "unlock", "leverage", "AI-powered"],
+  "banned_hex": ["#000000", "#ffffff", "#f7f5f0", "#b3261e"],
+  "allow_hex": [],
+  "title_punctuation": "forbid",
+  "max_tracked_caps_rules": 2,
+  "allow_long_dashes": false,
+  "forbid_regex": [
+    {"pattern": "class=\"[^\"]*eyebrow", "why": "no eyebrow labels above titles"},
+    {"pattern": "fleur|maple", "why": "charter law 14: no national clichés"},
+    {"pattern": "box-shadow:[^;]*0 0 [0-9]+px", "why": "charter law 10: no glow"}
+  ]
+}

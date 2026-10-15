@@ -6,3 +6,8 @@ __pycache__/
 tmp/
 models/
 data/raw/
+.design/shots/
+.design/brand/art/*.raw.png
+.design/brand/art/*.gen.json
+.design/brand/art/
+.design/refs/*.jpg

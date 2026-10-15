@@ -73,10 +73,14 @@ def review(en: str, fr: str) -> list[dict]:
                       "note": f"“{a}” is the English acronym. Government French usually has its own; check before sending.",
                       "source": "acronym rule learned from Open Government Portal pairs"})
     out_acr = set(ACR.findall(fr))
+    known_fr = {v["fr"] for v in acronym_map().values()} | bilingual_acronyms()
+    # what the model wrote instead: a capitalised token that is neither a known government
+    # French acronym nor one that stays the same in both languages (RRCQ, NIS, RC)
+    stray = sorted(out_acr - known_fr - set(ACR.findall(en)))
     for a in sorted(set(ACR.findall(en)) - left):
         m = acronym_map().get(a)
         if m and m["fr"] not in out_acr:
-            flags.append({"kind": "acronym", "term": a, "expected": m["fr"],
+            flags.append({"kind": "acronym", "term": a, "expected": m["fr"], "wrote": stray,
                           "note": f"Expected “{m['fr']}” for “{a}”; government translators used it in "
                                   f"{m['pairs']} of {m['of']} pairs, and it is not in this translation.",
                           "source": "acronym pairs learned from Open Government Portal translations"})

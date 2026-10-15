@@ -4,93 +4,236 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sans calque</title>
+<meta name="description" content="English to Canadian French on an open 4B model fine-tuned on Government of Canada translations. Every acronym and term is checked against the government's own usage.">
+<meta property="og:title" content="Sans calque">
+<meta property="og:description" content="French that doesn't show the English underneath. Fine-tuned on open government translations, every flag sourced.">
+<meta property="og:image" content="/static/og.png">
+<link rel="icon" href="/static/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/static/icon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <style>
+/*
+  Design code (full laws in .design/brand/CHARTER.md)
+  Convention avoided: the translation-app default, two white panes split by a swap-arrows
+  button, a blue accent, a language dropdown, rounded 12px boxes.
+  Metaphor: the animator's light table. "Calque" is French for tracing paper; a calque in
+  translation is a traced copy. The English lies on the warm lit table; the French comes
+  back on a cool frosted vellum sheet, punched for the peg bar.
+  - The French always sits on vellum and the English never does, because the original is
+    what lies under the tracing paper.
+  - Amber appears only behind a flagged term, because a flag means the original is showing
+    through the sheet.
+  - Vermilion is the correction pencil: rings and underlines on flagged terms, never text.
+  - The hero is the product's own recorded output, not a drawing of it: evidence over
+    illustration.
+  - Lettering is Osifont (ISO 3098, the lettering on technical drawings), stroked at display
+    sizes like a pen; the words people read are Spectral.
+*/
+@font-face{font-family:"Osifont";src:url(/static/fonts/osifont-lgpl3fe.ttf) format("truetype");font-display:swap}
 :root{
-  --paper:#f7f5f0; --ink:#1d1d1b; --muted:#6b6862; --rule:#dcd7cc; --card:#fffdf8;
-  --red:#b3261e; --red-soft:#f6e3e1; --green:#22603d; --green-soft:#e2efe6; --amber:#8a5a00; --amber-soft:#f6ecd6;
+  --desk:#1a120e; --desk-line:#3d3027;
+  --table:#d6ccbb; --table-hot:#e6dfd2; --table-edge:#a99a83; --table-lip:#e0d8ca;
+  --vellum:#d9e1e4; --vellum-back:#ccd4d7;
+  --amber-soft:rgba(215,183,125,.62);
+  --graphite:#2a211b; --graphite-2:#51473e;
+  --pencil:#c8372f; --pencil-ink:#a8281f;
+  --on-desk:#e9e2d6; --on-desk-2:#b4a795;
+  --shadow:0 22px 34px -20px rgba(0,0,0,.7), 0 2px 5px rgba(0,0,0,.35);
+  --sheet-shadow:0 12px 20px -12px rgba(40,25,15,.6), 0 1px 2px rgba(40,25,15,.25);
+  --lettering:"Osifont", ui-monospace, monospace;
+  --text:"Spectral", Georgia, serif;
+  --grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .2 0 0 0 0 .2 0 0 0 0 .22 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)'/%3E%3C/svg%3E");
+  --wood:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='700' height='700'%3E%3Cfilter id='w'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.006 .045' numOctaves='4' seed='11'/%3E%3CfeColorMatrix values='0 0 0 0 .55 0 0 0 0 .38 0 0 0 0 .26 0 0 0 .055 0'/%3E%3C/filter%3E%3Crect width='700' height='700' filter='url(%23w)'/%3E%3C/svg%3E");
 }
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --paper:#16150f; --ink:#ece8de; --muted:#a29d92; --rule:#353228; --card:#1f1d16;
-    --red:#f08a80; --red-soft:#3a1f1c; --green:#8fd1a6; --green-soft:#1b3024; --amber:#e3b55a; --amber-soft:#3a2f17;
-  }
+:root[data-theme="light"]{--table:#e7e0d4;--table-hot:#f4efe7;--table-edge:#a99a83;--table-lip:#efe8dc;--desk:#b8ab97;--desk-line:#a4977f;--on-desk:#231b16;--on-desk-2:#4a4037;--shadow:0 18px 28px -18px rgba(60,40,25,.5),0 1px 3px rgba(60,40,25,.25)}
+@media (prefers-color-scheme: light){
+  :root:not([data-theme="dark"]){--table:#e7e0d4;--table-hot:#f4efe7;--table-edge:#a99a83;--table-lip:#efe8dc;--desk:#b8ab97;--desk-line:#a4977f;--on-desk:#231b16;--on-desk-2:#4a4037;--shadow:0 18px 28px -18px rgba(60,40,25,.5),0 1px 3px rgba(60,40,25,.25)}
 }
 *{box-sizing:border-box}
-body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 Inter,system-ui,sans-serif}
-.wrap{max-width:1180px;margin:0 auto;padding:28px 16px 64px}
-header{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;border-bottom:2px solid var(--ink);padding-bottom:14px}
-h1{font:600 2.1rem/1.1 "Source Serif 4",Georgia,serif;margin:0;letter-spacing:-.01em}
-h1 em{font-style:normal;color:var(--red);text-decoration:line-through;text-decoration-thickness:2px}
-.tag{color:var(--muted);margin:6px 0 0;max-width:62ch}
-.mode{font-size:.8rem;color:var(--muted);border:1px solid var(--rule);border-radius:999px;padding:3px 10px;white-space:nowrap}
-.score{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:22px 0 8px;border:1px solid var(--rule);background:var(--card)}
-.score div{padding:14px 16px;border-right:1px solid var(--rule)}
-.score div:last-child{border-right:0}
-.score .k{font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
-.score .v{font:600 1.6rem "Source Serif 4",serif}
-.score .v small{font:400 .85rem Inter;color:var(--muted)}
-.score .ft .v{color:var(--green)}
-.fine{font-size:.82rem;color:var(--muted);margin:0 0 22px}
-textarea{width:100%;min-height:150px;resize:vertical;padding:14px;font:15px/1.5 Inter,sans-serif;background:var(--card);color:var(--ink);border:1px solid var(--rule);border-radius:4px}
-.bar{display:flex;gap:12px;align-items:center;margin:10px 0 26px;flex-wrap:wrap}
-button{font:600 15px Inter;background:var(--ink);color:var(--paper);border:0;border-radius:4px;padding:11px 18px;cursor:pointer}
-button.ghost{background:transparent;color:var(--ink);border:1px solid var(--rule)}
-button:disabled{opacity:.5;cursor:wait}
-label{font-size:.9rem;color:var(--muted);display:flex;gap:6px;align-items:center}
-.cols{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;border:1px solid var(--rule);background:var(--card)}
-.cols.two{grid-template-columns:1fr 1fr}
-.colh{font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);padding:10px 14px;border-bottom:1px solid var(--rule);border-right:1px solid var(--rule)}
-.colh:last-child{border-right:0}
-.cell{padding:12px 14px;border-bottom:1px solid var(--rule);border-right:1px solid var(--rule);font-size:.95rem}
-.cell:nth-child(3n){border-right:0}
-.cols.two .cell:nth-child(3n){border-right:1px solid var(--rule)}
-.cols.two .cell:nth-child(2n){border-right:0}
-.cell.en{color:var(--muted)}
-mark{background:var(--red-soft);color:var(--red);padding:0 2px;border-radius:2px}
-mark.ok{background:transparent;color:inherit}
-.flags{margin-top:8px;display:flex;flex-direction:column;gap:4px}
-.flag{font-size:.8rem;padding:4px 8px;border-left:3px solid var(--amber);background:var(--amber-soft);color:var(--ink)}
-.flag b{color:var(--amber)}
-.clean{font-size:.8rem;color:var(--green)}
-.err{color:var(--red);font-size:.85rem}
-.deliver{margin-top:28px;border:2px solid var(--ink);background:var(--card);padding:18px}
-.deliver h2{font:600 1.3rem "Source Serif 4",serif;margin:0 0 6px}
-.deliver pre{white-space:pre-wrap;font:15px/1.6 "Source Serif 4",serif;margin:12px 0}
-.limit{margin-top:22px;font-size:.85rem;color:var(--muted);border-top:1px solid var(--rule);padding-top:12px}
-@media (max-width:760px){
-  .score{grid-template-columns:1fr}.score div{border-right:0;border-bottom:1px solid var(--rule)}
-  .cols,.cols.two{grid-template-columns:1fr}.colh{display:none}
-  .cell{border-right:0!important}
-  .cell::before{content:attr(data-h);display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+html{color-scheme:dark light}
+body{margin:0;overflow-x:hidden;background:var(--desk) var(--wood);color:var(--on-desk);font:17px/1.55 var(--text);-webkit-font-smoothing:antialiased;font-feature-settings:"kern","liga"}
+.wrap{max-width:1240px;margin:0 auto;padding:22px 20px 80px}
+:focus-visible{outline:2px solid var(--pencil);outline-offset:3px;border-radius:2px}
+.pen{font-family:var(--lettering);-webkit-text-stroke:.035em currentColor;paint-order:stroke fill}
+
+.mast{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.wordmark{display:block;width:210px;aspect-ratio:4.329;background:var(--on-desk);
+  -webkit-mask:url(/static/wordmark.svg) no-repeat center/contain;mask:url(/static/wordmark.svg) no-repeat center/contain}
+.mode{font:16px var(--lettering);color:var(--on-desk-2);-webkit-text-stroke:.015em currentColor}
+.mode b{color:var(--on-desk);font-weight:400}
+
+/* hero */
+/* hero: one light table, the before/after sentence is the object */
+.hero{margin:26px 0 60px}
+h1{font-size:clamp(26px,3vw,40px);line-height:1.1;font-weight:400;margin:0 0 8px;color:var(--on-desk);max-width:30ch;text-wrap:balance}
+.lede{font-size:18px;max-width:44em;color:var(--on-desk-2);margin:0 0 26px}
+.show{background:var(--amber-soft);border-radius:2px;padding:0 .08em;box-shadow:inset 0 -.09em 0 var(--pencil);color:inherit;-webkit-text-stroke:0}
+.table{position:relative;border-radius:6px;padding:44px 48px 48px;display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:36px;
+  background:radial-gradient(ellipse at 38% 34%,var(--table-hot) 0,var(--table) 60%);
+  box-shadow:inset 0 0 0 3px var(--table-lip),inset 0 0 0 5px var(--table-edge),var(--shadow);color:var(--graphite)}
+.original{font-size:clamp(26px,3.1vw,40px);line-height:1.25;margin:0;color:#3b322b}
+.label{font:15px var(--lettering);color:var(--graphite-2);display:block;margin-bottom:8px}
+.vsheet{position:relative;background:var(--vellum) var(--grain);padding:34px 24px 18px;box-shadow:var(--sheet-shadow);color:var(--graphite)}
+.holes::before{content:"";position:absolute;top:10px;left:50%;width:118px;height:12px;transform:translateX(-50%);
+  background:radial-gradient(circle at 6px 6px,var(--under,#cdc2b0) 5.4px,transparent 6px),radial-gradient(circle at 112px 6px,var(--under,#cdc2b0) 5.4px,transparent 6px),linear-gradient(var(--under,#cdc2b0),var(--under,#cdc2b0)) 47px 1px/24px 10px no-repeat}
+.deliver .vsheet{--under:var(--desk)}
+/* the vellum is translucent: the English under it shows through, softened */
+.overlay{position:relative;margin-top:22px;display:grid;gap:0}
+.overlay .vsheet{font-size:clamp(20px,2.2vw,27px);line-height:1.35;padding:22px 30px 20px}
+.overlay .front{padding-top:40px}
+.overlay .back{transform:rotate(-1deg);margin-right:60px}
+.overlay .front{transform:rotate(.6deg);margin:8px 0 0 70px;background-color:rgba(219,227,230,.94)}
+.margin{font:16px/1.35 var(--lettering);color:var(--graphite);margin-top:10px}
+.margin::before,.notes p::before{content:"";display:inline-block;width:11px;height:11px;border:2px solid var(--pencil);border-radius:50%;margin-right:8px;vertical-align:-1px}
+.margin.ok::before{border-radius:0;border:0;border-left:2.2px solid var(--pencil);border-bottom:2.2px solid var(--pencil);width:12px;height:6px;transform:rotate(-45deg) translate(2px,-2px);margin-right:10px}
+.pinned{align-self:end;border-left:2px solid var(--pencil);padding:4px 0 4px 18px;color:var(--graphite)}
+.pinned .big{font-size:clamp(54px,5.6vw,78px);line-height:.9}
+.pinned .big small{font-size:.42em}
+.pinned p{font-size:16px;line-height:1.35;margin:8px 0 10px}
+.pinned .base{font:15px/1.4 var(--lettering);color:var(--graphite-2);font-variant-numeric:tabular-nums}
+
+/* input */
+.bench{border-radius:6px;padding:24px;background:var(--table) var(--grain);
+  box-shadow:inset 0 0 0 3px var(--table-lip),inset 0 0 0 5px var(--table-edge),var(--shadow);color:var(--graphite)}
+.bench h2{font-size:24px;font-weight:400;margin:0 0 4px}
+.bench .hint{margin:0 0 14px;color:var(--graphite-2);font-size:15.5px}
+textarea{width:100%;min-height:150px;resize:vertical;padding:14px 16px;font:17px/1.55 var(--text);color:var(--graphite);
+  background:rgba(255,255,255,.25);border:1.5px dashed var(--table-edge);border-radius:3px}
+textarea::placeholder{color:#7a6d5d}
+.bar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:12px}
+button{font:16px var(--lettering);border-radius:3px;padding:11px 18px;min-height:44px;cursor:pointer;border:0}
+.go{background:var(--graphite);color:var(--table)}
+.go:hover{background:#3b2f27}
+.ghost{background:transparent;color:var(--graphite);border:1.5px solid var(--graphite-2)}
+.ghost:hover{background:rgba(42,33,27,.07)}
+button:disabled{opacity:.55;cursor:wait}
+label.cmp{font-size:15.5px;display:flex;gap:7px;align-items:center;color:var(--graphite-2);min-height:44px}
+label.cmp input{width:18px;height:18px;accent-color:var(--graphite)}
+.msg{font:14px var(--lettering);color:var(--pencil-ink)}
+
+/* results lie on the desk, one spread */
+.spread{margin-top:34px;display:grid;grid-template-columns:repeat(var(--cols,3),minmax(0,1fr));gap:20px;align-items:start}
+.col h3{font:400 15px var(--lettering);color:var(--on-desk-2);margin:0 0 10px}
+.col.en .paper{background:var(--table) var(--grain);box-shadow:inset 0 0 0 2px var(--table-edge);padding:18px 18px 10px;color:#3b322b}
+.col .vsheet{padding:20px 20px 12px}
+.col.base .vsheet{background-color:var(--vellum-back)}
+.block{padding:10px 0;border-top:1px solid rgba(81,71,62,.2);font-size:17px}
+.block:first-child{border-top:0}
+.notes{margin-top:6px;display:flex;flex-direction:column;gap:3px}
+.notes p{margin:0;font:15.5px/1.35 var(--lettering);color:var(--graphite);-webkit-text-stroke:.015em currentColor}
+.notes .src{color:var(--graphite-2)}
+.err{color:var(--pencil-ink);font:14px/1.4 var(--lettering);display:flex;gap:10px;align-items:center}
+.err img{width:70px;flex:none}
+.empty{margin-top:30px;display:flex;gap:22px;align-items:center;color:var(--on-desk-2);font-size:17px;max-width:40em}
+.empty img{width:118px;flex:none}
+@keyframes settle{from{transform:translateY(-18px) rotate(-.8deg);opacity:0}to{transform:none;opacity:1}}
+.col.ft .vsheet{animation:settle .5s cubic-bezier(.2,.8,.25,1) both}
+@media (prefers-reduced-motion: reduce){.col.ft .vsheet{animation:none}}
+
+/* results read as a diff: each English line, then the two French strips, flags in the margin */
+.diff{margin-top:38px;display:flex;flex-direction:column;gap:26px}
+.diff-head{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:28px;font:16px var(--lettering);color:var(--on-desk-2)}
+.row{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:28px;align-items:start}
+.en-line{margin:0 0 8px;font-size:17px;color:var(--on-desk-2)}
+.strip{background:var(--vellum) var(--grain);color:var(--graphite);padding:10px 16px;font-size:18px;line-height:1.45;margin:0}
+.strip.base{background-color:var(--vellum-back);opacity:.92}
+.strip.ft{margin-top:6px;box-shadow:var(--sheet-shadow)}
+.who{display:block;font:14px var(--lettering);color:var(--graphite-2);margin-bottom:2px}
+.side{font:15.5px/1.4 var(--lettering);color:var(--on-desk);padding-top:30px}
+.side .notes p{color:var(--on-desk)}
+.side .notes .src{color:var(--on-desk-2)}
+.side .who{color:var(--on-desk-2);margin-top:8px}
+.row.ft-flagged .strip.ft{animation:settle .5s cubic-bezier(.2,.8,.25,1) both}
+@media (prefers-reduced-motion: reduce){.row.ft-flagged .strip.ft{animation:none}}
+.deliver{margin-top:26px}
+.deliver .vsheet{padding:38px 28px 24px}
+.deliver h3{font-size:22px;font-weight:400;margin:0 0 4px}
+.deliver .count{font:15px var(--lettering);color:var(--graphite)}
+.deliver .from{font-size:14.5px;color:var(--graphite-2);margin:2px 0 0}
+.deliver pre{white-space:pre-wrap;font:17px/1.6 var(--text);margin:16px 0}
+
+/* how it was graded */
+.receipt{margin-top:70px;max-width:980px}
+.receipt h2{font-size:28px;font-weight:400;margin:0 0 6px;color:var(--on-desk)}
+.receipt p{color:var(--on-desk-2);margin:0 0 16px;max-width:46em;font-size:16px}
+table{border-collapse:collapse;width:100%;font:15px var(--lettering);font-variant-numeric:tabular-nums;color:var(--on-desk)}
+th,td{text-align:right;padding:10px 12px;border-bottom:1px solid var(--desk-line)}
+th:first-child,td:first-child{text-align:left;font-family:var(--text);font-size:16px}
+thead th{color:var(--on-desk-2);font-weight:400}
+td.win{text-decoration:underline;text-decoration-color:var(--pencil);text-decoration-thickness:2px;text-underline-offset:5px}
+.limit{margin-top:40px;padding-top:16px;border-top:1px solid var(--desk-line);font-size:15.5px;color:var(--on-desk-2);max-width:60em}
+footer{margin-top:22px;font:14px var(--lettering);color:var(--on-desk-2);display:flex;gap:18px;flex-wrap:wrap}
+footer a{color:var(--on-desk)}
+
+@media (max-width:860px){
+  .wrap{padding:16px 16px 60px}
+  .mast{gap:6px}.wordmark{width:150px}.mode{font-size:13px;width:100%}
+  .hero{margin-top:18px}
+  .table{grid-template-columns:1fr;padding:26px 14px 22px;gap:26px}
+  .overlay .vsheet{padding:36px 16px 16px}
+  .overlay .back{margin-right:18px}
+  .overlay .front{margin:8px 0 0 18px}
+  .row,.diff-head{grid-template-columns:1fr;gap:6px}.diff-head span:last-child{display:none}.side{padding-top:4px}
+  .bench{padding:18px 14px}
+  table{font-size:13px}th,td{padding:8px 5px}th:first-child,td:first-child{font-size:14px}
 }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <div>
-      <h1>Sans <em>calque</em></h1>
-      <p class="tag">English to Canadian French for small-business pages, on a 4-billion-parameter model fine-tuned on government text and small enough to run on a laptop. Every flag below cites where its rule came from.</p>
-    </div>
-    <span class="mode" id="mode">loading…</span>
+  <header class="mast">
+    <span class="wordmark" role="img" aria-label="Sans calque"></span>
+    <span class="mode" id="mode">&nbsp;</span>
   </header>
 
-  <section class="score" id="score"></section>
-  <p class="fine" id="scorefine"></p>
+  <section class="hero">
+    <h1 class="pen">French that doesn't show the English underneath</h1>
+    <p class="lede">An open 4B model fine-tuned on Government of Canada translations. Every acronym and term it writes is checked against how government translators actually wrote it. Below is a real sentence and what two models did with it.</p>
+    <figure class="table" style="margin:0" aria-label="A real example: the untouched model and the fine-tuned model translating the same sentence">
+      <div>
+        <p class="original"><span class="label">The English, on the table</span>Before you register your business, you need a business number (BN) from the CRA.</p>
+        <div class="overlay">
+          <div class="vsheet back"><span class="label">Untouched Qwen3.5-4B</span>…un numéro d'entreprise (NE) auprès du <span class="show">RRCQ</span>.
+            <div class="margin">There is no RRCQ. Government translators wrote ARC for CRA, 31 of 31 times</div></div>
+          <div class="vsheet holes front"><span class="label">Fine-tuned on Tinker</span>…un numéro d’entreprise (NE) de l’ARC.
+            <div class="margin ok">Matches how the government writes it</div></div>
+        </div>
+      </div>
+      <aside class="pinned" id="figure" aria-label="Headline result"></aside>
+    </figure>
+  </section>
 
-  <textarea id="src" placeholder="Paste English text: a page, a few paragraphs, an email to customers…"></textarea>
-  <div class="bar">
-    <button id="go">Translate</button>
-    <button class="ghost" id="sample">Use a sample</button>
-    <label><input type="checkbox" id="cmp" checked> Compare with the untouched base model</label>
-    <span class="err" id="msg"></span>
-  </div>
+  <section class="bench" aria-labelledby="bench-h">
+    <h2 class="pen" id="bench-h">Put the English on the table</h2>
+    <p class="hint">A page, a few paragraphs, an email to customers. Up to 6,000 characters.</p>
+    <textarea id="src" aria-label="English text to translate" placeholder="Before you register your business, you need a business number (BN) from the CRA."></textarea>
+    <div class="bar">
+      <button class="go" id="go">Translate</button>
+      <button class="ghost" id="sample">Use the sample</button>
+      <label class="cmp"><input type="checkbox" id="cmp" checked> Show the untouched model too</label>
+      <span class="msg" id="msg" role="status" aria-live="polite"></span>
+    </div>
+  </section>
 
-  <section id="out"></section>
+  <section id="out" aria-live="polite">
+    <div class="empty"><img src="/static/art/empty.webp" alt="A blank sheet of tracing paper hanging from a peg bar" width="527" height="720"><span>The French comes back on its own sheet, laid next to the English, with anything that shows through circled in pencil.</span></div>
+  </section>
 
-  <p class="limit">What this model is not good at: it learned from government catalogue text, so it is strong on terminology and acronyms and has no particular flair for marketing copy. On held-out government pages its overall quality score is not measurably better than the base model's; the gain is in acronyms and terms. It still gets some acronyms wrong (it writes NIS for SIN, where the government writes NAS), which is why every acronym is checked against the government's own usage above. Read the French before you send it, starting with anything flagged.</p>
+  <section class="receipt" aria-labelledby="receipt-h">
+    <h2 class="pen" id="receipt-h">How it was graded</h2>
+    <p id="receiptline">Held-out canada.ca small-business pages, translated by Government of Canada translators. None of these sentences were in training.</p>
+    <div style="overflow-x:auto"><table id="score"></table></div>
+    <p id="bootline" style="margin-top:14px"></p>
+  </section>
+
+  <p class="limit">What this model is not good at: it learned from government catalogue text, so it is strong on terminology and acronyms and has no particular flair for marketing copy. On held-out government pages its overall quality score is not measurably better than the base model's; the gain is in acronyms and terms. It still gets some acronyms wrong (it writes NIS for SIN, where the government writes NAS), which is why every acronym is checked against the government's own usage. Read the French before you send it, starting with anything flagged.</p>
+  <footer>
+    <a href="https://github.com/JonathanSolvesProblems/sans-calque">Code and results</a>
+    <span>Training data: Open Government Portal, Open Government Licence (Canada)</span>
+    <span>Terms: Termium Plus, Translation Bureau</span>
+  </footer>
 </div>
 <script>
 const $ = s => document.querySelector(s);
@@ -99,66 +242,87 @@ If you expect to earn more than $30,000 in a year, you have to register for the 
 Keep your accounting records for six years after the end of the fiscal year they relate to.
 You can apply for your SIN at a Service Canada office.`;
 const esc = s => s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const pct = x => x == null ? "not measured" : `${(x*100).toFixed(1)}%`;
 
-function highlight(text, flags){
+function showThrough(text, flags){
   let h = esc(text);
-  for (const f of flags){
-    const t = esc(f.term).replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
-    h = h.replace(new RegExp(`(^|[^\\wÀ-ÿ])(${t})(?![\\wÀ-ÿ])`,"gi"), `$1<mark>$2</mark>`);
+  const terms = flags.flatMap(f => f.wrote && f.wrote.length ? f.wrote : [f.term]);
+  for (const term of terms){
+    const t = esc(term).replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
+    h = h.replace(new RegExp(`(^|[^\\wÀ-ÿ])(${t})(?![\\wÀ-ÿ])`,"gi"), `$1<span class="show">$2</span>`);
   }
   return h;
 }
-function flagList(flags){
-  if (!flags.length) return `<div class="clean">No flags</div>`;
-  return `<div class="flags">${flags.map(f => `<div class="flag"><b>${f.kind === "acronym" ? "Acronym" : "Termium"}</b> ${esc(f.note)}${f.preferred && f.preferred.length ? ` Preferred: <i>${esc(f.preferred.join(" / "))}</i>.` : ""}</div>`).join("")}</div>`;
+function notes(flags){
+  if (!flags.length) return "";
+  return `<div class="notes">${flags.map(f => {
+    let line;
+    if (f.kind === "termium") line = `“${esc(f.term)}”: Termium says avoid. Prefers ${esc((f.preferred||[]).slice(0,2).join(" or "))}. <span class="src">Termium Plus</span>`;
+    else if (f.expected) line = `${f.wrote && f.wrote.length ? `“${esc(f.wrote.join(", "))}”` : "This"} should be ${esc(f.expected)} for ${esc(f.term)}. <span class="src">${esc(f.note.match(/in (\d+ of \d+) pairs/)?.[1] || "")} government pairs</span>`;
+    else line = `“${esc(f.term)}” is still the English acronym. <span class="src">Check before sending</span>`;
+    return `<p>${line}</p>`;
+  }).join("")}</div>`;
 }
-function cellOut(r, flags, head){
+function cell(r, flags){
   if (!r) return "";
-  if (!r.ok) return `<div class="cell" data-h="${head}"><span class="err">This block failed (${esc(r.error)}). Nothing was filled in for it.</span></div>`;
-  return `<div class="cell" data-h="${head}">${highlight(r.text, flags)}${flagList(flags)}</div>`;
+  if (!r.ok) return `<div class="block"><p class="err"><img src="/static/art/error.webp" alt="" width="565" height="720">This block didn't come back (${esc(r.error)}). Nothing was filled in for it.</p></div>`;
+  return `<div class="block">${showThrough(r.text, flags)}${notes(flags)}</div>`;
 }
 
 async function meta(){
   const m = await (await fetch("/api/meta")).json();
-  $("#mode").textContent = m.local ? "Running on this computer (Ollama)" : "Hosted demo (Tinker)";
+  $("#mode").innerHTML = m.local ? "<b>On this computer</b>, through Ollama" : "<b>Hosted</b>, fine-tune served by Tinker";
   const s = m.scorecard;
-  const pct = x => x == null ? "–" : `${Math.round(x*100)}%`;
-  const col = (cls, label, r) => r ? `<div class="${cls}"><div class="k">${label}</div>
-     <div class="v">${pct(r.french_acronym_rate)} <small>of the government's French acronyms written correctly</small></div>
-     <div class="v">${r.english_acronyms_left ?? "–"} <small>English acronyms left in</small></div>
-     <div class="v">${r.termium} <small>of ${r.termium_of} sentences use a term Termium says to avoid</small></div></div>` : "";
-  $("#score").innerHTML = col("", "Gemma 3 4B", s.gemma) + col("", "Qwen3.5-4B, base", s.base) + col("ft", "Qwen3.5-4B, fine-tuned", s.ft);
-  if (s.ft) $("#scorefine").textContent =
-    `Graded on ${s.ft.n} held-out canada.ca sentences translated by Government of Canada translators, plus ${s.ft.termium_of} that touch a Termium term. ` +
-    `chrF++: Gemma ${s.gemma?.chrf ?? "–"}, base ${s.base.chrf}, fine-tuned ${s.ft.chrf} (fine-tuned beats base in ${Math.round(s.bootstrap_ft_beats_base_chrf*100)}% of bootstrap resamples, short of the 95% needed to call it better). ` +
-    `Training: ${s.training.examples.toLocaleString()} Open Government Licence pairs, ${s.training.epochs} epochs, about $${s.training.est_cost_usd}.`;
+  if (!s.ft) return;
+  $("#figure").innerHTML = `<div class="big pen">${(s.ft.french_acronym_rate*100).toFixed(1)}<small>%</small></div>
+    <p>of the government's own French acronyms written correctly, across ${s.ft.n} held-out canada.ca sentences</p>
+    <div class="base">Untouched model ${pct(s.base.french_acronym_rate)}<br>Gemma 3 4B ${pct(s.gemma?.french_acronym_rate)}</div>`;
+  const row = (label, k, f, best) => `<tr><td>${label}</td>${["gemma","base","ft"].map(c => {
+      const v = s[c]?.[k]; return `<td class="${c===best?"win":""}">${v==null?"not measured":f(v)}</td>`; }).join("")}</tr>`;
+  $("#score").innerHTML = `<thead><tr><th></th><th>Gemma 3 4B</th><th>Untouched</th><th>Fine-tuned</th></tr></thead><tbody>
+    ${row("Government French acronym written correctly","french_acronym_rate",v=>pct(v),"ft")}
+    ${row("English acronyms left in the French","english_acronyms_left",v=>v,null)}
+    ${row(`Sentences with a Termium “avoid” term (of ${s.ft.termium_of})`,"termium",v=>v,null)}
+    ${row("chrF++","chrf",v=>v.toFixed(2),null)}
+    ${row("COMET","comet",v=>v.toFixed(3),null)}</tbody>`;
+  $("#receiptline").textContent = `${s.ft.n} random sentences from held-out canada.ca small-business pages, plus ${s.ft.termium_of} that touch a Termium term, all translated by Government of Canada translators. None were in training. "Untouched" and "Fine-tuned" are both Qwen3.5-4B. Fine-tune: ${s.training.examples.toLocaleString()} Open Government Licence pairs, ${s.training.epochs} epochs, about $${s.training.est_cost_usd}.`;
+  $("#bootline").textContent = `On chrF++ the fine-tune beats the untouched model in ${Math.round(s.bootstrap_ft_beats_base_chrf*100)}% of 1,000 bootstrap resamples, short of the 95% needed to call it better. The gain is acronyms and terms, not overall quality.`;
 }
 
 async function go(){
   const text = $("#src").value; const compare = $("#cmp").checked;
-  $("#go").disabled = true; $("#msg").textContent = "Translating…"; $("#out").innerHTML = "";
+  if (!text.trim()){ $("#msg").textContent = "Paste some English first."; $("#src").focus(); return; }
+  $("#go").disabled = true; $("#msg").textContent = "Tracing…";
   try{
     const r = await fetch("/api/translate",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({text,compare})});
     const d = await r.json();
     if (!r.ok) throw new Error(d.detail || r.statusText);
-    const two = !compare;
-    let html = `<div class="cols ${two?"two":""}"><div class="colh">English</div>${compare?`<div class="colh">Base model</div>`:""}<div class="colh">Fine-tuned</div>`;
-    for (const b of d.blocks){
-      html += `<div class="cell en" data-h="English">${esc(b.en)}</div>` + (compare ? cellOut(b.base, b.base_flags, "Base model") : "") + cellOut(b.ft, b.ft_flags, "Fine-tuned");
-    }
-    html += `</div>`;
+    const strip = (r, flags, cls, who) => !r ? "" : r.ok
+      ? `<p class="strip ${cls}"><span class="who">${who}</span>${showThrough(r.text, flags)}</p>`
+      : `<p class="strip ${cls} err"><span class="who">${who}</span>This block didn't come back (${esc(r.error)}). Nothing was filled in for it.</p>`;
+    const side = b => {
+      const parts = [];
+      if (compare && b.base_flags.length) parts.push(`<span class="who">Untouched</span>${notes(b.base_flags)}`);
+      if (b.ft_flags.length) parts.push(`<span class="who">Fine-tuned</span>${notes(b.ft_flags)}`);
+      return parts.join("");
+    };
+    const rows = d.blocks.map(b => `<div class="row ${b.ft_flags.length ? "ft-flagged" : ""}">
+        <div><p class="en-line">${esc(b.en)}</p>${compare ? strip(b.base, b.base_flags, "base", "Untouched model") : ""}${strip(b.ft, b.ft_flags, "ft", "Fine-tuned")}</div>
+        <div class="side">${side(b)}</div></div>`).join("");
     const flagged = d.blocks.filter(b => b.ft_flags.length || !b.ft.ok).length;
     const fr = d.blocks.map(b => b.ft.ok ? b.ft.text : "[NOT TRANSLATED: this block failed]").join("\n\n");
-    html += `<div class="deliver"><h2>French, ready to send</h2>
-      <div>${flagged ? `${flagged} of ${d.blocks.length} blocks are flagged above. Check those before this goes to the client.` : `No flags in ${d.blocks.length} blocks.`}</div>
-      <pre id="fr">${esc(fr)}</pre><button class="ghost" id="copy">Copy French</button></div>`;
-    $("#out").innerHTML = html; $("#msg").textContent = "";
+    $("#out").innerHTML = `<div class="diff"><div class="diff-head"><span>English, then the French</span><span>What shows through</span></div>${rows}</div>
+      <div class="deliver"><div class="vsheet"><h3 class="pen">French, ready to send</h3>
+          <div class="count">${flagged ? `${flagged} of ${d.blocks.length} blocks have something showing through. Check those before it goes to the client.` : `Nothing flagged in ${d.blocks.length} blocks. Read it anyway.`}</div>
+          <p class="from">Flags come from Termium Plus, the Translation Bureau's term bank, and from acronym pairs in Open Government Portal translations.</p>
+          <pre id="fr">${d.blocks.map(b => b.ft.ok ? showThrough(b.ft.text, b.ft_flags) : "[NOT TRANSLATED: this block failed]").join("\n\n")}</pre><button class="ghost" id="copy">Copy the French</button></div></div>`;
+    $("#msg").textContent = "";
     $("#copy").onclick = () => navigator.clipboard.writeText(fr).then(()=>$("#copy").textContent="Copied");
   }catch(e){ $("#msg").textContent = e.message; }
   finally{ $("#go").disabled = false; }
 }
 $("#go").onclick = go;
-$("#sample").onclick = () => { $("#src").value = SAMPLE; };
+$("#sample").onclick = () => { const s = $("#src"); s.value = SAMPLE; s.scrollTop = 0; s.focus({preventScroll:true}); s.setSelectionRange(0,0); };
 meta();
 </script>
 </body>
