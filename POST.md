@@ -21,7 +21,7 @@ Nothing gets fixed silently. A flagged sentence lands on the review list, and th
 
 ## Demo
 
-Try it: **https://sans-calque.51-161-82-166.sslip.io** (it calls the fine-tune live on Tinker, with a daily word cap so the credit lasts). Click "Use a sample" for the sentences in this post.
+Try it: **https://sans-calque.51-161-82-166.sslip.io** (it calls the fine-tune live on Tinker, with a daily word cap so the credit lasts). Click "Use the sample" for the sentences in this post.
 
 [X: video]
 
