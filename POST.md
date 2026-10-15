@@ -21,7 +21,9 @@ Nothing gets fixed silently. A flagged sentence lands on the review list, and th
 
 ## Demo
 
-[X: video or deployed link]
+Try it: **https://sans-calque.51-161-82-166.sslip.io** (it calls the fine-tune live on Tinker, with a daily word cap so the credit lasts). Click "Use a sample" for the sentences in this post.
+
+[X: video]
 
 ## Code
 
@@ -65,4 +67,3 @@ And the open data is the reason any of this works. The training pairs, the termi
 ## Prize Categories
 
 - Best Use of Tinker
-- Best Use of Render [X: once deployed]
