@@ -13,7 +13,7 @@ Anything flagged is the original showing through.
    and nothing else. It is never body text. The darker #a8281f is the only vermilion allowed as text.
 5. **The show-through is the signature device.** A flagged term gets an amber patch with a vermilion pencil
    baseline, the original showing through the vellum, and the same mark is used nowhere else. The peg-bar punch survives only in
-   the wordmark's q. Punched holes on the sheets were removed on 2026-10-16, after three blind critics in four rounds read them as
+   the wordmark's q. Punched holes on the sheets were removed on 2026-10-16, after three outside reviews in four rounds read them as
    carousel dots.
 6. **Lettering is Osifont** (ISO 3098, the lettering standard on technical drawings), used for the wordmark, labels,
    numbers and buttons. **The French and English text is Spectral**, because it is what a person reads.

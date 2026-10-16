@@ -1,7 +1,6 @@
-.venv
+﻿.venv
 .env
 .git
-.claude
 tmp
 models
 data/raw

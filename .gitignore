@@ -11,3 +11,5 @@ data/raw/
 .design/brand/art/*.gen.json
 .design/brand/art/
 .design/refs/*.jpg
+broll/
+.design/AUDIT.md
