@@ -8,9 +8,11 @@ cover_image: https://sans-calque.51-161-82-166.sslip.io/static/og.png
 
 ## What I Built
 
-Ask an open 4B model to put "you need a business number (BN) from the CRA" into French and it writes "auprès du RRCQ". There is no RRCQ. The Canada Revenue Agency is the ARC in French, and in Canada's open data the government's translators wrote ARC all 31 times the pair shows up.
+Every page on my site has a French twin. I build things on the side (send me a brief, get a working demo back in 48 hours), and the site ships in English and fr-CA, so every new page means a translation.
 
-That one acronym is the whole side hustle in miniature. Mine is building things on the side: send me a brief and I send back a working demo in 48 hours. My own site ships in English and fr-CA, so every page I write needs a French twin, and a Canadian client who wants the same is trusting that the French is right. They won't read it closely. They will notice CRA where it should say ARC.
+So I gave an open 4B model a line any Canadian small-business page would have: "you need a business number (BN) from the CRA". It wrote "auprès du RRCQ". There is no RRCQ. The Canada Revenue Agency is the ARC in French, and in Canada's open data the government's translators wrote ARC all 31 times the pair shows up.
+
+Who pays: a small business pays a bilingual freelancer per page to put its site into French. The client won't read the French closely. They will notice CRA where it should say ARC. With an open model on the freelancer's own laptop there's no per-word bill, and the client's text never leaves the machine.
 
 **Sans calque** is the tool for that freelancer. Paste English, get French from a model I fine-tuned for $1.35 on government text, next to the untouched base model, plus a review list. It flags three things, and each flag says where its rule came from:
 
@@ -45,7 +47,7 @@ Try it: **https://sans-calque.51-161-82-166.sslip.io** (it calls the fine-tune l
 | Sentences with a Termium "avoid" term (of 147) | 16 | 24 | 7 | 14 |
 | chrF++ | 50.58 | 55.32 | 55.65 | 56.09 |
 
-The gain is acronyms and terms, not overall quality. Run 2 beats the base model on chrF++ in 92% of 1,000 bootstrap resamples, and I had set 95% as the bar before running it, so I don't claim it. Run 2 isn't better everywhere either. It leaves more English acronyms and more Termium terms than run 1. I serve it anyway because it gets the acronyms a client notices.
+The gain is acronyms and terms, not overall quality. The acronym gain holds up: run 2 beats the base model in all 1,000 bootstrap resamples of the 146 held-out sentences that contain a government French acronym. Overall quality doesn't: run 2 beats the base model on chrF++ in 92% of 1,000 bootstrap resamples, and I had set 95% as the bar before running it, so I don't claim it. Run 2 isn't better everywhere either. It leaves more English acronyms and more Termium terms than run 1. I serve it anyway because it gets the acronyms a client notices.
 
 **It's not always right, and the base model sometimes is.** On "you can apply for your SIN", the base model writes "numéro d'assurance sociale (NAS)", which is correct. Run 2 writes "NIS". The acronym check catches it: the government wrote NAS in 10 of 10 pairs. Run 2 also wrote "Conserver" where an instruction needs "Conservez", and none of my checks catch that one. That's why the box says to read it before you send it.
 
@@ -55,7 +57,7 @@ The gain is acronyms and terms, not overall quality. Run 2 beats the base model 
 
 ## Why Open Innovation Matters
 
-The weights are mine. I exported the fine-tune from Tinker, converted it to a 2.59 GB 4-bit file and it runs in Ollama on my laptop's 8 GB GPU at 32.5 tokens a second. Client text never has to leave the machine, and there is no per-word bill.
+The weights are mine. I exported the fine-tune from Tinker, converted it to a 2.59 GB 4-bit file and it runs in Ollama on my laptop's 8 GB GPU at 32.5 tokens a second. Client text never has to leave the machine, and there is no per-word bill. The same web page runs against it: I loaded it with every request outside my laptop blocked, and it still translated, fonts included, with zero requests out.
 
 That took three dead ends: Ollama no longer accepts LoRA adapters, its own quantiser needs a Mac, and an 8-bit file ran at 0.8 tokens a second. Shrinking it to 4-bit can cost something, so I scored the laptop copies on the same test. For run 1 it did: chrF++ 54.96 against 55.65 in the cloud. For run 2 it didn't. The laptop copy scored 56.43 against 56.09 and got 67.8% of the government's acronyms right against 66.9%. Statistically those are the same model, so I'm not claiming the laptop is better, just that nothing was lost.
 

@@ -1,0 +1,8 @@
+{
+ "a": "base_qwen35_4b",
+ "b": "ft2_qwen35_4b",
+ "sentences_with_french_acronyms": 146,
+ "rate_a": 0.508,
+ "rate_b": 0.669,
+ "b_beats_a_share": 1.0
+}

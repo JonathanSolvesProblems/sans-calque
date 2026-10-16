@@ -91,6 +91,11 @@ def claims() -> list[tuple[str, str, str]]:
     if lq1.exists():
         for doc in (readme, post):
             c.append((doc, "local run 1 chrF", f"chrF++ {res('local_run1_q4')['chrf++']:.2f} against {r1['chrf++']:.2f}"))
+    ab = R / "acronym_bootstrap_base_qwen35_4b_vs_ft2_qwen35_4b.json"
+    if ab.exists():
+        a2 = res("acronym_bootstrap_base_qwen35_4b_vs_ft2_qwen35_4b")
+        share = "all 1,000" if a2["b_beats_a_share"] == 1.0 else f"{a2['b_beats_a_share'] * 100:.1f}% of 1,000"
+        c.append((post, "acronym bootstrap", f"in {share} bootstrap resamples of the {a2['sentences_with_french_acronyms']} held-out"))
     if (R / "first_user.json").exists():
         fu = res("first_user")
         ft_flags = [fl for b in fu["flagged"] for fl in b["ft_flags"]]
