@@ -83,3 +83,20 @@ Every place where the data overruled my first version is in [PLAN.md](PLAN.md#co
 - My first Termium check flagged the government's own translators 21 times.
 - One term was counted three times.
 - The 8-bit local model ran 26 times slower than the 4-bit one.
+
+## Sources
+
+Every claim in the demo video and the post, and where it comes from.
+
+| Claim | Source |
+|---|---|
+| The Canada Revenue Agency is the ARC in French | The agency's own pages: [canada.ca/en/revenue-agency](https://www.canada.ca/en/revenue-agency.html), [canada.ca/fr/agence-revenu](https://www.canada.ca/fr/agence-revenu.html) |
+| Government translators wrote ARC for CRA in 31 of 31 pairs | Counted over 82,455 [Open Government Portal](https://open.canada.ca) English and French pairs, in `data/acronym_map.json`. One of them: [dataset d24ae2dd…](https://open.canada.ca/data/en/dataset/d24ae2dd-8399-4b49-8441-3e0318aaf69a), "The CSFA Program and CRA use…" / "Le PCAFE et l'Agence du revenu du Canada (ARC) utilisent…" |
+| NAS for SIN in 10 of 10 pairs | Same corpus, `data/acronym_map.json` |
+| "année fiscale" is to be avoided; the preferred term is "exercice financier" | Termium Plus, the Translation Bureau's term bank, [open data](https://open.canada.ca/data/en/dataset/94fc74d6-9b9a-4c2e-9c6c-45a5092453aa), file `Administration_AJ.csv`, subject Public Administration (General): année fiscale labelled "avoid, calque". Online: [Termium Plus](https://www.btb.termiumplus.gc.ca/) |
+| 8,000 training pairs, about $1.35 | `results/train_run2.json`, priced from Tinker's [models and pricing](https://tinker-docs.thinkingmachines.ai/tinker/models/models_and_pricing/) page |
+| 66.9% against 50.8%, all 1,000 bootstrap resamples | `results/compare_base_qwen35_4b_vs_ft2_qwen35_4b.json`, `results/acronym_bootstrap_base_qwen35_4b_vs_ft2_qwen35_4b.json` |
+| 8 flags became 1 on my own page | `results/first_user.json`, `results/first_user_keep.json`; the page is [jonathanandrei.com/how-i-work](https://jonathanandrei.com/how-i-work/) |
+| The held-out French was written by Government of Canada translators | canada.ca small-business pages, listed in `data/eval_urls.json`; used under the [canada.ca terms](https://www.canada.ca/en/transparency/terms.html) (non-commercial) |
+
+Licences and tools: training data and Termium Plus under the [Open Government Licence – Canada](https://open.canada.ca/en/open-government-licence-canada); base model [Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B), fine-tuned on [Tinker](https://thinkingmachines.ai/tinker/); comparison model [Gemma 3 4B](https://ollama.com/library/gemma3) through [Ollama](https://ollama.com); local conversion with [llama.cpp](https://github.com/ggml-org/llama.cpp); scoring with [sacrebleu](https://github.com/mjpost/sacrebleu) and [COMET wmt22-comet-da](https://huggingface.co/Unbabel/wmt22-comet-da); type is [Spectral](https://fonts.google.com/specimen/Spectral) (SIL Open Font License) and [Osifont](https://github.com/hikikomori82/osifont) (LGPL-3 with font exception).
