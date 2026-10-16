@@ -62,7 +62,13 @@ And the open data is the reason any of this works. The training pairs, the termi
 
 ## My First User
 
-[X: who tried it, what they pasted, what they said]
+Me, on my own site. jonathanandrei.com ships in English and fr-CA, so I pasted the English "How I work" page into the live app: 41 blocks.
+
+The fine-tune raised 8 flags. 7 were noise for this kind of text: MCP, LLM, RAG, FHIR, SDK and a NICE guideline code, all acronyms my own French page keeps in English. The acronym rule learned how the government writes, and tech jargon doesn't follow it.
+
+The 8th was real. My sentence says the logs held data "the AI had already claimed was PHI-free". The French came back as "lesquels avaient déjà été déclarés exempts", which means "which had already been declared free". The AI is gone from the sentence, and it was the whole point of it. The flag fired because the expected "IA" was missing, and it was missing because the model dropped the subject.
+
+So on my own page: one catch that mattered, seven to wave off. For a freelancer that's a fine trade, but it tells me the next version needs a "keep these in English" list per client.
 
 ## Prize Categories
 

@@ -91,6 +91,13 @@ def claims() -> list[tuple[str, str, str]]:
     if lq1.exists():
         for doc in (readme, post):
             c.append((doc, "local run 1 chrF", f"chrF++ {res('local_run1_q4')['chrf++']:.2f} against {r1['chrf++']:.2f}"))
+    if (R / "first_user.json").exists():
+        fu = res("first_user")
+        ft_flags = [fl for b in fu["flagged"] for fl in b["ft_flags"]]
+        c.append((post, "first user blocks", f"{fu['blocks']} blocks"))
+        c.append((post, "first user flags", f"raised {len(ft_flags)} flags"))
+        c.append((post, "first user noise", f"{len(ft_flags) - 1} were noise"))
+        c.append((post, "first user real catch", "lesquels avaient déjà été déclarés exempts"))
     if (R / "local_run2_q4.json").exists():
         l2 = res("local_run2_q4")
         a_l2 = acr("ft2_qwen35_4b", "local_run2_q4", "local_run2_q4")

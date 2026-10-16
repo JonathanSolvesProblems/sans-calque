@@ -1,0 +1,399 @@
+{
+ "page": "https://jonathanandrei.com/how-i-work/",
+ "fr_twin": "https://jonathanandrei.com/fr/how-i-work/",
+ "blocks": 41,
+ "ft_flagged_blocks": 5,
+ "base_flagged_blocks": 6,
+ "flagged": [
+  {
+   "en": "AI / LLM products: agents, RAG, MCP, FHIR, the things I do every day",
+   "base": "Produits IA / LLM : agents, RAG, MCP, FHIR, les outils que j'utilise au quotidien.",
+   "ft": "Produits d'IA / LLM : agents, RAG, MCP, FHIR, les choses que je fais tous les jours",
+   "base_flags": [
+    {
+     "kind": "acronym",
+     "term": "FHIR",
+     "note": "“FHIR” is the English acronym. Government French usually has its own; check before sending.",
+     "source": "acronym rule learned from Open Government Portal pairs"
+    },
+    {
+     "kind": "acronym",
+     "term": "LLM",
+     "note": "“LLM” is the English acronym. Government French usually has its own; check before sending.",
+     "source": "acronym rule learned from Open Government Portal pairs"
+    },
+    {
+     "kind": "acronym",
+     "term": "MCP",
+     "note": "“MCP” is the English acronym. Government French usually has its own; check before sending.",
+     "source": "acronym rule learned from Open Government Portal pairs"
+    },
+    {
+     "kind": "acronym",
+     "term": "RAG",
+     "note": "“RAG” is the English acronym. Government French usually has its own; check before sending.",
+     "source": "acronym rule learned from Open Government Portal pairs"
+    }
+   ],
+   "ft_flags": [
+    {
+     "kind": "acronym",
+     "term": "FHIR",
+     "note": "“FHIR” is the English acronym. Government French usually has its own; check before sending.",
+     "source": "acronym rule learned from Open Government Portal pairs"
+    },
+    {
+     "kind": "acronym",
+     "term": "LLM",
+     "note": "“LLM” is the English acronym. Government French usually has its own; check before sending.",
+     "source": "acronym rule learned from Open Government Portal pairs"
+    },
+    {
+     "kind": "acronym",
+     "term": "MCP",
+     "note": "“MCP” is the English acronym. Government French usually has its own; check before sending.",
+     "source": "acronym rule learned from Open Government Portal pairs"
+    },
+    {
+     "kind": "acronym",
+     "term": "RAG",
+     "note": "“RAG” is the English acronym. Government French usually has its own; check before sending.",
+     "source": "acronym rule learned from Open Government Portal pairs"
+    }
+   ]
+  },
+  {
+   "en": "Because “it runs” is the lowest bar. On my last hackathon (a maternal-triage MCP server for PromptOpinion), I spent about 20 hours across 15 commits chasing why a dashboard rendered blank in production. AI-authored components used the wrong prop names for the partner platform's widget wire format. Every Approve / Reject button silently failed a Zod schema check.",
+   "base": "Parce que « ça marche » est le seuil le plus bas. Lors de mon dernier hackathon (un serveur MCP de triage maternel pour PromptOpinion), j'ai passé environ 20 heures sur 15 engagements de code à chercher pourquoi un tableau de bord s'affichait vide en production. Les composants rédigés par l'intelligence artificielle utilisaient les mauvais noms de propriétés pour le format de fil de l'interface du partenaire. Chaque bouton « Approuver » / « Rejeter » échouait silencieusement à un contrôle de schéma Zod.",
+   "ft": "Parce que « ça marche » est la plus basse des barres. Pour mon dernier hackathon (un serveur MCP de triage maternel pour PromptOpinion), j’ai passé environ 20 heures sur 15 engagements à chercher pourquoi un tableau de bord était vide en production. Les composants rédigés par l’IA utilisaient les mauvais noms de propriétés pour le format de fil de l’engin de la plateforme partenaire. Chaque bouton Approver / Rejeter échouait silencieusement à un contrôle de schéma Zod.",
+   "base_flags": [
+    {
+     "kind": "acronym",
+     "term": "MCP",
+     "note": "“MCP” is the English acronym. Government French usually has its own; check before sending.",
+     "source": "acronym rule learned from Open Government Portal pairs"
+    },
+    {
+     "kind": "acronym",
+     "term": "AI",
+     "expected": "IA",
+     "wrote": [],
+     "note": "Expected “IA” for “AI”; government translators used it in 32 of 32 pairs, and it is not in this translation.",
+     "source": "acronym pairs learned from Open Government Portal translations"
+    }
+   ],
+   "ft_flags": [
+    {
+     "kind": "acronym",
+     "term": "MCP",
+     "note": "“MCP” is the English acronym. Government French usually has its own; check before sending.",
+     "source": "acronym rule learned from Open Government Portal pairs"
+    }
+   ]
+  },
+  {
+   "en": "Sentry's own AI (Seer) diagnosed exactly a memory leak in their Python SDK that I was patching upstream. Then it proposed a fix that would silently drop every builtin exception from deduplication. The prose plan and the actual generated patch were two different things.",
+   "base": "L'IA de Sentry (Seer) a diagnostiqué avec précision une fuite de mémoire dans leur SDK Python que je corrigeais en amont. Elle a ensuite proposé une correction qui ferait disparaître silencieusement toutes les exceptions natives du processus de déduplication. Le plan de rédaction et le patch généré en réalité étaient deux choses différentes.",
+   "ft": "Sentry a diagnostiqué avec précision une fuite de mémoire dans son SDK Python que je réparais en amont grâce à son IA (Seer). Puis, il a proposé une correction qui ferait disparaître silencieusement toutes les exceptions intégrées de la déduplication. Le plan énoncé et le patch généré étaient deux choses différentes.",
+   "base_flags": [
+    {
+     "kind": "acronym",
+     "term": "SDK",
+     "note": "“SDK” is the English acronym. Government French usually has its own; check before sending.",
+     "source": "acronym rule learned from Open Government Portal pairs"
+    }
+   ],
+   "ft_flags": [
+    {
+     "kind": "acronym",
+     "term": "SDK",
+     "note": "“SDK” is the English acronym. Government French usually has its own; check before sending.",
+     "source": "acronym rule learned from Open Government Portal pairs"
+    }
+   ]
+  },
+  {
+   "en": "AI review is a force-multiplier when a human is doing the accepting. It is not a replacement for the human who says “wait, this patch does something different from what it says.”",
+   "base": "L'examen par l'intelligence artificielle agit comme un multiplicateur de force lorsqu'un humain valide les demandes. Il ne remplace pas l'humain qui dit : « Attendez, ce correctif fait autre chose que ce qu'il indique. »",
+   "ft": "L’examen par l’IA est un multiplicateur de force lorsque l’acceptation est faite par un humain. Il ne remplace pas l’humain qui dit : « Attends, ce patch fait quelque chose de différent de ce qu’il dit. »",
+   "base_flags": [
+    {
+     "kind": "acronym",
+     "term": "AI",
+     "expected": "IA",
+     "wrote": [],
+     "note": "Expected “IA” for “AI”; government translators used it in 32 of 32 pairs, and it is not in this translation.",
+     "source": "acronym pairs learned from Open Government Portal translations"
+    }
+   ],
+   "ft_flags": []
+  },
+  {
+   "en": "Yes, and I have watched it happen on a medical build. Before I wired the maternal-triage system to real NICE clinical guidelines, Claude Sonnet 4.6 confidently made up the severe-hypertension threshold (170/110 instead of the real 160/110 under NICE NG133) that decides whether a pregnant patient goes to labour and delivery.",
+   "base": "Oui, et j'ai pu le constater lors d'un projet de construction médicale. Avant d'avoir relié le système de triage maternel aux directives cliniques NICE réelles, Claude Sonnet 4.6 a affirmé avec confiance le seuil d'hypertension sévère (170/110 au lieu de 160/110 selon les directives NICE NG133), qui détermine si une patiente enceinte est dirigée vers la salle de naissance.",
+   "ft": "Oui, et j’ai observé cela se produire sur un projet de bâtiment médical. Avant d’avoir câblé le système de triage des patients en maternité aux directives cliniques réelles de l’ANEC, Claude Sonnet 4.6 a confiant inventé le seuil de hypertension sévère (170/110 au lieu de 160/110 selon les directives réelles de l’ANEC NG133) qui détermine si une patiente enceinte doit être dirigée vers la maternité.",
+   "base_flags": [
+    {
+     "kind": "acronym",
+     "term": "NG133",
+     "note": "“NG133” is the English acronym. Government French usually has its own; check before sending.",
+     "source": "acronym rule learned from Open Government Portal pairs"
+    },
+    {
+     "kind": "acronym",
+     "term": "NICE",
+     "note": "“NICE” is the English acronym. Government French usually has its own; check before sending.",
+     "source": "acronym rule learned from Open Government Portal pairs"
+    }
+   ],
+   "ft_flags": [
+    {
+     "kind": "acronym",
+     "term": "NG133",
+     "note": "“NG133” is the English acronym. Government French usually has its own; check before sending.",
+     "source": "acronym rule learned from Open Government Portal pairs"
+    }
+   ]
+  },
+  {
+   "en": "On that same medical build, the top-level error handler printed the raw Error object to logs. For every axios HTTP failure, that meant the full Authorization: Bearer token and the PHI-adjacent response body ended up in log storage the AI had already claimed was PHI-free in the README. The README said one thing, the code did another.",
+   "base": "Sur cette même version médicale, le gestionnaire d'erreurs de niveau supérieur a imprimé l'objet Error brut dans les journaux. Pour chaque échec HTTP axios, cela signifiait que le jeton d'autorisation complet ainsi que le corps de réponse adjacent aux données de santé sensibles se retrouvaient stockés dans les journaux, alors que l'IA avait déjà affirmé dans le fichier README qu'il ne contenait aucune donnée de santé sensibles. Le README disait une chose, mais le code en faisait une autre.",
+   "ft": "Sur la même version médicale, le gestionnaire d’erreur de niveau supérieur a imprimé l’objet d’erreur brut dans les journaux. Pour chaque échec HTTP d’Axios, cela signifiait que le token d’autorisation complet et le corps de la réponse adjacent à l’information de santé personnelle se retrouvaient dans le stockage des journaux, lesquels avaient déjà été déclarés exempts d’information de santé personnelle dans le fichier README. Le fichier README disait une chose, le code en faisait une autre.",
+   "base_flags": [],
+   "ft_flags": [
+    {
+     "kind": "acronym",
+     "term": "AI",
+     "expected": "IA",
+     "wrote": [],
+     "note": "Expected “IA” for “AI”; government translators used it in 32 of 32 pairs, and it is not in this translation.",
+     "source": "acronym pairs learned from Open Government Portal translations"
+    }
+   ]
+  },
+  {
+   "en": "AI produces code that runs. I produce code that survives contact with your customers. That is the seam you're paying for: the judgment that says “this Zod discriminator collides with the prop named type,” “this state transition needs a guard,” “this default value silently overwrites the clinician's input.”",
+   "base": "L'intelligence artificielle génère du code qui fonctionne. Je génère du code qui résiste au contact avec vos clients. C'est la couture que vous payez : le jugement qui dit « ce discriminateur Zod entre en collision avec la propriété nommée type », « cette transition d'état nécessite une garde », « cette valeur par défaut écrase silencieusement l'entrée du clinicien ».",
+   "ft": "L'IA produit du code qui fonctionne. Je produis du code qui résiste au contact de vos clients. C'est la couture que vous payez : le jugement qui dit « ce discriminateur Zod entre en collision avec le type nommé prop », « cette transition d'état a besoin d'une garde », « cette valeur par défaut écrase silencieusement l'entrée du clinicien. »",
+   "base_flags": [
+    {
+     "kind": "acronym",
+     "term": "AI",
+     "expected": "IA",
+     "wrote": [],
+     "note": "Expected “IA” for “AI”; government translators used it in 32 of 32 pairs, and it is not in this translation.",
+     "source": "acronym pairs learned from Open Government Portal translations"
+    }
+   ],
+   "ft_flags": []
+  }
+ ],
+ "all": [
+  {
+   "en": "The first thing you'll see is your idea, half-built , not an invoice.",
+   "ft": "La première chose que vous verrez sera votre idée, en construction, et non une facture."
+  },
+  {
+   "en": "Most freelancers send you a quote based on a Zoom call. I send you a personalized demo video of your project working, within 48 hours of your brief. You iterate on the demo, not on a contract.",
+   "ft": "La plupart des freelances vous envoient un devis après un appel sur Zoom. Je vous envoie une vidéo de démo personnalisée de votre projet en fonction, dans les 48 heures suivant votre brief. Vous itérez sur la démo, pas sur un contrat."
+  },
+  {
+   "en": "I build a working sketch of your idea before we agree on anything.",
+   "ft": "Je réalise un croquis fonctionnel de votre idée avant de convenir de quoi que ce soit."
+  },
+  {
+   "en": "After you send a brief, I record a 2–3 minute walkthrough of your project running: a tiny interactive prototype, the architecture I'd use, the parts I'd push back on, and a rough price. You react. I refine. By the time we scope the real build, you've already seen (and felt) the thing.",
+   "ft": "Après avoir envoyé un court brief, je réalise une démo de 2 à 3 minutes de votre projet en cours : un tout petit prototype interactif, l’architecture que j’utiliserais, les parties sur lesquelles je ferais remonter des objections, et un prix approximatif. Vous réagissez. Je perfectionne. À l’heure où nous définissons le cadre du projet réel, vous avez déjà vu (et ressenti) l’objet."
+  },
+  {
+   "en": "The five steps from brief to ship",
+   "ft": "Les cinq étapes, du bref à la navire"
+  },
+  {
+   "en": "You send me a brief",
+   "ft": "Vous m'envoyez un bref"
+  },
+  {
+   "en": "Through the quote form: what you're building, who it's for, why now, and any constraints (budget, timeline, tech). Five minutes to write.",
+   "ft": "Par le formulaire de demande : ce que vous construisez, pour qui, pourquoi maintenant, et les contraintes (budget, calendrier, technologie). Cinq minutes pour écrire."
+  },
+  {
+   "en": "I send a personalized demo video within 48 hours",
+   "ft": "Je vous envoie une vidéo de démo personnalisée dans les 48 heures"
+  },
+  {
+   "en": "Loom-style walkthrough with a working prototype of your idea, my proposed approach, and the parts I'd challenge, plus a rough price. If we're not a fit, I say so here.",
+   "ft": "Visite guidée en style de métier à tisser avec un prototype fonctionnel de votre idée, de ma proposition et des parties que je contesterais, ainsi qu'un prix approximatif. Si nous ne sommes pas une bonne correspondance, je le dis ici."
+  },
+  {
+   "en": "What landed, what didn't, what you want different. A voice memo or a few bullets is enough. The point is to react to something concrete, not negotiate over a doc.",
+   "ft": "Ce qui a atterri, ce qui n'a pas atterri, ce que vous voulez différent. Un message vocal ou quelques points sont suffisants. Le point est de réagir à quelque chose de concret, pas de négocier sur un document."
+  },
+  {
+   "en": "I refine the demo",
+   "ft": "J'affine la démo"
+  },
+  {
+   "en": "Usually 1–2 rounds. Once the demo direction is right, we agree on scope, milestones, and price for the real build. No surprises at signing.",
+   "ft": "Généralement 1 à 2 tours. Une fois la direction de la démo correcte, nous convenons de l’étendue, des jalons et du prix pour la construction réelle. Pas de surprises à la signature."
+  },
+  {
+   "en": "I ship, with you in the loop",
+   "ft": "Je vous tiens au courant, je vous fais part de mes expéditions"
+  },
+  {
+   "en": "Bi-weekly progress demos so you see the build evolve. Source code in your GitHub from day one. Documentation and handoff included.",
+   "ft": "Démonstrations de progression hebdomadaires pour voir l'évolution de la construction. Code source sur votre GitHub dès le premier jour. Documentation et remise en main propre incluses."
+  },
+  {
+   "en": "Founders with a real idea and a working budget who want to see it built, not described",
+   "ft": "Les fondateurs qui ont une idée solide et un budget fonctionnel et qui veulent la voir réalisée, pas seulement décrite"
+  },
+  {
+   "en": "AI / LLM products: agents, RAG, MCP, FHIR, the things I do every day",
+   "ft": "Produits d'IA / LLM : agents, RAG, MCP, FHIR, les choses que je fais tous les jours"
+  },
+  {
+   "en": "Bilingual (EN / FR-CA) projects, especially Canadian SMBs and Quebec-based teams",
+   "ft": "Projets bilingues (FR-CA / EN), en particulier les PME canadiennes et les équipes basées au Québec"
+  },
+  {
+   "en": "Projects between $5K and $80K where I can commit 2–8 weeks of focus",
+   "ft": "Projets de 5 000 $ à 80 000 $ pour lesquels je peux m’engager pendant 2 à 8 semaines"
+  },
+  {
+   "en": "Static brochure / Wordpress sites without dev work, local agencies do this faster and cheaper",
+   "ft": "Brochure statique / sites WordPress sans travail de développement, les agences locales peuvent le faire plus rapidement et moins cher"
+  },
+  {
+   "en": "Sub-$5K work, the demo-first process doesn't pencil out at that scale",
+   "ft": "Pour les travaux de moins de 5 000 $, le processus de démonstration en premier ne tient pas la route à cette échelle"
+  },
+  {
+   "en": "Design-only, no implementation, I build, I don't just deliver pixels",
+   "ft": "Design seulement, pas de mise en œuvre, je conçois, je ne fournis pas juste des pixels"
+  },
+  {
+   "en": "Projects requiring on-site work in a specific city, I'm remote-only",
+   "ft": "Projets nécessitant des travaux sur place dans une ville spécifique, je ne travaille que à distance"
+  },
+  {
+   "en": "“Can't I just vibe-code this myself ?”",
+   "ft": "“Pourquoi ne pas coder ça moi-même ?”"
+  },
+  {
+   "en": "Fair question, and my honest answer is: yes, you can, and you should use AI as much as possible. What I sell is the seam. Here are four things AI pair-programming shipped in my own builds this year, every one of which type-checked and every one of which broke in production.",
+   "ft": "Question légitime, et ma réponse honnête est : oui, vous pouvez, et vous devriez utiliser l’IA autant que possible. Ce que je vends, c’est la couture. Voici quatre choses que j’ai livrées dans mes propres compilations cette année grâce à la programmation en binôme avec l’IA, toutes vérifiées par vérification du type et toutes ayant rencontré des problèmes en production."
+  },
+  {
+   "en": "“The code runs. Why do I still need you?”",
+   "ft": "« Le code fonctionne. Pourquoi ai-je encore besoin de vous? »"
+  },
+  {
+   "en": "Because “it runs” is the lowest bar. On my last hackathon (a maternal-triage MCP server for PromptOpinion), I spent about 20 hours across 15 commits chasing why a dashboard rendered blank in production. AI-authored components used the wrong prop names for the partner platform's widget wire format. Every Approve / Reject button silently failed a Zod schema check.",
+   "ft": "Parce que « ça marche » est la plus basse des barres. Pour mon dernier hackathon (un serveur MCP de triage maternel pour PromptOpinion), j’ai passé environ 20 heures sur 15 engagements à chercher pourquoi un tableau de bord était vide en production. Les composants rédigés par l’IA utilisaient les mauvais noms de propriétés pour le format de fil de l’engin de la plateforme partenaire. Chaque bouton Approver / Rejeter échouait silencieusement à un contrôle de schéma Zod."
+  },
+  {
+   "en": "On my laptop with test data, it looked fine. In front of judges, every button was dead. That is what an AI pair-programming session produces without a human who has read enough production incident reports to know which wire mismatches fail quietly.",
+   "ft": "Sur mon ordinateur portable avec des données de test, tout semblait correct. Devant les juges, tous les boutons étaient inactifs. C'est ce qu'une session de codage assisté par IA produit sans un humain qui a lu suffisamment de rapports d'incidents en production pour savoir quels désaccords de câblage échouent silencieusement."
+  },
+  {
+   "en": "“But the AI is really good at debugging too, right?”",
+   "ft": "« Mais l’IA est vraiment bonne pour déboguer, n’est-ce pas? »"
+  },
+  {
+   "en": "Sentry's own AI (Seer) diagnosed exactly a memory leak in their Python SDK that I was patching upstream. Then it proposed a fix that would silently drop every builtin exception from deduplication. The prose plan and the actual generated patch were two different things.",
+   "ft": "Sentry a diagnostiqué avec précision une fuite de mémoire dans son SDK Python que je réparais en amont grâce à son IA (Seer). Puis, il a proposé une correction qui ferait disparaître silencieusement toutes les exceptions intégrées de la déduplication. Le plan énoncé et le patch généré étaient deux choses différentes."
+  },
+  {
+   "en": "AI review is a force-multiplier when a human is doing the accepting. It is not a replacement for the human who says “wait, this patch does something different from what it says.”",
+   "ft": "L’examen par l’IA est un multiplicateur de force lorsque l’acceptation est faite par un humain. Il ne remplace pas l’humain qui dit : « Attends, ce patch fait quelque chose de différent de ce qu’il dit. »"
+  },
+  {
+   "en": "Read the full story (sentry-python memory leak)",
+   "ft": "Lisez l’histoire complète (fuite de mémoire dans sentry-python)"
+  },
+  {
+   "en": "“Can AI hallucinate something that actually hurts me?”",
+   "ft": "« L’IA peut-elle halluciner quelque chose qui me fait réellement du mal? »"
+  },
+  {
+   "en": "Yes, and I have watched it happen on a medical build. Before I wired the maternal-triage system to real NICE clinical guidelines, Claude Sonnet 4.6 confidently made up the severe-hypertension threshold (170/110 instead of the real 160/110 under NICE NG133) that decides whether a pregnant patient goes to labour and delivery.",
+   "ft": "Oui, et j’ai observé cela se produire sur un projet de bâtiment médical. Avant d’avoir câblé le système de triage des patients en maternité aux directives cliniques réelles de l’ANEC, Claude Sonnet 4.6 a confiant inventé le seuil de hypertension sévère (170/110 au lieu de 160/110 selon les directives réelles de l’ANEC NG133) qui détermine si une patiente enceinte doit être dirigée vers la maternité."
+  },
+  {
+   "en": "That single hallucinated number would have shipped as “AI-powered maternal triage” and missed preeclampsia cases in production. The AI does not know it does not know. The same is true of every domain your business runs on: pricing rules, compliance thresholds, refund windows, licensing terms.",
+   "ft": "Ce seul nombre halluciné aurait été expédié sous le nom de « triage maternel propulsé par l’IA » et aurait manqué des cas de pré-éclampsie en production. L’IA ne sait pas qu’elle ne sait pas. C’est le cas pour chaque domaine sur lequel votre entreprise fonctionne : règles de prix, seuils de conformité, fenêtres de remboursement, conditions de licence."
+  },
+  {
+   "en": "“What about security? The AI wouldn't do something dangerous, would it?”",
+   "ft": "« Et la sécurité? L'IA ne ferait pas quelque chose de dangereux, non? »"
+  },
+  {
+   "en": "On that same medical build, the top-level error handler printed the raw Error object to logs. For every axios HTTP failure, that meant the full Authorization: Bearer token and the PHI-adjacent response body ended up in log storage the AI had already claimed was PHI-free in the README. The README said one thing, the code did another.",
+   "ft": "Sur la même version médicale, le gestionnaire d’erreur de niveau supérieur a imprimé l’objet d’erreur brut dans les journaux. Pour chaque échec HTTP d’Axios, cela signifiait que le token d’autorisation complet et le corps de la réponse adjacent à l’information de santé personnelle se retrouvaient dans le stockage des journaux, lesquels avaient déjà été déclarés exempts d’information de santé personnelle dans le fichier README. Le fichier README disait une chose, le code en faisait une autre."
+  },
+  {
+   "en": "I caught it, patched it, moved on. A vibe-coded version of the same feature ships to production and quietly becomes an incident when someone reads the logs.",
+   "ft": "Je l’ai repéré, réparé et continué. Une version codée selon les codes de l’ambiance de la même fonctionnalité est livrée en production et devient un incident lorsque quelqu’un lit les journaux."
+  },
+  {
+   "en": "AI produces code that runs. I produce code that survives contact with your customers. That is the seam you're paying for: the judgment that says “this Zod discriminator collides with the prop named type,” “this state transition needs a guard,” “this default value silently overwrites the clinician's input.”",
+   "ft": "L'IA produit du code qui fonctionne. Je produis du code qui résiste au contact de vos clients. C'est la couture que vous payez : le jugement qui dit « ce discriminateur Zod entre en collision avec le type nommé prop », « cette transition d'état a besoin d'une garde », « cette valeur par défaut écrase silencieusement l'entrée du clinicien. »"
+  },
+  {
+   "en": "If you can describe it in a paragraph, I can show you a working sketch in 48 hours.",
+   "ft": "Si vous pouvez le décrire en un paragraphe, je peux vous montrer un croquis fonctionnel en 48 heures."
+  },
+  {
+   "en": "Send me your brief.",
+   "ft": "Envoyez-moi votre courtes communication."
+  },
+  {
+   "en": "Working demo back within 48 hours. If it doesn't land, you owe nothing.",
+   "ft": "Le démo de travail sera disponible à nouveau dans 48 heures. Si elle ne s’envole pas, vous ne devez rien."
+  }
+ ],
+ "site_fr": [
+  "La première chose que vous verrez, c'est votre idée, à moitié construite , pas une facture.",
+  "La plupart des indépendants vous envoient un devis après un appel Zoom. Moi, je vous envoie une vidéo personnalisée de votre projet en marche, dans les 48 heures suivant votre brief. Vous itérez sur la démo, pas sur un contrat.",
+  "Je bâtis une esquisse fonctionnelle de votre idée avant qu'on s'entende sur quoi que ce soit.",
+  "Après votre brief, j'enregistre une visite guidée de 2 à 3 minutes de votre projet en marche : un petit prototype interactif, l'architecture que j'utiliserais, les points sur lesquels je pousserais en arrière, et un prix approximatif. Vous réagissez. J'ajuste. Au moment de cadrer le vrai chantier, vous avez déjà vu (et ressenti) la chose.",
+  "Cinq étapes, du brief à la livraison",
+  "Vous m'envoyez un brief",
+  "Par le formulaire de devis : ce que vous bâtissez, pour qui, pourquoi maintenant, et les contraintes (budget, échéancier, tech). Cinq minutes à écrire.",
+  "Je vous renvoie une vidéo personnalisée sous 48 h",
+  "Vidéo style Loom avec un prototype fonctionnel de votre idée, l'approche proposée, les éléments que je remettrais en question, et un prix approximatif. Si on n'est pas un bon match, je le dis ici.",
+  "Vous m'envoyez vos retours",
+  "Ce qui a marché, ce qui n'a pas marché, ce que vous voulez différent. Un mémo vocal ou quelques puces suffisent. L'idée, c'est de réagir à quelque chose de concret, pas de négocier sur un document.",
+  "Habituellement 1 ou 2 tours. Quand la direction est bonne, on s'entend sur le cadrage, les jalons et le prix du vrai chantier. Pas de surprise à la signature.",
+  "Je livre, avec vous dans la boucle",
+  "Démos d'avancement aux deux semaines pour que vous voyiez le build évoluer. Code source dans votre GitHub dès le premier jour. Documentation et transfert inclus.",
+  "Fondateurs avec une vraie idée et un budget réel qui veulent voir leur projet construit, pas décrit",
+  "Produits IA / LLM : agents, RAG, MCP, FHIR, ce que je fais tous les jours",
+  "Projets bilingues (FR-CA / EN), surtout PME canadiennes et équipes québécoises",
+  "Projets de 5 k$ à 80 k$ où je peux engager 2 à 8 semaines de concentration",
+  "Sites vitrines statiques / Wordpress sans développement, les agences locales font ça plus vite et moins cher",
+  "Mandats sous 5 k$, la méthode démo-d'abord ne tient pas la route à cette échelle",
+  "Design seul, sans implémentation, je construis, je ne livre pas que des pixels",
+  "Projets exigeant du travail sur site dans une ville précise, je travaille à distance uniquement",
+  "« Je peux pas juste coder ça à l'IA moi-même ? »",
+  "Question honnête, et j'y réponds honnêtement : oui, vous pouvez, et vous devriez utiliser l'IA autant que possible. Ce que je vends, c'est le joint. Voici quatre trucs que le pair-programming avec l'IA a produits dans mes propres builds cette année, tous passant le type-check, tous cassant en production.",
+  "« Le code roule. Pourquoi j'ai encore besoin de toi ? »",
+  "Parce que « ça roule », c'est la barre la plus basse. Sur mon dernier hackathon (un serveur MCP de triage maternel pour PromptOpinion), j'ai passé environ 20 heures étalées sur 15 commits à chercher pourquoi un tableau de bord rendait un écran blanc en production. Les composants générés par l'IA utilisaient les mauvais noms de props pour le format de widget de la plateforme partenaire. Chaque bouton Approve / Reject échouait silencieusement à un contrôle de schéma Zod.",
+  "Sur mon portable avec des données de test, ça avait l'air impec. Devant les juges, chaque bouton était mort. C'est ce que produit une session de pair-programming avec l'IA sans un humain qui a lu assez de post-mortems pour savoir quels décalages de wire échouent en silence.",
+  "« Mais l'IA est bonne pour déboguer aussi, non ? »",
+  "La propre IA de Sentry (Seer) a diagnostiqué exactement une fuite mémoire dans leur SDK Python que je corrigeais en amont. Puis elle a proposé un correctif qui aurait silencieusement écarté chaque exception builtin de la déduplication. Le plan en prose et le patch réellement généré étaient deux choses différentes.",
+  "La revue IA est un multiplicateur de force quand un humain accepte. Ce n'est pas un remplacement pour l'humain qui dit « attends, ce patch fait autre chose que ce qu'il annonce ».",
+  "Lire l'histoire complète (fuite mémoire sentry-python)",
+  "« L'IA peut-elle halluciner un truc qui me fait vraiment mal ? »",
+  "Oui, et je l'ai vu arriver sur un build médical. Avant que je branche le système de triage maternel sur les vraies directives cliniques NICE, Claude Sonnet 4.6 a inventé avec assurance le seuil d'hypertension sévère (170/110 au lieu du vrai 160/110 sous NICE NG133) qui décide si une patiente enceinte va en salle d'accouchement.",
+  "Ce seul chiffre halluciné aurait été livré comme « triage maternel propulsé par l'IA » et manqué des cas de prééclampsie en production. L'IA ne sait pas qu'elle ne sait pas. La même chose vaut pour chaque domaine de votre business : règles de tarification, seuils de conformité, fenêtres de remboursement, termes de licence.",
+  "« Et la sécurité ? L'IA ne ferait pas de bêtise, non ? »",
+  "Sur le même build médical, le catch de haut niveau imprimait l'objet Error brut dans les logs. Pour chaque échec HTTP axios, ça voulait dire que le jeton complet Authorization: Bearer et le corps de réponse adjacent aux données patient (PHI) atterrissaient dans le stockage de logs que l'IA avait déjà déclaré sans PHI dans le README. Le README disait une chose, le code faisait l'autre.",
+  "J'ai attrapé, patché, avancé. Une version « vibe-codée » de la même fonctionnalité arrive en production et devient tranquillement un incident quand quelqu'un ouvre les logs.",
+  "L'IA produit du code qui roule. Je produis du code qui survit au contact de vos clients. C'est le joint que vous payez : le jugement qui dit « ce discriminant Zod entre en collision avec la prop nommée type », « cette transition d'état a besoin d'une garde », « cette valeur par défaut écrase silencieusement la saisie du clinicien ».",
+  "Si vous pouvez le décrire en un paragraphe, je peux vous en montrer une esquisse fonctionnelle sous 48 heures.",
+  "Démo fonctionnelle sous 48 heures. Si ça ne colle pas, vous ne devez rien."
+ ]
+}
