@@ -18,8 +18,9 @@ from translate import backend  # noqa: E402
 
 SENTENCES = [
     "Before you register your business, you need a business number (BN) from the CRA.",
-    "If you expect to earn more than $30,000 in a year, you have to register for the GST/HST.",
+    "Most small businesses use the calendar year as their fiscal year.",
     "Keep your accounting records for six years after the end of the fiscal year they relate to.",
+    "Keep a copy of your accounts payable and accounts receivable for each fiscal year.",
     "You can apply for your SIN at a Service Canada office.",
 ]
 

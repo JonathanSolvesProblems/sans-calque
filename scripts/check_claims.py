@@ -115,6 +115,8 @@ def claims() -> list[tuple[str, str, str]]:
 QUOTED_OUTPUTS = [  # (system in demo_outputs.json, text the docs quote it as writing)
     ("run2", "de l’ARC"), ("run2", "exercice financier"), ("run2", "NIS"), ("run2", "Conserver"),
     ("run1", "de la RC"), ("run1", "N° de S de C"), ("base", "RRCQ"), ("base", "numéro d'assurance sociale (NAS)"),
+    ("base", "comme année fiscale"), ("run2", "comme année financière"),
+    ("base", "comptes à payer"), ("run2", "comptes à payer"),
 ]
 
 

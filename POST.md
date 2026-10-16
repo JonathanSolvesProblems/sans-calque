@@ -1,6 +1,7 @@
 ---
 title: A $1.35 fine-tune taught an open 4B model that CRA is ARC in French. It still writes NIS for SIN.
 tags: devchallenge, hf26challenge, ai, opensource
+cover_image: https://sans-calque.51-161-82-166.sslip.io/static/og.png
 ---
 
 *This is a submission for the [Hacktoberfest Open-Source AI Challenge, Week 2: Side Hustle](https://dev.to/challenges/hacktoberfest-week2-2026-10-12)*
@@ -15,7 +16,7 @@ That one acronym is the whole side hustle in miniature. Mine is building things 
 
 - an English acronym left in the French
 - a missing French acronym the government uses (ARC for CRA, NAS for SIN), from 466 pairs learned from open data
-- a term the Translation Bureau's Termium Plus says to avoid, like "année fiscale" for fiscal year (it wants "exercice financier")
+- a term the Translation Bureau's Termium Plus says to avoid, like "année fiscale" for fiscal year (it wants "exercice financier"). On "most small businesses use the calendar year as their fiscal year", the untouched model writes année fiscale and the fine-tune writes année financière. Both models write "comptes à payer" for accounts payable, which Termium also flags, and the check catches it on both
 
 Nothing gets fixed silently. A flagged sentence lands on the review list, and the "French, ready to send" box tells you how many blocks to check first.
 

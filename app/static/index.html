@@ -202,6 +202,7 @@ footer a{color:var(--on-desk)}
         </div>
       </div>
       <aside class="pinned" id="figure" aria-label="Headline result"></aside>
+      <p class="label" style="grid-column:1 / -1;margin:0">Recorded from the deployed models. Every line above is in results/demo_outputs.json in the repo, and a script fails the build if they disagree.</p>
     </figure>
   </section>
 
@@ -238,8 +239,9 @@ footer a{color:var(--on-desk)}
 <script>
 const $ = s => document.querySelector(s);
 const SAMPLE = `Before you register your business, you need a business number (BN) from the CRA.
-If you expect to earn more than $30,000 in a year, you have to register for the GST/HST.
+Most small businesses use the calendar year as their fiscal year.
 Keep your accounting records for six years after the end of the fiscal year they relate to.
+Keep a copy of your accounts payable and accounts receivable for each fiscal year.
 You can apply for your SIN at a Service Canada office.`;
 const esc = s => s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const pct = x => x == null ? "not measured" : `${(x*100).toFixed(1)}%`;

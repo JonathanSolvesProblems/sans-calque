@@ -1,8 +1,9 @@
 {
  "sentences": [
   "Before you register your business, you need a business number (BN) from the CRA.",
-  "If you expect to earn more than $30,000 in a year, you have to register for the GST/HST.",
+  "Most small businesses use the calendar year as their fiscal year.",
   "Keep your accounting records for six years after the end of the fiscal year they relate to.",
+  "Keep a copy of your accounts payable and accounts receivable for each fiscal year.",
   "You can apply for your SIN at a Service Canada office."
  ],
  "systems": {
@@ -21,14 +22,33 @@
      ]
     },
     {
-     "en": "If you expect to earn more than $30,000 in a year, you have to register for the GST/HST.",
-     "fr": "Si vous prévoyez gagner plus de 30 000 $ par année, vous devez vous inscrire à la TPS/TVH.",
-     "flags": []
+     "en": "Most small businesses use the calendar year as their fiscal year.",
+     "fr": "La plupart des petites entreprises utilisent l'année civile comme année fiscale.",
+     "flags": [
+      {
+       "kind": "termium",
+       "term": "année fiscale"
+      }
+     ]
     },
     {
      "en": "Keep your accounting records for six years after the end of the fiscal year they relate to.",
      "fr": "Conservez vos documents comptables pendant six ans après la fin de l'exercice fiscal auquel ils se rapportent.",
      "flags": []
+    },
+    {
+     "en": "Keep a copy of your accounts payable and accounts receivable for each fiscal year.",
+     "fr": "Conservez une copie de vos comptes à payer et de vos comptes à recevoir pour chaque exercice financier.",
+     "flags": [
+      {
+       "kind": "termium",
+       "term": "comptes à recevoir"
+      },
+      {
+       "kind": "termium",
+       "term": "comptes à payer"
+      }
+     ]
     },
     {
      "en": "You can apply for your SIN at a Service Canada office.",
@@ -52,13 +72,18 @@
      ]
     },
     {
-     "en": "If you expect to earn more than $30,000 in a year, you have to register for the GST/HST.",
-     "fr": "Si vous prévoyez gagner plus de 30 000 $ par année, vous devez vous inscrire à la TPS/TVH.",
+     "en": "Most small businesses use the calendar year as their fiscal year.",
+     "fr": "La plupart des petites entreprises utilisent l’année civile comme exercice financier.",
      "flags": []
     },
     {
      "en": "Keep your accounting records for six years after the end of the fiscal year they relate to.",
      "fr": "Conservez vos registres comptables pendant six ans après la fin de l’exercice qu’ils concernent.",
+     "flags": []
+    },
+    {
+     "en": "Keep a copy of your accounts payable and accounts receivable for each fiscal year.",
+     "fr": "Conservez une copie de votre compte à payer et de votre compte à recevoir pour chaque exercice.",
      "flags": []
     },
     {
@@ -83,14 +108,28 @@
      "flags": []
     },
     {
-     "en": "If you expect to earn more than $30,000 in a year, you have to register for the GST/HST.",
-     "fr": "Si vous prévoyez gagner plus de 30 000 $ par année, vous devez vous inscrire à la TPS/TVH.",
+     "en": "Most small businesses use the calendar year as their fiscal year.",
+     "fr": "La plupart des petites entreprises utilisent l’année civile comme année financière.",
      "flags": []
     },
     {
      "en": "Keep your accounting records for six years after the end of the fiscal year they relate to.",
      "fr": "Conserver vos livres comptables pendant six ans après la fin de l’exercice financier auquel ils se rapportent.",
      "flags": []
+    },
+    {
+     "en": "Keep a copy of your accounts payable and accounts receivable for each fiscal year.",
+     "fr": "Conservez une copie de vos comptes à payer et de vos comptes à recevoir pour chaque exercice financier.",
+     "flags": [
+      {
+       "kind": "termium",
+       "term": "comptes à recevoir"
+      },
+      {
+       "kind": "termium",
+       "term": "comptes à payer"
+      }
+     ]
     },
     {
      "en": "You can apply for your SIN at a Service Canada office.",
@@ -114,14 +153,28 @@
      "flags": []
     },
     {
-     "en": "If you expect to earn more than $30,000 in a year, you have to register for the GST/HST.",
-     "fr": "Si vous gagnez plus de 30 000 $ par année, vous devez vous inscrire à la TPS/TVH.",
+     "en": "Most small businesses use the calendar year as their fiscal year.",
+     "fr": "La plupart des petites entreprises utilisent l’année civile comme année financière.",
      "flags": []
     },
     {
      "en": "Keep your accounting records for six years after the end of the fiscal year they relate to.",
      "fr": "Conserver vos livres comptables pendant six ans après la fin de l’exercice financier auquel ils se rapportent.",
      "flags": []
+    },
+    {
+     "en": "Keep a copy of your accounts payable and accounts receivable for each fiscal year.",
+     "fr": "Conservez une copie de vos comptes à payer et de vos comptes à recevoir pour chaque exercice financier.",
+     "flags": [
+      {
+       "kind": "termium",
+       "term": "comptes à recevoir"
+      },
+      {
+       "kind": "termium",
+       "term": "comptes à payer"
+      }
+     ]
     },
     {
      "en": "You can apply for your SIN at a Service Canada office.",
