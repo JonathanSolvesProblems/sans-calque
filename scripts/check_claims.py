@@ -14,7 +14,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 R = ROOT / "results"
-DOCS = [p for p in [ROOT / "README.md", ROOT / "app" / "static" / "index.html", ROOT / "POST.md"] if p.exists()]
+DOCS = [p for p in [ROOT / "README.md", ROOT / "app" / "static" / "index.html", ROOT / "POST.md",
+                    ROOT / "preview" / "captions.md"] if p.exists()]
 
 
 def res(name: str) -> dict:
@@ -87,6 +88,13 @@ def claims() -> list[tuple[str, str, str]]:
         (post, "Termium n", f"all {base['termium_sentences']} that touch"),
         (post, "general n", f"{base['n_general']} random sentences"),
     ]
+    cap = "captions.md"
+    c += [
+        (cap, "headline", f"gets {pct(a_r2['rate'])} of government acronyms"),
+        (cap, "graded row", f"{pct(a_r2['rate'])} of acronyms right, against {pct(a_base['rate'])} untouched"),
+        (cap, "CRA evidence", f"{amap['CRA']['pairs']} of {amap['CRA']['of']} pairs agree"),
+        (cap, "SIN evidence", f"{amap['SIN']['pairs']} of {amap['SIN']['of']} government pairs"),
+    ]
     lq1 = R / "local_run1_q4.json"
     if lq1.exists():
         for doc in (readme, post):
@@ -107,6 +115,7 @@ def claims() -> list[tuple[str, str, str]]:
         fk, fu = res("first_user_keep"), res("first_user")
         before = sum(len(b["ft_flags"]) for b in fu["flagged"])
         c.append((post, "keep list result", f"{before} flags became {fk['ft_flags']}"))
+        c.append(("captions.md", "keep list result", f"{fk['ft_flags']} of {fk['blocks']} blocks flagged, down from {before}"))
         if fk["ft_flags"] == 1 and any(f.get("expected") == "IA" for x in fk["flagged"] for f in x["flags"]):
             c.append((post, "keep list leaves the real catch", "the one left is the real catch"))
         else:
