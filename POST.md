@@ -70,6 +70,8 @@ The weights are mine. I exported the fine-tune from Tinker, converted it to a 2.
 
 That took three dead ends: Ollama no longer accepts LoRA adapters, its own quantiser needs a Mac, and an 8-bit file ran at 0.8 tokens a second. Shrinking it to 4-bit can cost something, so I scored the laptop copies on the same test. For run 1 it did: chrF++ 54.96 against 55.65 in the cloud. For run 2 it didn't. The laptop copy scored 56.43 against 56.09 and got 67.8% of the government's acronyms right against 66.9%. Statistically those are the same model, so I'm not claiming the laptop is better, just that nothing was lost.
 
+It's narrow on purpose. The people who'd pay for this are freelancers and small agencies doing Canadian French, and me. But the recipe isn't Canadian: fine-tune on a government's own open bilingual text, then check every term against that government's term bank. Anywhere both exist (the EU's IATE term base, for one) the same scripts should apply, though I've only measured it here.
+
 And the open data is the reason any of this works. The training pairs, the terminology bank and the acronym evidence all come from the Government of Canada's open data, and the test is the same government's translators. A closed model can't show you where its "ARC" came from. This one can, down to the 31 pairs.
 
 ## My First User
