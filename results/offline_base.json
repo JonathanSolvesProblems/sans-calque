@@ -1,0 +1,5 @@
+{
+ "backend": "ollama:qwen3.5:4b",
+ "en": "Before you register your business, you need a business number (BN) from the CRA.",
+ "fr": "Avant d'enregistrer votre entreprise, vous devez obtenir un numéro d'entreprise auprès du RReC."
+}

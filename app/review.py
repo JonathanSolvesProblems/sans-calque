@@ -79,7 +79,9 @@ def review(en: str, fr: str, keep: set[str] | None = None) -> list[dict]:
     known_fr = {v["fr"] for v in acronym_map().values()} | bilingual_acronyms()
     # what the model wrote instead: a capitalised token that is neither a known government
     # French acronym nor one that stays the same in both languages (RRCQ, NIS, RC)
-    stray = sorted(out_acr - known_fr - set(ACR.findall(en)))
+    # models also invent mixed-case forms ("RReC"), so any short token with 2+ capitals counts
+    loose = {w for w in re.findall(r"\b[A-Za-zÀ-ÿ]{2,6}\b", fr) if sum(ch.isupper() for ch in w) >= 2}
+    stray = sorted((out_acr | loose) - known_fr - set(ACR.findall(en)))
     for a in sorted(set(ACR.findall(en)) - left - keep):
         m = acronym_map().get(a)
         if m and m["fr"] not in out_acr:

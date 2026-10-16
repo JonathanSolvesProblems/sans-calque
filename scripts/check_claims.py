@@ -144,6 +144,9 @@ def main() -> int:
         for m in re.finditer(r"\bTBD\b|\[X\b", t):
             fails.append(f"{name}: unresolved placeholder near {t[max(0, m.start() - 40):m.start() + 20]!r}")
     demo = json.loads((R / "demo_outputs.json").read_text(encoding="utf-8"))["systems"]
+    ob = R / "offline_base.json"
+    if ob.exists() and "RReC" in text.get("POST.md", "") and "RReC" not in json.loads(ob.read_text(encoding="utf-8"))["fr"]:
+        fails.append("offline_base.json: the local untouched model no longer writes 'RReC'")
     for system, quote in QUOTED_OUTPUTS:
         outs = " ".join(o["fr"] for o in demo[system]["outputs"])
         if quote not in outs:

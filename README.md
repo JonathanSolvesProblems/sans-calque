@@ -12,6 +12,10 @@ Paste English. You get the fine-tuned model's French next to the untouched base 
 - **A French acronym that is missing**, when the government uses a known one: ARC for CRA (31 of 31 government pairs), NAS for SIN (10 of 10). The map has 466 acronyms, learned from the training pairs.
 - **A term the Translation Bureau says to avoid**, from Termium Plus. An example is "année fiscale", which Termium labels a calque of "fiscal year"; the preferred term is "exercice financier".
 
+Two things came out of the first real use, on my own site:
+- **Fetch the page.** Give a public page's address and its text is laid on the table. The fetcher refuses non-web schemes, unusual ports and private addresses, and it checks the address it actually connected to, so a rebinding DNS answer can't reach the server's neighbours.
+- **Keep in English.** A per-client list of terms such as MCP or SDK that stay in English. They are exempt from the acronym checks only, and Termium checks still run. On my own "How I work" page this took 8 flags down to 1, and the one left was a real error.
+
 Nothing is rewritten silently. A flagged sentence goes on the review list, and a failed block is shown as failed, never as an empty translation.
 
 ## Results

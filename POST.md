@@ -12,6 +12,9 @@ Every page on my site has a French twin. I build things on the side (send me a b
 
 So I gave an open 4B model a line any Canadian small-business page would have: "you need a business number (BN) from the CRA". It wrote "auprès du RRCQ". There is no RRCQ. The Canada Revenue Agency is the ARC in French, and in Canada's open data the government's translators wrote ARC all 31 times the pair shows up.
 
+![The light table: the English sentence, the untouched model's sheet with RRCQ circled, the fine-tuned sheet reading de l'ARC](https://raw.githubusercontent.com/JonathanSolvesProblems/sans-calque/master/docs/hero.png)
+*The hero is recorded output from the deployed models, not a mock-up.*
+
 Who pays: a small business pays a bilingual freelancer per page to put its site into French. The client won't read the French closely. They will notice CRA where it should say ARC. With an open model on the freelancer's own laptop there's no per-word bill, and the client's text never leaves the machine.
 
 **Sans calque** is the tool for that freelancer. Paste English, get French from a model I fine-tuned for $1.35 on government text, next to the untouched base model, plus a review list. It flags three things, and each flag says where its rule came from:
@@ -25,6 +28,9 @@ Nothing gets fixed silently. A flagged sentence lands on the review list, and th
 ## Demo
 
 Try it: **https://sans-calque.51-161-82-166.sslip.io** (it calls the fine-tune live on Tinker, with a daily word cap so the credit lasts). Click "Use the sample" for the sentences in this post.
+
+![Results as a diff: each English line, the untouched and fine-tuned French under it, flags in the margin with their source](https://raw.githubusercontent.com/JonathanSolvesProblems/sans-calque/master/docs/result.png)
+*The sample on the live site. Margin notes say where each rule came from.*
 
 [X: video]
 
@@ -58,6 +64,9 @@ The gain is acronyms and terms, not overall quality. The acronym gain holds up: 
 ## Why Open Innovation Matters
 
 The weights are mine. I exported the fine-tune from Tinker, converted it to a 2.59 GB 4-bit file and it runs in Ollama on my laptop's 8 GB GPU at 32.5 tokens a second. Client text never has to leave the machine, and there is no per-word bill. The same web page runs against it: I loaded it with every request outside my laptop blocked, and it still translated, fonts included, with zero requests out.
+
+![Local mode: the header reads On this computer, through Ollama, and the same flags appear](https://raw.githubusercontent.com/JonathanSolvesProblems/sans-calque/master/docs/offline.png)
+*Local mode with every request outside the laptop blocked. Two crops of one capture: the header and the first two rows. The local untouched model invented a different acronym, RReC, and it still gets caught.*
 
 That took three dead ends: Ollama no longer accepts LoRA adapters, its own quantiser needs a Mac, and an 8-bit file ran at 0.8 tokens a second. Shrinking it to 4-bit can cost something, so I scored the laptop copies on the same test. For run 1 it did: chrF++ 54.96 against 55.65 in the cloud. For run 2 it didn't. The laptop copy scored 56.43 against 56.09 and got 67.8% of the government's acronyms right against 66.9%. Statistically those are the same model, so I'm not claiming the laptop is better, just that nothing was lost.
 
