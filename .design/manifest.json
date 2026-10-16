@@ -1,0 +1,38 @@
+{
+  "project": "sans-calque",
+  "date": "2026-10-16",
+  "platform": "web-app",
+  "family": "dimensional-tactile",
+  "category_convention_avoided": "Translation apps: two white panes split by a swap-arrows button, a blue accent, a language dropdown, 12px rounded boxes.",
+  "metaphor": "The animator's light table. The English lies on the warm lit table, the French comes back on cool frosted vellum, and a flag is the original showing through.",
+  "found_details": ".design/refs/NOTES.md",
+  "palette": {
+    "dark": {"desk": "#1a120e", "desk_line": "#3d3027", "table": "#d6ccbb", "table_hot": "#e6dfd2", "table_edge": "#a99a83", "on_desk": "#e9e2d6", "on_desk_2": "#b4a795"},
+    "light": {"desk": "#b8ab97", "desk_line": "#a4977f", "table": "#e7e0d4", "table_hot": "#f4efe7", "table_edge": "#a99a83", "on_desk": "#231b16", "on_desk_2": "#41372f"},
+    "shared": {"vellum": "#d9e1e4", "vellum_back": "#ccd4d7", "amber_show_through": "#d7b77d", "graphite": "#2a211b", "graphite_2": "#51473e", "pencil": "#c8372f", "pencil_ink": "#9c2219"},
+    "reasons": {
+      "desk": "eyedropped #170f0c from light-table-tracing-1.jpg, lifted",
+      "table": "eyedropped #dfd9cf, the lit table surface, dimmed in dark mode to soften the jump from the desk",
+      "vellum": "eyedropped #d7e1e6 from papier-calque-3.jpg; tracing vellum is cool in every photo",
+      "amber_show_through": "aged tracing paper #d7b77d from tracing-paper-drawing-3.jpg",
+      "pencil": "domain fact: animators correct in coloured pencil over the graphite line; pushed red to stay clear of the rust accent"
+    }
+  },
+  "type": {
+    "lettering": "Osifont LGPL-3 with font exception (ISO 3098, technical-drawing lettering); stroked at display sizes",
+    "text": "Spectral (Production Type, Paris), for every sentence a person reads, including flag notes",
+    "numerals": "tabular, always with a denominator"
+  },
+  "signature_device": "amber show-through patch with a vermilion pencil baseline on a flagged term",
+  "structure": "one light table as the hero (recorded real output), then the input table, then results as diff rows with flags in the margin",
+  "depth": "material simulation: sheets cast one soft shadow on the table; no glow",
+  "motion_brief": {
+    "arrival": "none: the page is a tool and the hero is evidence",
+    "data": "the fine-tuned strip of a flagged row settles down onto the table (0.5s), the one orchestrated moment",
+    "live": "not applicable: nothing changes without the user asking",
+    "continuity": "not applicable: single screen",
+    "reduced_motion": "the strip simply appears; asserted 0 running animations"
+  },
+  "assets": ["app/static/wordmark.svg", "app/static/mark.svg", "app/static/icon.svg", "app/static/icon-180.png", "app/static/icon-192.png", "app/static/icon-512.png", "app/static/og.png", "app/static/art/empty.webp", "app/static/art/error.webp"],
+  "charter": ".design/brand/CHARTER.md"
+}

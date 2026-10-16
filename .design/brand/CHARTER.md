@@ -11,9 +11,10 @@ Anything flagged is the original showing through.
    term, where English or a calque bleeds through the French. It is never a button and never decoration.
 4. **Vermilion (#c8372f) is the correction pencil.** It draws rings, ticks and underlines on flagged terms
    and nothing else. It is never body text. The darker #a8281f is the only vermilion allowed as text.
-5. **The peg strip is the signature device.** A punched strip (round, slot, round) sits along the top of
-   every translation sheet, exactly once per sheet. It never goes on buttons, never on the English, and never repeats as a
-   pattern.
+5. **The show-through is the signature device.** A flagged term gets an amber patch with a vermilion pencil
+   baseline, the original showing through the vellum, and the same mark is used nowhere else. The peg-bar punch survives only in
+   the wordmark's q. Punched holes on the sheets were removed on 2026-10-16, after three blind critics in four rounds read them as
+   carousel dots.
 6. **Lettering is Osifont** (ISO 3098, the lettering standard on technical drawings), used for the wordmark, labels,
    numbers and buttons. **The French and English text is Spectral**, because it is what a person reads.
 7. **Titles carry no full stop and no comma.** Lettering on a drawing is not a sentence.
