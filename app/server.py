@@ -25,6 +25,8 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 sys.path.insert(0, str(ROOT / "app"))
 load_dotenv(ROOT / ".env")
+import requests  # noqa: E402
+from fetch_page import FetchError, blocks_from_url  # noqa: E402
 from review import review  # noqa: E402
 from translate import backend  # noqa: E402
 
@@ -80,11 +82,39 @@ def scorecard() -> dict:
 class Req(BaseModel):
     text: str
     compare: bool = True
+    keep: list[str] = []  # acronyms the client wants left in English
+
+
+class FetchReq(BaseModel):
+    url: str
 
 
 @app.get("/")
 def index():
     return FileResponse(ROOT / "app" / "static" / "index.html")
+
+
+@app.post("/api/fetch")
+async def fetch(req: FetchReq):
+    """Text blocks of a public page, so a whole page can be translated by address."""
+    try:
+        page = await asyncio.to_thread(blocks_from_url, req.url)
+    except FetchError as e:
+        raise HTTPException(400, str(e))
+    except requests.RequestException as e:
+        raise HTTPException(502, f"Could not fetch that page ({type(e).__name__}).")
+    except Exception as e:  # never surface a raw 500 to the page; say what failed instead
+        raise HTTPException(502, f"That page could not be read ({type(e).__name__}).")
+    if not page["blocks"]:
+        raise HTTPException(422, "No readable text was found on that page.")
+    text, kept = "", 0
+    for b in page["blocks"]:  # fill up to the demo's limit, whole blocks only
+        if len(text) + len(b) + 1 > MAX_CHARS:
+            break
+        text += b + "\n"
+        kept += 1
+    return {"url": page["url"], "title": page["title"], "text": text.strip(),
+            "blocks_total": len(page["blocks"]), "blocks_kept": kept}
 
 
 @app.get("/api/meta")
@@ -125,7 +155,8 @@ async def translate(req: Req):
     base_out = await asyncio.gather(*(one(base, b) for b in parts)) if base else [None] * len(parts)
     result = []
     for en, f, b in zip(parts, ft_out, base_out):
+        keep = set(req.keep)
         result.append({"en": en, "ft": f, "base": b,
-                       "ft_flags": review(en, f["text"]) if f["ok"] else [],
-                       "base_flags": review(en, b["text"]) if b and b["ok"] else []})
+                       "ft_flags": review(en, f["text"], keep) if f["ok"] else [],
+                       "base_flags": review(en, b["text"], keep) if b and b["ok"] else []})
     return {"blocks": result, "words": words}

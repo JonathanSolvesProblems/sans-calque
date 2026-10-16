@@ -103,6 +103,14 @@ def claims() -> list[tuple[str, str, str]]:
         c.append((post, "first user flags", f"raised {len(ft_flags)} flags"))
         c.append((post, "first user noise", f"{len(ft_flags) - 1} were noise"))
         c.append((post, "first user real catch", "lesquels avaient déjà été déclarés exempts"))
+    if (R / "first_user_keep.json").exists() and (R / "first_user.json").exists():
+        fk, fu = res("first_user_keep"), res("first_user")
+        before = sum(len(b["ft_flags"]) for b in fu["flagged"])
+        c.append((post, "keep list result", f"{before} flags became {fk['ft_flags']}"))
+        if fk["ft_flags"] == 1 and any(f.get("expected") == "IA" for x in fk["flagged"] for f in x["flags"]):
+            c.append((post, "keep list leaves the real catch", "the one left is the real catch"))
+        else:
+            c.append((post, "keep list leaves the real catch", "THE RECORDED RUN NO LONGER SUPPORTS THIS CLAIM"))
     if (R / "local_run2_q4.json").exists():
         l2 = res("local_run2_q4")
         a_l2 = acr("ft2_qwen35_4b", "local_run2_q4", "local_run2_q4")

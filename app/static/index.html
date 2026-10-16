@@ -116,6 +116,13 @@ button:disabled{opacity:.55;cursor:wait}
 label.cmp{font-size:15.5px;display:flex;gap:7px;align-items:center;color:var(--graphite-2);min-height:44px}
 label.cmp input{width:18px;height:18px;accent-color:var(--graphite)}
 .msg{font:14px var(--lettering);color:var(--pencil-ink)}
+.msg.ok{color:var(--graphite-2)}
+.fetchrow{display:flex;gap:10px;margin-bottom:10px;flex-wrap:wrap}
+.fetchrow input,.keep input{flex:1 1 260px;min-height:44px;padding:10px 14px;font:16px var(--text);color:var(--graphite);
+  background:rgba(255,255,255,.25);border:1.5px dashed var(--table-edge);border-radius:3px}
+.keep{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:8px;font-size:15.5px;color:var(--graphite-2)}
+.keep input{max-width:360px}
+.fetched{font:14px var(--lettering);color:var(--graphite-2);margin:6px 0 0}
 
 /* results lie on the desk, one spread */
 .spread{margin-top:34px;display:grid;grid-template-columns:repeat(var(--cols,3),minmax(0,1fr));gap:20px;align-items:start}
@@ -215,7 +222,11 @@ footer a{color:var(--on-desk)}
 
   <section class="bench" aria-labelledby="bench-h">
     <h2 class="pen" id="bench-h">Put the English on the table</h2>
-    <p class="hint">A page, a few paragraphs, an email to customers. Up to 6,000 characters.</p>
+    <p class="hint">A page, a few paragraphs, an email to customers. Up to 6,000 characters. Or give the address of a public page and it is laid on the table for you.</p>
+    <div class="fetchrow">
+      <input id="url" type="url" inputmode="url" autocomplete="url" aria-label="Address of a public English page" placeholder="https://your-client.ca/about">
+      <button class="ghost" id="fetch">Fetch the page</button>
+    </div>
     <textarea id="src" aria-label="English text to translate" placeholder="Before you register your business, you need a business number (BN) from the CRA."></textarea>
     <div class="bar">
       <button class="go" id="go">Translate</button>
@@ -223,6 +234,7 @@ footer a{color:var(--on-desk)}
       <label class="cmp"><input type="checkbox" id="cmp" checked> Show the untouched model too</label>
       <span class="msg" id="msg" role="status" aria-live="polite"></span>
     </div>
+    <label class="keep">Keep in English for this client <input id="keep" type="text" spellcheck="false" placeholder="MCP, SDK, FHIR"></label>
   </section>
 
   <section id="out" aria-live="polite">
@@ -301,9 +313,9 @@ async function meta(){
 async function go(){
   const text = $("#src").value; const compare = $("#cmp").checked;
   if (!text.trim()){ $("#msg").textContent = "Paste some English first."; $("#src").focus(); return; }
-  $("#go").disabled = true; $("#msg").textContent = "Tracing…";
+  $("#go").disabled = true; $("#msg").classList.add("ok"); $("#msg").textContent = "Tracing…";
   try{
-    const r = await fetch("/api/translate",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({text,compare})});
+    const r = await fetch("/api/translate",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({text,compare,keep:$("#keep").value.split(/[,\s]+/).filter(Boolean)})});
     const d = await r.json();
     if (!r.ok) throw new Error(d.detail || r.statusText);
     const strip = (r, flags, cls, who, first) => !r ? "" : r.ok
@@ -327,9 +339,26 @@ async function go(){
           <pre id="fr">${d.blocks.map(b => b.ft.ok ? showThrough(b.ft.text, b.ft_flags) : "[NOT TRANSLATED: this block failed]").join("\n\n")}</pre><button class="ghost" id="copy">Copy the French</button></div></div>`;
     $("#msg").textContent = "";
     $("#copy").onclick = () => navigator.clipboard.writeText(fr).then(()=>$("#copy").textContent="Copied");
-  }catch(e){ $("#msg").textContent = e.message; }
+  }catch(e){ $("#msg").classList.remove("ok"); $("#msg").textContent = e.message; }
   finally{ $("#go").disabled = false; }
 }
+async function fetchPage(){
+  const url = $("#url").value.trim();
+  if (!url){ $("#msg").textContent = "Give the page's address first."; $("#url").focus(); return; }
+  $("#fetch").disabled = true; $("#msg").classList.add("ok"); $("#msg").textContent = "Fetching the page…";
+  try{
+    const r = await fetch("/api/fetch",{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({url})});
+    const d = await r.json();
+    if (!r.ok) throw new Error(d.detail || r.statusText);
+    const s = $("#src"); s.value = d.text; s.scrollTop = 0; $("#msg").classList.add("ok");
+    $("#msg").textContent = d.blocks_kept < d.blocks_total
+      ? `${d.blocks_kept} of ${d.blocks_total} blocks from “${d.title}” fit the demo's 6,000-character limit.`
+      : `${d.blocks_kept} blocks from “${d.title}”.`;
+  }catch(e){ $("#msg").classList.remove("ok"); $("#msg").textContent = e.message; }
+  finally{ $("#fetch").disabled = false; }
+}
+$("#fetch").onclick = fetchPage;
+$("#url").addEventListener("keydown", e => { if (e.key === "Enter") fetchPage(); });
 $("#go").onclick = go;
 $("#sample").onclick = () => { const s = $("#src"); s.value = SAMPLE; s.scrollTop = 0; s.focus({preventScroll:true}); s.setSelectionRange(0,0); };
 meta();

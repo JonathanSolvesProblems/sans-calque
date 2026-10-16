@@ -71,7 +71,7 @@ The fine-tune raised 8 flags. 7 were noise for this kind of text: MCP, LLM, RAG,
 
 The 8th was real. My sentence says the logs held data "the AI had already claimed was PHI-free". The French came back as "lesquels avaient déjà été déclarés exempts", which means "which had already been declared free". The AI is gone from the sentence, and it was the whole point of it. The flag fired because the expected "IA" was missing, and it was missing because the model dropped the subject.
 
-So on my own page: one catch that mattered, seven to wave off. For a freelancer that's a fine trade, but it tells me the next version needs a "keep these in English" list per client.
+So on my own page: one catch that mattered, seven to wave off. That told me what to build next, so I built it: a "keep in English" list per client, and a "Fetch the page" box so the page comes in by its address instead of by copy and paste. Same page, fetched by the app, with MCP, LLM, RAG, FHIR, SDK and the guideline code on the list: 8 flags became 1, and the one left is the real catch.
 
 ## Prize Categories
 

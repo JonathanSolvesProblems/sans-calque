@@ -65,9 +65,12 @@ def checker() -> Checker:
     return Checker()
 
 
-def review(en: str, fr: str) -> list[dict]:
+def review(en: str, fr: str, keep: set[str] | None = None) -> list[dict]:
+    """`keep`: acronyms the client wants left in English (MCP, SDK, a product name). They are
+    exempt from the acronym checks only; Termium checks still run."""
     flags = []
-    left = (set(ACR.findall(en)) & set(ACR.findall(fr))) - bilingual_acronyms()
+    keep = {k.upper() for k in (keep or set())}
+    left = (set(ACR.findall(en)) & set(ACR.findall(fr))) - bilingual_acronyms() - keep
     for a in sorted(left):
         flags.append({"kind": "acronym", "term": a,
                       "note": f"“{a}” is the English acronym. Government French usually has its own; check before sending.",
@@ -77,7 +80,7 @@ def review(en: str, fr: str) -> list[dict]:
     # what the model wrote instead: a capitalised token that is neither a known government
     # French acronym nor one that stays the same in both languages (RRCQ, NIS, RC)
     stray = sorted(out_acr - known_fr - set(ACR.findall(en)))
-    for a in sorted(set(ACR.findall(en)) - left):
+    for a in sorted(set(ACR.findall(en)) - left - keep):
         m = acronym_map().get(a)
         if m and m["fr"] not in out_acr:
             flags.append({"kind": "acronym", "term": a, "expected": m["fr"], "wrote": stray,

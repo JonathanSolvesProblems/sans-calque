@@ -1,0 +1,29 @@
+{
+ "page": "https://jonathanandrei.com/how-i-work/",
+ "blocks": 41,
+ "keep": [
+  "MCP",
+  "LLM",
+  "RAG",
+  "FHIR",
+  "SDK",
+  "NG133"
+ ],
+ "ft_flags": 1,
+ "flagged": [
+  {
+   "en": "On that same medical build, the top-level error handler printed the raw Error object to logs. For every axios HTTP failure, that meant the full Authorization: Bearer token and the PHI-adjacent response body ended up in log storage the AI had already claimed was PHI-free in the README. The README said one thing, the code did another.",
+   "ft": "Sur la même version médicale, le gestionnaire d’erreur de niveau supérieur a imprimé l’objet d’erreur brut dans les journaux. Pour chaque échec HTTP d’Axios, cela signifiait que le jeton d’autorisation complet et le corps de réponse adjacent aux données de santé personnelles se retrouvaient dans le stockage des journaux, lesquels avaient déjà été déclarés exempts de données de santé personnelles dans le fichier README. Le fichier README disait une chose, le code en faisait une autre.",
+   "flags": [
+    {
+     "kind": "acronym",
+     "term": "AI",
+     "expected": "IA",
+     "wrote": [],
+     "note": "Expected “IA” for “AI”; government translators used it in 32 of 32 pairs, and it is not in this translation.",
+     "source": "acronym pairs learned from Open Government Portal translations"
+    }
+   ]
+  }
+ ]
+}
