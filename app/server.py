@@ -107,6 +107,9 @@ async def fetch(req: FetchReq):
         raise HTTPException(502, f"That page could not be read ({type(e).__name__}).")
     if not page["blocks"]:
         raise HTTPException(422, "No readable text was found on that page.")
+    if page["lang"].startswith("fr"):  # the page says it is already French: point at its English twin
+        twin = f" Its English version is {page['en_twin']}" if page["en_twin"] else ""
+        raise HTTPException(422, f"That page is already in French (it declares lang=\"{page['lang']}\").{twin}")
     text, kept = "", 0
     for b in page["blocks"]:  # fill up to the demo's limit, whole blocks only
         if len(text) + len(b) + 1 > MAX_CHARS:

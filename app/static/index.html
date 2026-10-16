@@ -319,7 +319,7 @@ async function go(){
     const d = await r.json();
     if (!r.ok) throw new Error(d.detail || r.statusText);
     const strip = (r, flags, cls, who, first) => !r ? "" : r.ok
-      ? `<p class="strip ${cls}"><span class="${first ? "who" : "sr"}">${who}</span>${showThrough(r.text, flags)}</p>`
+      ? `<p class="strip ${cls}">${first ? `<span class="who">${who}</span>` : `<span class="sr">${who}: </span>`}${showThrough(r.text, flags)}</p>`
       : `<p class="strip ${cls} err"><span class="who">${who}</span>This block didn't come back (${esc(r.error)}). Nothing was filled in for it.</p>`;
     const side = b => {
       const parts = [];

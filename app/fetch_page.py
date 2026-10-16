@@ -93,4 +93,10 @@ def blocks_from_url(url: str) -> dict:
         if len(t.split()) >= 4 and t not in out:
             out.append(t)
     title = soup.title.get_text(strip=True) if soup.title else url
-    return {"url": r.url, "title": title, "blocks": out}
+    lang = ((soup.html.get("lang") if soup.html else "") or "").lower()
+    en_twin = None
+    for link in soup.find_all("link", attrs={"rel": "alternate", "hreflang": True}):
+        if link["hreflang"].lower().startswith("en") and link.get("href"):
+            en_twin = urljoin(r.url, link["href"])
+            break
+    return {"url": r.url, "title": title, "blocks": out, "lang": lang, "en_twin": en_twin}
