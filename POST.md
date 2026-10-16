@@ -32,11 +32,13 @@ Try it: **https://sans-calque.51-161-82-166.sslip.io** (it calls the fine-tune l
 ![Results as a diff: each English line, the untouched and fine-tuned French under it, flags in the margin with their source](https://raw.githubusercontent.com/JonathanSolvesProblems/sans-calque/master/docs/result.png)
 *The sample on the live site. Margin notes say where each rule came from.*
 
-[X: video]
+{% embed https://www.youtube.com/watch?v=iObGJm1Id6Y %}
 
 ## Code
 
 {% github JonathanSolvesProblems/sans-calque %}
+
+A longer write-up is on my blog: [Sans calque, a Canadian French fine-tune on Tinker](https://jonathanandrei.com/blog/sans-calque-canadian-french-fine-tune-tinker/).
 
 ## How I Built It
 

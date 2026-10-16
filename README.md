@@ -4,6 +4,10 @@ English to Canadian French for small-business pages, on a 4-billion-parameter op
 
 Built for the DEV Hacktoberfest Open-Source AI Challenge, Week 2: Side Hustle.
 
+- Live app: https://sans-calque.51-161-82-166.sslip.io
+- Demo video (1:42): https://www.youtube.com/watch?v=iObGJm1Id6Y
+- Write-up: https://jonathanandrei.com/blog/sans-calque-canadian-french-fine-tune-tinker/
+
 ## What it does
 
 Paste English. You get the fine-tuned model's French next to the untouched base model's, a review list, and a "French, ready to send" box. The review list flags three things, each with its source:
